@@ -1,0 +1,12 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24644" id="Group_24644" transform="translate(1694 -6389)">
+        <g data-name="map (3)" id="map_3_" transform="translate(-1692.57 6392)">
+            <path d="M0,13.714,6,16V2.286L0,0Z" data-name="Path 30482" fill="#392694"
+                id="Path_30482" transform="translate(7.57 1)" />
+            <path d="M0,16l6-2.286V0L0,2.286Z" data-name="Path 30483" fill="#392694" id="Path_30483"
+                transform="translate(0.57 1)" />
+            <path d="M0,2.286V16l6-2.286V0Z" data-name="Path 30484" fill="#392694" id="Path_30484"
+                transform="translate(14.57 1)" />
+        </g>
+    </g>
+</svg>

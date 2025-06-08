@@ -1,0 +1,11 @@
+<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24827" id="Group_24827" transform="translate(-1158 -1356)">
+        <g data-name="Ellipse 77" fill="#fff" id="Ellipse_77" stroke="#392694" stroke-width="1"
+            transform="translate(1158 1356)">
+            <circle cx="8" cy="8" r="8" stroke="none" />
+            <circle cx="8" cy="8" fill="none" r="7.5" />
+        </g>
+        <circle cx="6" cy="6" data-name="Ellipse 80" fill="#392694" id="Ellipse_80" r="6"
+            transform="translate(1160 1358)" />
+    </g>
+</svg>

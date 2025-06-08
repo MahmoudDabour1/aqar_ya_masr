@@ -1,0 +1,12 @@
+<svg height="28" viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24617" id="Group_24617" transform="translate(-156 -313)">
+        <g id="line-chart" transform="translate(158 315)">
+            <path d="M3,18H6V16.5H3V12H6V10.5H3V6H6V4.5H3V0H1.5V21H0v1.5H1.5V24H3V22.5H24V21H3Z"
+                data-name="Path 30614" fill="#313033" id="Path_30614" />
+            <path
+                d="M140.217,118.838h-5.25v1.5h3.439l-5.687,5.686-3.2-3.233a.751.751,0,0,0-.531-.223.719.719,0,0,0-.532.22l-5.268,5.268,1.061,1.061,4.735-4.735,3.2,3.233a.751.751,0,0,0,.531.223,1.03,1.03,0,0,0,.532-.22l6.22-6.22v3.439h1.5v-5.25A.75.75,0,0,0,140.217,118.838Z"
+                data-name="Path 30615" fill="#313033" id="Path_30615"
+                transform="translate(-116.968 -112.837)" />
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+    <g style="mix-blend-mode: normal;isolation: isolate" data-name="Group 42" id="Group_42">
+        <g data-name="Rectangle 65" fill="#392694" id="Rectangle_65" opacity="0" stroke="#707070"
+            stroke-width="1">
+            <rect height="16" stroke="none" width="16" />
+            <rect fill="none" height="15" width="15" x="0.5" y="0.5" />
+        </g>
+        <g data-name="Rectangle 66" fill="#392694" id="Rectangle_66" opacity="0" stroke="#707070"
+            stroke-width="1" transform="translate(1 1)">
+            <rect height="14" stroke="none" width="14" />
+            <rect fill="none" height="13" width="13" x="0.5" y="0.5" />
+        </g>
+        <path d="M5.2,6,0,1.125V0L6.4,6,0,12V10.875Z" fill="#392694" id="right-chevron"
+            transform="translate(2.4 11.2) rotate(-90)" />
+    </g>
+</svg>

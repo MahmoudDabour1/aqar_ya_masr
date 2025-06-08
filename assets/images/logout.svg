@@ -1,0 +1,17 @@
+<svg data-name="log out" height="24" id="log_out" viewBox="0 0 24 24" width="24"
+    xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Rectangle 12966" fill="#a32015" id="Rectangle_12966" opacity="0" stroke="#eae6ff"
+        stroke-width="1">
+        <rect height="24" stroke="none" width="24" />
+        <rect fill="none" height="23" width="23" x="0.5" y="0.5" />
+    </g>
+    <g data-name="logout (1)" id="logout_1_" transform="translate(2 2)">
+        <path
+            d="M248.129,160.051l-.878.878,2.665,2.665h-8.8v1.241h8.8l-2.665,2.665.878.878,4.163-4.163Z"
+            data-name="Path 30072" fill="#a32015" id="Path_30072"
+            transform="translate(-232.292 -154.214)" />
+        <path
+            d="M13.781,18.75H1.253V1.25H13.781V2.5h1.253V.625A.625.625,0,0,0,14.408,0H.626A.625.625,0,0,0,0,.625v18.75A.625.625,0,0,0,.626,20H14.408a.625.625,0,0,0,.626-.625V17.5H13.781Z"
+            data-name="Path 30073" fill="#a32015" id="Path_30073" transform="translate(0)" />
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 25208" id="Group_25208" transform="translate(-16 -58)">
+        <g data-name="Group 24458" id="Group_24458" transform="translate(-92 -229)">
+            <g data-name="Rectangle 13201" fill="#313033" id="Rectangle_13201" opacity="0"
+                stroke="#707070" stroke-width="1" transform="translate(108 287)">
+                <rect height="24" stroke="none" width="24" />
+                <rect fill="none" height="23" width="23" x="0.5" y="0.5" />
+            </g>
+            <path
+                d="M45.653,17.592l-1.071-2.55a4.759,4.759,0,0,1-.376-1.857V8.571a7.182,7.182,0,0,0-5.288-6.789,2.264,2.264,0,0,0-4.424,0,7.182,7.182,0,0,0-5.288,6.789v4.614a4.759,4.759,0,0,1-.376,1.857l-1.071,2.55a.686.686,0,0,0,.075.665.76.76,0,0,0,.621.314h5.7a2.988,2.988,0,0,0,5.1,0h5.7a.76.76,0,0,0,.621-.314.686.686,0,0,0,.075-.665Zm-16.089-.449.66-1.571a6.132,6.132,0,0,0,.483-2.387V8.571a6.007,6.007,0,0,1,12,0v4.614a6.132,6.132,0,0,0,.483,2.387l.66,1.571Z"
+                data-name="alarm-bell (1)" fill="#313033" id="alarm-bell_1_"
+                transform="translate(83.293 289)" />
+        </g>
+    </g>
+</svg>

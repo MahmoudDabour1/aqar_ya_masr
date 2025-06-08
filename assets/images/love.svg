@@ -1,0 +1,17 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 25206" id="Group_25206" transform="translate(414 -6324)">
+        <rect data-name="Rectangle 13309" fill="#eae6ff" height="24" id="Rectangle_13309" rx="4"
+            transform="translate(-414 6324)" width="24" />
+        <g data-name="Group 24958" id="Group_24958" transform="translate(-410.571 6327.429)">
+            <g data-name="Rectangle 13409" fill="rgba(49,48,51,0)" id="Rectangle_13409" opacity="0"
+                stroke="#392694" stroke-width="1" transform="translate(-0.428 -0.429)">
+                <rect height="18" stroke="none" width="18" />
+                <rect fill="none" height="17" width="17" x="0.5" y="0.5" />
+            </g>
+            <path
+                d="M10.038,22.543A4.009,4.009,0,0,0,8.161,23a4.17,4.17,0,0,0-1.077.813A4.17,4.17,0,0,0,6.007,23a4.009,4.009,0,0,0-1.877-.461A4.185,4.185,0,0,0,0,26.771c0,1.651.852,3.405,2.532,5.213a24.593,24.593,0,0,0,4.314,3.557l.238.157.238-.157a24.592,24.592,0,0,0,4.314-3.557c1.68-1.808,2.532-3.562,2.532-5.213A4.185,4.185,0,0,0,10.038,22.543Z"
+                fill="rgba(49,48,51,0)" id="heart" stroke="#392694" stroke-width="1"
+                transform="translate(1.487 -20.55)" />
+        </g>
+    </g>
+</svg>

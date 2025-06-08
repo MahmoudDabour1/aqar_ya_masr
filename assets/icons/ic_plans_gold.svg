@@ -1,0 +1,28 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24465" id="Group_24465" transform="translate(-733 -1562)">
+        <g id="plans" transform="translate(735 1564)">
+            <rect data-name="Rectangle 5898" fill="#e0b251" height="12.76" id="Rectangle_5898"
+                transform="translate(0.801 1.845)" width="0.696" />
+            <rect data-name="Rectangle 5899" fill="#e0b251" height="0.696" id="Rectangle_5899"
+                transform="translate(5.394 18.503)" width="12.76" />
+            <g data-name="Group 23090" id="Group_23090" transform="translate(0 0.348)">
+                <path d="M2.3,10.717,1.149,8.872,0,10.717Z" data-name="Path 26523" fill="#e0b251"
+                    id="Path_26523" transform="translate(0 -8.872)" />
+                <path d="M0,363.338l1.149,1.845L2.3,363.338Z" data-name="Path 26524" fill="#e0b251"
+                    id="Path_26524" transform="translate(0 -349.429)" />
+            </g>
+            <g data-name="Group 23091" id="Group_23091" transform="translate(3.898 17.702)">
+                <path d="M456.109,455.746l1.845-1.149-1.845-1.149Z" data-name="Path 26525"
+                    fill="#e0b251" id="Path_26525" transform="translate(-442.2 -453.449)" />
+                <path d="M103.488,455.746l-1.845-1.149,1.845-1.149Z" data-name="Path 26526"
+                    fill="#e0b251" id="Path_26526" transform="translate(-101.643 -453.449)" />
+            </g>
+            <path d="M117.4,9.968v-1.1H101.643V24.626H117.4v-13.5" data-name="Path 26527"
+                fill="#e0b251" id="Path_26527" transform="translate(-97.745 -8.524)" />
+            <path
+                d="M92.772,0V16.45h16.45V0Zm15.754,9.265v6.489H98.58V13.722h-.7v2.033H93.468V.7h4.415V11.911h.7V9.265h6.545v-.7H98.58V.7h9.947V8.569H106.8v.7Z"
+                data-name="Path 26528" fill="#313033" id="Path_26528"
+                transform="translate(-89.222)" />
+        </g>
+    </g>
+</svg>

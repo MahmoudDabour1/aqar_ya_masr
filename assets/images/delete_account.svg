@@ -1,0 +1,12 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g id="delete" transform="translate(-1838 -10421)">
+        <g data-name="Rectangle 13543" fill="#fff" id="Rectangle_13543" opacity="0" stroke="#707070"
+            stroke-width="1" transform="translate(1838 10421)">
+            <rect height="24" stroke="none" width="24" />
+            <rect fill="none" height="23" width="23" x="0.5" y="0.5" />
+        </g>
+        <path
+            d="M51.946,2.5h-5V.625A.625.625,0,0,0,46.321,0h-6.25a.625.625,0,0,0-.625.625V2.5h-5V3.75H35.7v15A1.251,1.251,0,0,0,36.946,20h12.5a1.251,1.251,0,0,0,1.25-1.25v-15h1.25V2.5ZM40.7,1.25h5V2.5h-5Zm8.751,17.5v0h-12.5v-15h12.5v15Z"
+            data-name="delete" fill="#a32015" id="delete-2" transform="translate(1806.554 10423)" />
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg height="28" viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24616" id="Group_24616" transform="translate(-167 -489)">
+        <g id="bookmark" transform="translate(108 491)">
+            <g data-name="Group 24615" id="Group_24615" transform="translate(64)">
+                <g data-name="Group 24614" id="Group_24614" transform="translate(0)">
+                    <path
+                        d="M81.854,5.147l-5-5A.5.5,0,0,0,76.5,0H66a2,2,0,0,0-2,2V22a2,2,0,0,0,2,2H80a2,2,0,0,0,2-2V5.5A.5.5,0,0,0,81.854,5.147ZM77,1.707,80.293,5H78a1,1,0,0,1-1-1ZM68,1h0ZM81,22a1,1,0,0,1-1,1H66a1,1,0,0,1-1-1V2a1,1,0,0,1,1-1H76V4a2,2,0,0,0,2,2h3Z"
+                        data-name="Path 30609" fill="#313033" id="Path_30609"
+                        transform="translate(-64)" />
+                    <path
+                        d="M128,235.166a.5.5,0,0,0,.5.5h11a.5.5,0,1,0,0-1h-11A.5.5,0,0,0,128,235.166Z"
+                        data-name="Path 30610" fill="#313033" id="Path_30610"
+                        transform="translate(-125 -223.666)" />
+                    <path
+                        d="M128,235.166a.5.5,0,0,0,.5.5h11a.5.5,0,1,0,0-1h-11A.5.5,0,0,0,128,235.166Z"
+                        data-name="Path 30613" fill="#313033" id="Path_30613"
+                        transform="translate(-125 -227.193)" />
+                    <path d="M139.5,320h-11a.5.5,0,0,0,0,1h11a.5.5,0,1,0,0-1Z"
+                        data-name="Path 30611" fill="#313033" id="Path_30611"
+                        transform="translate(-125 -305)" />
+                    <path d="M136.5,405.333h-8a.5.5,0,0,0,0,1h8a.5.5,0,1,0,0-1Z"
+                        data-name="Path 30612" fill="#313033" id="Path_30612"
+                        transform="translate(-125 -386.332)" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

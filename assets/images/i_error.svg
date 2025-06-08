@@ -1,0 +1,15 @@
+<svg data-name="Group 24273" height="20" id="Group_24273" viewBox="0 0 20 20" width="20"
+    xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Rectangle 13050" fill="#a32015" id="Rectangle_13050" opacity="0" stroke="#707070"
+        stroke-width="1">
+        <rect height="20" stroke="none" width="20" />
+        <rect fill="none" height="19" width="19" x="0.5" y="0.5" />
+    </g>
+    <g data-name="information (3)" id="information_3_" transform="translate(2 2)">
+        <g data-name="Group 24272" id="Group_24272">
+            <path
+                d="M8,0a8,8,0,1,0,8,8A8.009,8.009,0,0,0,8,0ZM9.333,13A.333.333,0,0,1,9,13.333H7A.333.333,0,0,1,6.667,13V8H6.333A.333.333,0,0,1,6,7.667V6.333A.333.333,0,0,1,6.333,6H9a.333.333,0,0,1,.333.333ZM8,5.333A1.333,1.333,0,1,1,9.333,4,1.335,1.335,0,0,1,8,5.333Z"
+                data-name="Path 30276" fill="#a32015" id="Path_30276" />
+        </g>
+    </g>
+</svg>

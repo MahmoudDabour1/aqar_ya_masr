@@ -1,0 +1,20 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g data-name="Group 24457" id="Group_24457" transform="translate(-326 -347)">
+        <g data-name="settings (2)" id="settings_2_" transform="translate(329 317.554)">
+            <path d="M34.446,34.446h1.286v2.571H34.446Z" data-name="Path 30500" fill="#392694"
+                id="Path_30500" transform="translate(-33.16 0)" />
+            <path d="M223.9,34.446h1.286V42.16H223.9Z" data-name="Path 30501" fill="#392694"
+                id="Path_30501" transform="translate(-215.54 0)" />
+            <path d="M413.348,34.446h1.286v5.143h-1.286Z" data-name="Path 30502" fill="#392694"
+                id="Path_30502" transform="translate(-397.919 0)" />
+            <path d="M382.759,206.674H378.9v1.286h1.286v7.714h1.286V207.96h1.286v-1.286Z"
+                data-name="Path 30503" fill="#392694" id="Path_30503"
+                transform="translate(-364.759 -166.228)" />
+            <path d="M189.451,276.851h1.286v5.143h1.286v-5.143h1.286v-1.286h-3.857Z"
+                data-name="Path 30504" fill="#392694" id="Path_30504"
+                transform="translate(-182.38 -232.548)" />
+            <path d="M0,139.068H1.286v10.286H2.571V139.068H3.857v-1.286H0Z" data-name="Path 30505"
+                fill="#392694" id="Path_30505" transform="translate(0 -99.907)" />
+        </g>
+    </g>
+</svg>

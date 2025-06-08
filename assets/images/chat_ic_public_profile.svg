@@ -1,0 +1,17 @@
+<svg height="24" id="outline-forum-24px" viewBox="0 0 24 24" width="24"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="Bounding_Boxes" opacity="0">
+        <path d="M0,0H24V24H0Z" data-name="Path 2732" fill="#fff" id="Path_2732" />
+    </g>
+    <g id="Outline" transform="translate(2 2)">
+        <path
+            d="M17.716,4.815v9.3H3.5V3.438H17.716M16,2H3A1,1,0,0,0,2,3V18.439l4.182-3.051H18a1,1,0,0,0,1-1V3.438C19,2.888,18.55,2,18,2Zm5,4H19.795V16.317H6V17a1,1,0,0,0,1,1H18l4,4V7a1,1,0,0,0-1-1Z"
+            data-name="Path 2733" fill="#fff" id="Path_2733" transform="translate(-2 -2)" />
+        <line data-name="Line 5" fill="none" id="Line_5" stroke="#fff" stroke-linecap="round"
+            stroke-width="1" transform="translate(3.5 9.5)" x1="10" />
+        <line data-name="Line 6" fill="none" id="Line_6" stroke="#fff" stroke-linecap="round"
+            stroke-width="1" transform="translate(3.5 6.5)" x1="10" />
+        <line data-name="Line 7" fill="none" id="Line_7" stroke="#fff" stroke-linecap="round"
+            stroke-width="1" transform="translate(3.5 3.5)" x1="5" />
+    </g>
+</svg>

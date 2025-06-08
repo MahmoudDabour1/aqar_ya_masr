@@ -1,0 +1,33 @@
+<svg height="66" viewBox="0 0 66 66" width="66" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter filterUnits="userSpaceOnUse" height="66" id="Ellipse_125" width="66" x="0" y="0">
+            <feOffset dy="2" input="SourceAlpha" />
+            <feGaussianBlur result="blur" stdDeviation="3" />
+            <feFlood flood-color="#392694" flood-opacity="0.2" />
+            <feComposite in2="blur" operator="in" />
+            <feComposite in="SourceGraphic" />
+        </filter>
+    </defs>
+    <g data-name="Group 24404" id="Group_24404" transform="translate(1400 -5897)">
+        <g filter="url(#Ellipse_125)" transform="matrix(1, 0, 0, 1, -1400, 5897)">
+            <circle cx="24" cy="24" data-name="Ellipse 125" fill="#fff" id="Ellipse_125-2" r="24"
+                transform="translate(9 7)" />
+        </g>
+        <g data-name="Group 24403" id="Group_24403" transform="translate(-13.432 -13.432)">
+            <g data-name="Rectangle 13166" fill="#392694" id="Rectangle_13166" opacity="0"
+                stroke="#707070" stroke-width="1" transform="translate(-1371.568 5923.432)">
+                <rect height="36" stroke="none" width="36" />
+                <rect fill="none" height="35" width="35" x="0.5" y="0.5" />
+            </g>
+            <g data-name="target (1)" id="target_1_" transform="translate(-1368.045 5926.955)">
+                <path
+                    d="M169.252,163.823a5.429,5.429,0,1,0,5.429,5.429A5.435,5.435,0,0,0,169.252,163.823Zm0,9.048a3.619,3.619,0,1,1,3.619-3.619A3.623,3.623,0,0,1,169.252,172.871Z"
+                    data-name="Path 30480" fill="#392694" id="Path_30480"
+                    transform="translate(-154.775 -154.775)" />
+                <path
+                    d="M27.1,13.572A12.669,12.669,0,0,0,15.382,1.855V0h-1.81V1.855A12.669,12.669,0,0,0,1.855,13.572H0v1.81H1.855A12.669,12.669,0,0,0,13.572,27.1v1.855h1.81V27.1A12.669,12.669,0,0,0,27.1,15.382h1.855v-1.81H27.1ZM14.477,25.335A10.858,10.858,0,1,1,25.335,14.477,10.87,10.87,0,0,1,14.477,25.335Z"
+                    data-name="Path 30481" fill="#392694" id="Path_30481" />
+            </g>
+        </g>
+    </g>
+</svg>
