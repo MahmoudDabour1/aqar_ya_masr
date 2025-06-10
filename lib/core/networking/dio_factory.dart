@@ -25,19 +25,20 @@ class DioFactory {
   }
 
   static void addDioHeaders() async {
-    final token =
-        await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken);
+    // final token =
+    //     await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken);
+    //
+    // final locale =
+    //     await SharedPrefHelper.getString(SharedPrefKeys.selectedLocale) ?? 'en';
 
-    final locale =
-        await SharedPrefHelper.getString(SharedPrefKeys.selectedLocale) ?? 'en';
-
-    if (token == null || token.isEmpty) {
-      throw Exception("User token is missing or invalid.");
-    }
+    // if (token == null || token.isEmpty) {
+    //   throw Exception("User token is missing or invalid.");
+    // }
     dio?.options.headers = {
       'Accept': 'application/json',
-      'Authorization': 'Bearer $token',
-      'Accept-Language': locale,
+      // 'Authorization': 'Bearer $token',
+      // 'Accept-Language': locale,
+      'x-secret-key':"2KwG1hilCWiCLyEX4bwhdZJBmtjvIpqNGwn",
       'Content-Type': 'application/json',
     };
   }

@@ -24,6 +24,7 @@ class AqarYaMasr extends StatelessWidget {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: MaterialApp(
+          locale: Locale("ar"),
           title: 'Flutter Demo',
           theme: appTheme,
           builder: FToastBuilder(),
