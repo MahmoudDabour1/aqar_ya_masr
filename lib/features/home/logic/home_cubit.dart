@@ -75,4 +75,21 @@ class HomeCubit extends Cubit<HomeState> {
       },
     );
   }
+
+  Future<void> getAdDetails(int adId) async {
+    emit(HomeState.adDetailsLoading());
+    final response = await homeRepo.getAdDetailsData(adId);
+    response.when(
+      success: (data) {
+        emit(HomeState.adDetailsSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.adDetailsFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
 }

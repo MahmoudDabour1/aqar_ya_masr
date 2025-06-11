@@ -11,9 +11,17 @@ class TextWithIconWidget extends StatelessWidget {
   final String iconPath;
 
   bool get isSvg => iconPath.endsWith('.svg?v=2') || iconPath.endsWith('.svg');
+  final double? iconSize;
+  final double? textSize;
+  final Color? textColor;
 
-  const TextWithIconWidget(
-      {super.key, required this.text, required this.iconPath});
+  const TextWithIconWidget({
+    super.key,
+    required this.text,
+    required this.iconPath,
+    this.iconSize,
+    this.textSize,  this.textColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,23 +32,23 @@ class TextWithIconWidget extends StatelessWidget {
         isSvg
             ? SvgPicture.network(
                 iconPath,
-                width: 16.w,
-                height: 16.h,
+                width: iconSize ?? 16.w,
+                height: iconSize ?? 16.h,
                 placeholderBuilder: (BuildContext context) => SizedBox(
-                  width: 16.w,
-                  height: 16.h,
+                  width: iconSize ?? 16.w,
+                  height: iconSize ?? 16.h,
                   child: const CircularProgressIndicator(strokeWidth: 2),
                 ),
                 fit: BoxFit.contain,
               )
             : Image.network(
                 iconPath,
-                width: 16.w,
-                height: 16.h,
+                width: iconSize ?? 16.w,
+                height: iconSize ?? 16.h,
                 fit: BoxFit.contain,
                 errorBuilder: (context, error, stackTrace) => Icon(
                   Icons.error,
-                  size: 16.w, // Match icon size
+                  size: iconSize ?? 16.w, // Match icon size
                   color: Colors.red,
                 ),
                 loadingBuilder: (context, child, loadingProgress) {
@@ -61,7 +69,10 @@ class TextWithIconWidget extends StatelessWidget {
         horizontalSpace(4),
         AutoSizeText(
           text,
-          style: AppStyles.font16GrayLight.copyWith(fontSize: 14.sp),
+          style: AppStyles.font16GrayLight.copyWith(
+            fontSize: textSize ?? 14.sp,
+            color:  textColor,
+          ),
           overflow: TextOverflow.ellipsis,
           maxLines: 1,
         ),

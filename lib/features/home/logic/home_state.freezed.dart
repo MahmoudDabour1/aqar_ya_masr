@@ -34,6 +34,9 @@ mixin _$HomeState<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,6 +54,9 @@ mixin _$HomeState<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +74,9 @@ mixin _$HomeState<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -86,6 +95,9 @@ mixin _$HomeState<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -103,6 +115,9 @@ mixin _$HomeState<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -120,6 +135,9 @@ mixin _$HomeState<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -203,6 +221,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return initial();
   }
@@ -223,6 +244,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return initial?.call();
   }
@@ -243,6 +267,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -267,6 +294,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return initial(this);
   }
@@ -287,6 +317,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return initial?.call(this);
   }
@@ -307,6 +340,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -378,6 +414,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return aqarMomayasLoading();
   }
@@ -398,6 +437,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return aqarMomayasLoading?.call();
   }
@@ -418,6 +460,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -442,6 +487,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return aqarMomayasLoading(this);
   }
@@ -462,6 +510,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return aqarMomayasLoading?.call(this);
   }
@@ -482,6 +533,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -581,6 +635,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return aqarMomayasSuccess(aqarMomayasModel);
   }
@@ -601,6 +658,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return aqarMomayasSuccess?.call(aqarMomayasModel);
   }
@@ -621,6 +681,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -645,6 +708,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return aqarMomayasSuccess(this);
   }
@@ -665,6 +731,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return aqarMomayasSuccess?.call(this);
   }
@@ -685,6 +754,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -793,6 +865,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return aqarMomayasFailure(errorMessage);
   }
@@ -813,6 +888,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return aqarMomayasFailure?.call(errorMessage);
   }
@@ -833,6 +911,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -857,6 +938,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return aqarMomayasFailure(this);
   }
@@ -877,6 +961,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return aqarMomayasFailure?.call(this);
   }
@@ -897,6 +984,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -977,6 +1067,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return qsrSakanyLoading();
   }
@@ -997,6 +1090,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return qsrSakanyLoading?.call();
   }
@@ -1017,6 +1113,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -1041,6 +1140,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return qsrSakanyLoading(this);
   }
@@ -1061,6 +1163,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return qsrSakanyLoading?.call(this);
   }
@@ -1081,6 +1186,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -1180,6 +1288,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return qsrSakanySuccess(qsrSakanyModel);
   }
@@ -1200,6 +1311,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return qsrSakanySuccess?.call(qsrSakanyModel);
   }
@@ -1220,6 +1334,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -1244,6 +1361,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return qsrSakanySuccess(this);
   }
@@ -1264,6 +1384,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return qsrSakanySuccess?.call(this);
   }
@@ -1284,6 +1407,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -1392,6 +1518,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return qsrSakanyFailure(errorMessage);
   }
@@ -1412,6 +1541,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return qsrSakanyFailure?.call(errorMessage);
   }
@@ -1432,6 +1564,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -1456,6 +1591,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return qsrSakanyFailure(this);
   }
@@ -1476,6 +1614,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return qsrSakanyFailure?.call(this);
   }
@@ -1496,6 +1637,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -1576,6 +1720,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return villaSakanyLoading();
   }
@@ -1596,6 +1743,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return villaSakanyLoading?.call();
   }
@@ -1616,6 +1766,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -1640,6 +1793,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return villaSakanyLoading(this);
   }
@@ -1660,6 +1816,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return villaSakanyLoading?.call(this);
   }
@@ -1680,6 +1839,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -1779,6 +1941,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return villaSakanySuccess(villaSakanyModel);
   }
@@ -1799,6 +1964,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return villaSakanySuccess?.call(villaSakanyModel);
   }
@@ -1819,6 +1987,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -1843,6 +2014,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return villaSakanySuccess(this);
   }
@@ -1863,6 +2037,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return villaSakanySuccess?.call(this);
   }
@@ -1883,6 +2060,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -1991,6 +2171,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return villaSakanyFailure(errorMessage);
   }
@@ -2011,6 +2194,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return villaSakanyFailure?.call(errorMessage);
   }
@@ -2031,6 +2217,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -2055,6 +2244,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return villaSakanyFailure(this);
   }
@@ -2075,6 +2267,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return villaSakanyFailure?.call(this);
   }
@@ -2095,6 +2290,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -2175,6 +2373,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return flatSakanyLoading();
   }
@@ -2195,6 +2396,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return flatSakanyLoading?.call();
   }
@@ -2215,6 +2419,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -2239,6 +2446,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return flatSakanyLoading(this);
   }
@@ -2259,6 +2469,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return flatSakanyLoading?.call(this);
   }
@@ -2279,6 +2492,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -2379,6 +2595,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return flatSakanySuccess(flatSakanyModel);
   }
@@ -2399,6 +2618,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return flatSakanySuccess?.call(flatSakanyModel);
   }
@@ -2419,6 +2641,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -2443,6 +2668,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return flatSakanySuccess(this);
   }
@@ -2463,6 +2691,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return flatSakanySuccess?.call(this);
   }
@@ -2483,6 +2714,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -2592,6 +2826,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function(FlatSakanyModel flatSakanyModel)
         flatSakanySuccess,
     required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
   }) {
     return flatSakanyFailure(errorMessage);
   }
@@ -2612,6 +2849,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function()? flatSakanyLoading,
     TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
   }) {
     return flatSakanyFailure?.call(errorMessage);
   }
@@ -2632,6 +2872,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function()? flatSakanyLoading,
     TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
     TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -2656,6 +2899,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
     required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
     required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
   }) {
     return flatSakanyFailure(this);
   }
@@ -2676,6 +2922,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
   }) {
     return flatSakanyFailure?.call(this);
   }
@@ -2696,6 +2945,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
     TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
     TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -2716,4 +2968,657 @@ abstract class FlatSakanyFailure<T> implements HomeState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FlatSakanyFailureImplCopyWith<T, _$FlatSakanyFailureImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AdDetailsLoadingImplCopyWith<T, $Res> {
+  factory _$$AdDetailsLoadingImplCopyWith(_$AdDetailsLoadingImpl<T> value,
+          $Res Function(_$AdDetailsLoadingImpl<T>) then) =
+      __$$AdDetailsLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$AdDetailsLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AdDetailsLoadingImpl<T>>
+    implements _$$AdDetailsLoadingImplCopyWith<T, $Res> {
+  __$$AdDetailsLoadingImplCopyWithImpl(_$AdDetailsLoadingImpl<T> _value,
+      $Res Function(_$AdDetailsLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
+  const _$AdDetailsLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.adDetailsLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AdDetailsLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+  }) {
+    return adDetailsLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+  }) {
+    return adDetailsLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsLoading != null) {
+      return adDetailsLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+  }) {
+    return adDetailsLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+  }) {
+    return adDetailsLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsLoading != null) {
+      return adDetailsLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AdDetailsLoading<T> implements HomeState<T> {
+  const factory AdDetailsLoading() = _$AdDetailsLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$AdDetailsSuccessImplCopyWith<T, $Res> {
+  factory _$$AdDetailsSuccessImplCopyWith(_$AdDetailsSuccessImpl<T> value,
+          $Res Function(_$AdDetailsSuccessImpl<T>) then) =
+      __$$AdDetailsSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({AdDetailsModel adDetailsModel});
+}
+
+/// @nodoc
+class __$$AdDetailsSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AdDetailsSuccessImpl<T>>
+    implements _$$AdDetailsSuccessImplCopyWith<T, $Res> {
+  __$$AdDetailsSuccessImplCopyWithImpl(_$AdDetailsSuccessImpl<T> _value,
+      $Res Function(_$AdDetailsSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? adDetailsModel = null,
+  }) {
+    return _then(_$AdDetailsSuccessImpl<T>(
+      null == adDetailsModel
+          ? _value.adDetailsModel
+          : adDetailsModel // ignore: cast_nullable_to_non_nullable
+              as AdDetailsModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
+  const _$AdDetailsSuccessImpl(this.adDetailsModel);
+
+  @override
+  final AdDetailsModel adDetailsModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.adDetailsSuccess(adDetailsModel: $adDetailsModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AdDetailsSuccessImpl<T> &&
+            (identical(other.adDetailsModel, adDetailsModel) ||
+                other.adDetailsModel == adDetailsModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, adDetailsModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AdDetailsSuccessImplCopyWith<T, _$AdDetailsSuccessImpl<T>> get copyWith =>
+      __$$AdDetailsSuccessImplCopyWithImpl<T, _$AdDetailsSuccessImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+  }) {
+    return adDetailsSuccess(adDetailsModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+  }) {
+    return adDetailsSuccess?.call(adDetailsModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsSuccess != null) {
+      return adDetailsSuccess(adDetailsModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+  }) {
+    return adDetailsSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+  }) {
+    return adDetailsSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsSuccess != null) {
+      return adDetailsSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AdDetailsSuccess<T> implements HomeState<T> {
+  const factory AdDetailsSuccess(final AdDetailsModel adDetailsModel) =
+      _$AdDetailsSuccessImpl<T>;
+
+  AdDetailsModel get adDetailsModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AdDetailsSuccessImplCopyWith<T, _$AdDetailsSuccessImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AdDetailsFailureImplCopyWith<T, $Res> {
+  factory _$$AdDetailsFailureImplCopyWith(_$AdDetailsFailureImpl<T> value,
+          $Res Function(_$AdDetailsFailureImpl<T>) then) =
+      __$$AdDetailsFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$AdDetailsFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AdDetailsFailureImpl<T>>
+    implements _$$AdDetailsFailureImplCopyWith<T, $Res> {
+  __$$AdDetailsFailureImplCopyWithImpl(_$AdDetailsFailureImpl<T> _value,
+      $Res Function(_$AdDetailsFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$AdDetailsFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
+  const _$AdDetailsFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.adDetailsFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AdDetailsFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AdDetailsFailureImplCopyWith<T, _$AdDetailsFailureImpl<T>> get copyWith =>
+      __$$AdDetailsFailureImplCopyWithImpl<T, _$AdDetailsFailureImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+  }) {
+    return adDetailsFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+  }) {
+    return adDetailsFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsFailure != null) {
+      return adDetailsFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+  }) {
+    return adDetailsFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+  }) {
+    return adDetailsFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    required TResult orElse(),
+  }) {
+    if (adDetailsFailure != null) {
+      return adDetailsFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AdDetailsFailure<T> implements HomeState<T> {
+  const factory AdDetailsFailure({required final String errorMessage}) =
+      _$AdDetailsFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AdDetailsFailureImplCopyWith<T, _$AdDetailsFailureImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
 }

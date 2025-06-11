@@ -1,3 +1,4 @@
+import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/flat_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
@@ -41,4 +42,12 @@ class HomeState<T> with _$HomeState<T> {
 
   const factory HomeState.flatSakanyFailure({required String errorMessage}) =
       FlatSakanyFailure;
+
+  const factory HomeState.adDetailsLoading() = AdDetailsLoading;
+
+  const factory HomeState.adDetailsSuccess(AdDetailsModel adDetailsModel) =
+  AdDetailsSuccess;
+
+  const factory HomeState.adDetailsFailure({required String errorMessage}) =
+  AdDetailsFailure;
 }
