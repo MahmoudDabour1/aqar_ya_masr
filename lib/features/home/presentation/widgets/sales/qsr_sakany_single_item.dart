@@ -1,3 +1,4 @@
+import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/routing/router_observer.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/presentation/widgets/list_view_item_widget.dart';
@@ -5,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/utils/spacing.dart';
 
@@ -55,16 +57,22 @@ class QsrSakanySingleItem extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: EdgeInsets.only(left: 16.w),
-                    child: ListViewItemWidget(
-                      barIcons:
-                          qsrSakanyModel.qsrData?.ads?[index].barIcon ?? [],
-                      title: qsrSakanyModel.qsrData?.ads?[index].title ?? '',
-                      imageUrl:
-                          qsrSakanyModel.qsrData?.ads?[index].defaultImage ??
-                              '',
-                      description:
-                          qsrSakanyModel.qsrData?.ads?[index].description ?? '',
-                      price: qsrSakanyModel.qsrData?.ads?[index].price ?? '',
+                    child: GestureDetector(
+                      onTap: () {
+                        context.pushNamed(Routes.detailsScreen,
+                            arguments: qsrSakanyModel.qsrData?.ads?[index].id);
+                      },
+                      child: ListViewItemWidget(
+                        barIcons:
+                            qsrSakanyModel.qsrData?.ads?[index].barIcon ?? [],
+                        title: qsrSakanyModel.qsrData?.ads?[index].title ?? '',
+                        imageUrl:
+                            qsrSakanyModel.qsrData?.ads?[index].defaultImage ??
+                                '',
+                        description:
+                            qsrSakanyModel.qsrData?.ads?[index].description ?? '',
+                        price: qsrSakanyModel.qsrData?.ads?[index].price ?? '',
+                      ),
                     ),
                   );
                 }),

@@ -4,6 +4,7 @@ class ApiConstants {
   static const String qsrSakanyEP = "ads?type_id=6&limit=6";
   static const String villaSakanyEP = "ads?type_id=7&limit=6";
   static const String flatSakanyEP = "ads?type_id=8&limit=6";
+  static const String adDetailsEP = "ads/{adId}";
 
 }
 

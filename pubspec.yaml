@@ -56,6 +56,8 @@ dependencies:
   shimmer: ^3.0.0
   cached_network_image: ^3.4.1
   auto_size_text: ^3.0.0
+  intl: ^0.20.2
+  carousel_slider: ^5.1.1
 
 
 # Automatically generate code for converting to and from JSON by annotating Dart classes
