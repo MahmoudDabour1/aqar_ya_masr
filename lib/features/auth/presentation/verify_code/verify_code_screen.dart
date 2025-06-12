@@ -12,7 +12,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class VerifyCodeScreen extends StatelessWidget {
   final String phoneNumber;
 
-  const VerifyCodeScreen({super.key, required this.phoneNumber});
+  VerifyCodeScreen({super.key, required this.phoneNumber});
+
+  final GlobalKey<FormState> verifyFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -33,14 +35,16 @@ class VerifyCodeScreen extends StatelessWidget {
                       .copyWith(color: AppColors.primaryColor),
                 ),
                 verticalSpace(32),
-                OtpInputWidget(),
+                OtpInputWidget(
+                  formKey: verifyFormKey,
+                ),
                 verticalSpace(64),
                 AppCustomButton(
                   textButton: "تحقق",
                   btnWidth: MediaQuery.sizeOf(context).width,
                   btnHeight: 50.h,
                   onPressed: () {
-                    if (cubit.verifyCodeFormKey.currentState!.validate()) {
+                    if (verifyFormKey.currentState!.validate()) {
                       cubit.verifyCode(context);
                     }
                   },

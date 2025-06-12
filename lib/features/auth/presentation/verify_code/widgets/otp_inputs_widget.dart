@@ -7,7 +7,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OtpInputWidget extends StatefulWidget {
-  const OtpInputWidget({super.key});
+  final GlobalKey<FormState> formKey;
+
+  const OtpInputWidget({super.key, required this.formKey});
 
   @override
   State<OtpInputWidget> createState() => _OtpInputWidgetState();
@@ -47,7 +49,7 @@ class _OtpInputWidgetState extends State<OtpInputWidget> {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Form(
-        key: context.read<AuthCubit>().verifyCodeFormKey,
+        key: widget.formKey,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: List.generate(

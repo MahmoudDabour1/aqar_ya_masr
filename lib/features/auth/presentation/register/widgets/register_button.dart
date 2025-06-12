@@ -8,7 +8,9 @@ import '../../../logic/auth_cubit.dart';
 import '../../../logic/auth_state.dart';
 
 class RegisterButton extends StatelessWidget {
-  const RegisterButton({super.key});
+  final GlobalKey<FormState> formKey;
+
+  const RegisterButton({super.key, required this.formKey});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class RegisterButton extends StatelessWidget {
           textButton: "تسجيل",
           isLoading: state is RegisterLoading,
           onPressed: () {
-            if (cubit.registerFormKey.currentState!.validate()) {
+            if (formKey.currentState!.validate()) {
               if (cubit.registerAcceptedTerms == true) {
                 context.read<AuthCubit>().register(context);
               } else {

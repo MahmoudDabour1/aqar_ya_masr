@@ -2,6 +2,8 @@ import 'package:aqar_ya_masr/core/networking/api_error_handler.dart';
 import 'package:aqar_ya_masr/core/networking/api_result.dart';
 import 'package:aqar_ya_masr/features/auth/data/data_source/auth_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/login_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/verify_code_request_model.dart';
@@ -15,6 +17,9 @@ abstract class AuthRepos {
 
   Future<ApiResult<VerifyResponseModel>> verifyCode(
       VerifyCodeRequestModel verifyCodeRequestModel);
+
+  Future<ApiResult<LoginResponseModel>> login(
+      LoginRequestBody loginRequestBody);
 }
 
 class AuthReposImpl implements AuthRepos {
@@ -44,11 +49,24 @@ class AuthReposImpl implements AuthRepos {
   }
 
   @override
-  Future<ApiResult<VerifyResponseModel>> verifyCode(VerifyCodeRequestModel verifyCodeRequestModel) async{
-    try{
-      final response = await authRemoteDataSource.verifyCode(verifyCodeRequestModel);
+  Future<ApiResult<VerifyResponseModel>> verifyCode(
+      VerifyCodeRequestModel verifyCodeRequestModel) async {
+    try {
+      final response =
+          await authRemoteDataSource.verifyCode(verifyCodeRequestModel);
       return ApiResult.success(response);
-    }catch(e){
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+
+  @override
+  Future<ApiResult<LoginResponseModel>> login(
+      LoginRequestBody loginRequestBody) async {
+    try {
+      final response = await authRemoteDataSource.login(loginRequestBody);
+      return ApiResult.success(response);
+    } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
