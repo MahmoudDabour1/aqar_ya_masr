@@ -29,7 +29,7 @@ class AqarDetailsTextsWidget extends StatelessWidget {
           ),
           Text(
             "المرافق",
-            style: AppStyles.font16BlackMedium,
+            style: AppStyles.font18BlackMedium,
           ),
           verticalSpace(8),
           SizedBox(
@@ -63,7 +63,7 @@ class AqarDetailsTextsWidget extends StatelessWidget {
                                   "1"
                                   ? "نعم"
                                   : "لا",
-                              style: AppStyles.font16BlackMedium.copyWith(
+                              style: AppStyles.font18BlackMedium.copyWith(
                                 color: adModel.adDetailsData?.ad
                                     ?.propertyData?[index].value ==
                                     "1"

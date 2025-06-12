@@ -20,7 +20,7 @@ class AqarContentWidget extends StatelessWidget {
       children: [
         Text(
           "محتوى العقار",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(8),
         SizedBox(

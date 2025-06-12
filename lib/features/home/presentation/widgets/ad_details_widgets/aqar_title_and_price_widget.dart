@@ -24,7 +24,7 @@ class AqarTextDetailsWidget extends StatelessWidget {
         verticalSpace(8),
         Text(
           adModel?.title ?? "",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
           textAlign: TextAlign.start,
           overflow: TextOverflow.ellipsis,
           maxLines: 1,
@@ -32,7 +32,7 @@ class AqarTextDetailsWidget extends StatelessWidget {
         verticalSpace(16),
         Text(
           "جنيه${adModel?.price??""}",
-          style: AppStyles.font16BlackMedium.copyWith(
+          style: AppStyles.font18BlackMedium.copyWith(
             color: AppColors.goldColor,
             fontWeight: FontWeightHelper.semiBold,
           ),
@@ -66,14 +66,14 @@ class AqarTextDetailsWidget extends StatelessWidget {
         verticalSpace(16),
         Text(
           "موقع العقار",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(8),
         AqarLocationWidget(adModel: adDetailsModel,),
 
         Text(
           "الوصف",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(8),
         Text(
@@ -83,7 +83,7 @@ class AqarTextDetailsWidget extends StatelessWidget {
         verticalSpace(16),
         Text(
           "العنوان بالتفصيل",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(8),
         Text(
@@ -93,7 +93,7 @@ class AqarTextDetailsWidget extends StatelessWidget {
         verticalSpace(16),
         Text(
           "اكثر ما يميز العقار",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(8),
         Text(

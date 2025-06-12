@@ -67,7 +67,7 @@ class ListViewItemWidget extends StatelessWidget {
             ),
             verticalSpace(8),
             Text(title,
-                style: AppStyles.font16BlackMedium,
+                style: AppStyles.font18BlackMedium,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1),
             verticalSpace(8),
@@ -97,7 +97,7 @@ class ListViewItemWidget extends StatelessWidget {
             verticalSpace(8),
             Text(
               "$price جنيه",
-              style: AppStyles.font16BlackMedium.copyWith(
+              style: AppStyles.font18BlackMedium.copyWith(
                 color: isAqarMomayas
                     ? AppColors.goldColor
                     : AppColors.primaryColor,

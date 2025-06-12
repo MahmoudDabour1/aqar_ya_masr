@@ -5,6 +5,9 @@ class ApiConstants {
   static const String villaSakanyEP = "ads?type_id=7&limit=6";
   static const String flatSakanyEP = "ads?type_id=8&limit=6";
   static const String adDetailsEP = "ads/{adId}";
+  static const String registerEP = "auth/register";
+  static const String appInitEP = "init";
+  static const String verifyCodeEP = "auth/verify-code";
 
 }
 

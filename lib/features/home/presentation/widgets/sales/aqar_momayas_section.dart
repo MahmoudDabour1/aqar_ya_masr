@@ -40,7 +40,7 @@ class AqarMomayasSection extends StatelessWidget {
     return Center(
       child: Text(
         error,
-        style: AppStyles.font16BlackMedium,
+        style: AppStyles.font18BlackMedium,
       ),
     );
   }

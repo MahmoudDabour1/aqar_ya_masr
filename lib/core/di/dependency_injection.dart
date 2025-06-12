@@ -1,3 +1,6 @@
+import 'package:aqar_ya_masr/features/auth/data/data_source/auth_remote_data_source.dart';
+import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
+import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
 import 'package:aqar_ya_masr/features/home/data/data_source/home_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/repos/home_repos.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
@@ -16,4 +19,11 @@ Future<void> setupGetIt() async {
   sl.registerLazySingleton<HomeRepo>(
       () => HomeRepoImpl(homeRemoteDataSource: sl()));
   sl.registerFactory<HomeCubit>(() => HomeCubit(sl()));
+
+  //auth
+  sl.registerLazySingleton<AuthRemoteDataSource>(
+      () => AuthRemoteDataSource(dio));
+  sl.registerLazySingleton<AuthRepos>(
+      () => AuthReposImpl( sl()));
+  sl.registerFactory<AuthCubit>(() => AuthCubit(sl()));
 }

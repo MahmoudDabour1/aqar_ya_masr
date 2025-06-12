@@ -32,7 +32,7 @@ class FlatSakanySingleModel extends StatelessWidget {
                 children: [
                   Text(
                     "الكل",
-                    style: AppStyles.font16BlackMedium,
+                    style: AppStyles.font18BlackMedium,
                   ),
                   horizontalSpace(6),
                   SvgPicture.asset(

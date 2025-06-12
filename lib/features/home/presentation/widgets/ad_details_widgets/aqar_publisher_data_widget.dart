@@ -18,7 +18,7 @@ class AqarPublisherDataWidget extends StatelessWidget {
         verticalSpace(16),
         Text(
           "ناشر الإعلان",
-          style: AppStyles.font16BlackMedium,
+          style: AppStyles.font18BlackMedium,
         ),
         verticalSpace(16),
         Row(
