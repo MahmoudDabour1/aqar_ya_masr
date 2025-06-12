@@ -1,4 +1,5 @@
 import 'package:aqar_ya_masr/core/routing/routes.dart';
+import 'package:aqar_ya_masr/features/auth/presentation/login/login_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/verify_code/verify_code_screen.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,10 @@ class AppRouter {
           builder: (_) => VerifyCodeScreen(
             phoneNumber: phoneNumber,
           ),
+        );
+      case Routes.loginScreen:
+        return MaterialPageRoute(
+          builder: (_) => LoginScreen(),
         );
 
       default:

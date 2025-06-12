@@ -1,4 +1,6 @@
 import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/login_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/verify_code_request_model.dart';
@@ -27,5 +29,10 @@ abstract class AuthRemoteDataSource {
   @POST(ApiConstants.verifyCodeEP)
   Future<VerifyResponseModel> verifyCode(
     @Body() VerifyCodeRequestModel verifyCodeRequestBody,
+  );
+
+  @POST(ApiConstants.loginEP)
+  Future<LoginResponseModel> login(
+    @Body() LoginRequestBody loginRequestBody,
   );
 }

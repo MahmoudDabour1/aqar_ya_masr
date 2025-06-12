@@ -22,5 +22,11 @@ part 'auth_state.freezed.dart';
 
  const factory AuthState.verifyCodeFailure({required String errorMessage}) =
  VerifyCodeFailure<T>;
+const factory AuthState.loginLoading() =LogineLoading;
+
+ const factory AuthState.loginSuccess(T data) =LogineSuccess<T>;
+
+ const factory AuthState.loginFailure({required String errorMessage}) =
+ LogineFailure<T>;
 
 }

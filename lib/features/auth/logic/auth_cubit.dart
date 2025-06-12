@@ -1,6 +1,7 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/helpers/helper_methods.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/verify_code_request_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
@@ -29,9 +30,6 @@ class AuthCubit extends Cubit<AuthState> {
 
   //Verify Code
   String? verifyCodeNumber;
-
-  final registerFormKey = GlobalKey<FormState>();
-  final verifyCodeFormKey = GlobalKey<FormState>();
 
   Future<void> getAppInitData() async {
     emit(AuthState.getAppInitLoading());
@@ -97,4 +95,40 @@ class AuthCubit extends Cubit<AuthState> {
       },
     );
   }
+
+  Future<void> login(BuildContext context) async {
+    emit(AuthState.loginLoading());
+    final response = await authRepos.login(
+      LoginRequestBody(
+        phone: phoneController.text,
+        password: passwordController.text,
+      ),
+    );
+    response.when(
+      success: (data) {
+        emit(AuthState.loginSuccess(data));
+        showToast(message: "Login successful");
+        context.pushNamed(Routes.homeScreen);
+      },
+      failure: (e) {
+        showToast(message: e.message ?? "");
+        emit(AuthState.loginFailure(errorMessage: e.toString()));
+      },
+    );
+  }
+
+// Future<void> resendCode(BuildContext context) async {
+//   emit(AuthState.resendCodeLoading());
+//   final response = await authRepos.resendCode(phoneController.text);
+//   response.when(
+//     success: (data) {
+//       emit(AuthState.resendCodeSuccess(data));
+//       showToast(message: "Code resent successfully");
+//     },
+//     failure: (e) {
+//       showToast(message: e.message ?? "");
+//       emit(AuthState.resendCodeFailure(errorMessage: e.toString()));
+//     },
+//   );
+// }
 }

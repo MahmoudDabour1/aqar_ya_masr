@@ -8,7 +8,7 @@ class ApiConstants {
   static const String registerEP = "auth/register";
   static const String appInitEP = "init";
   static const String verifyCodeEP = "auth/verify-code";
-
+  static const String loginEP = "auth/login";
 }
 
 class ApiErrors {

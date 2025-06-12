@@ -1,20 +1,31 @@
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/register/widgets/register_drop_down_city_widget.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/utils/spacing.dart';
 import '../../../../../core/widgets/app_text_form_field.dart';
 
-class RegisterInputWidget extends StatelessWidget {
-  const RegisterInputWidget({super.key});
+class RegisterInputWidget extends StatefulWidget {
+  final GlobalKey<FormState> formKey;
+
+  const RegisterInputWidget({super.key, required this.formKey});
+
+  @override
+  State<RegisterInputWidget> createState() => _RegisterInputWidgetState();
+}
+
+class _RegisterInputWidgetState extends State<RegisterInputWidget> {
+  bool isPasswordVisible = false;
 
   @override
   Widget build(BuildContext context) {
     final cubit = context.read<AuthCubit>();
     return Form(
-      key: cubit.registerFormKey,
+      key: widget.formKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -67,7 +78,25 @@ class RegisterInputWidget extends StatelessWidget {
               }
               return null;
             },
-            isObscureText: true,
+            isObscureText: isPasswordVisible,
+            suffixIcon: IconButton(
+              icon: isPasswordVisible
+                  ? SvgPicture.asset(
+                "assets/images/eye_icon.svg",
+                height: 30.h,
+                width: 30.w,
+              )
+                  : SvgPicture.asset(
+                "assets/images/eye_icon2.svg",
+                height: 30.h,
+                width: 30.w,
+              ),
+              onPressed: () {
+                setState(() {
+                  isPasswordVisible = !isPasswordVisible;
+                });
+              },
+            ),
           ),
           verticalSpace(8),
           Text(
@@ -86,7 +115,25 @@ class RegisterInputWidget extends StatelessWidget {
               }
               return null;
             },
-            isObscureText: true,
+            isObscureText: isPasswordVisible,
+            suffixIcon: IconButton(
+              icon: isPasswordVisible
+                  ? SvgPicture.asset(
+                "assets/images/eye_icon.svg",
+                height: 30.h,
+                width: 30.w,
+              )
+                  : SvgPicture.asset(
+                "assets/images/eye_icon2.svg",
+                height: 30.h,
+                width: 30.w,
+              ),
+              onPressed: () {
+                setState(() {
+                  isPasswordVisible = !isPasswordVisible;
+                });
+              },
+            ),
           ),
           verticalSpace(16),
           RegisterDropDownCityWidget(),

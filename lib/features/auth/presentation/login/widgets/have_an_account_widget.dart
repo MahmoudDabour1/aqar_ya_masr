@@ -1,13 +1,12 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
-import 'package:aqar_ya_masr/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_colors.dart';
 import '../../../../../core/theming/app_styles.dart';
-import '../../../../../core/utils/spacing.dart';
 
-class DoYouHaveAccountWidget extends StatelessWidget {
-  const DoYouHaveAccountWidget({super.key});
+class HaveAnAccountWidget extends StatelessWidget {
+  const HaveAnAccountWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,15 +14,15 @@ class DoYouHaveAccountWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          " لديك حساب؟",
+          "لديك حساب؟",
           style: AppStyles.font18BlackMedium,
         ),
         TextButton(
           onPressed: () {
-            context.pushNamed(Routes.loginScreen);
+            context.pushNamed(Routes.registerScreen);
           },
           child: Text(
-            "تسجيل الدخول",
+            "تسجيل",
             style: AppStyles.font18BlackMedium.copyWith(
               color: AppColors.primaryColor,
             ),
