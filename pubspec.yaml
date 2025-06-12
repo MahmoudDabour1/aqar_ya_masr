@@ -62,7 +62,9 @@ dependencies:
   flutter_polyline_points: ^2.1.0
   location: ^8.0.0
   flutter_localization: ^0.2.0
-
+  loading_animation_widget: ^1.3.0
+  flutter_html: ^3.0.0
+  verification_code_field: ^1.0.8
 
 # Automatically generate code for converting to and from JSON by annotating Dart classes
 # Code generator (mainly used with cubit & retrofit)

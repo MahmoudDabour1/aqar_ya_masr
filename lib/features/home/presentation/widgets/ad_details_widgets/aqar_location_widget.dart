@@ -105,7 +105,7 @@ class _AqarLocationWidgetState extends State<AqarLocationWidget> {
             ),
             label: Text(
               "أعرض الموقع فى خرائط جوجل",
-              style: AppStyles.font16BlackMedium,
+              style: AppStyles.font18BlackMedium,
             ),
             style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(
