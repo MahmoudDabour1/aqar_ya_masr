@@ -37,6 +37,7 @@ class LoginScreen extends StatelessWidget {
                 LoginButton(formKey: loginFormKey,),
                 verticalSpace(16.h),
                 HaveAnAccountWidget(),
+                verticalSpace(8),
                 Center(
                   child: TextButton(
                     onPressed: () {
