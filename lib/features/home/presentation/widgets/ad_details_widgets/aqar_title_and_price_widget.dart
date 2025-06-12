@@ -8,6 +8,7 @@ import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/theming/font_weight_helper.dart';
 import '../../../../../core/utils/spacing.dart';
 import 'aqar_content_widget.dart';
+import 'aqar_location_widget.dart';
 
 class AqarTextDetailsWidget extends StatelessWidget {
   final AdDetailsModel adDetailsModel;
@@ -63,6 +64,12 @@ class AqarTextDetailsWidget extends StatelessWidget {
         AqarContentWidget(adDetailsModel: adDetailsModel,),
 
         verticalSpace(16),
+        Text(
+          "موقع العقار",
+          style: AppStyles.font16BlackMedium,
+        ),
+        verticalSpace(8),
+        AqarLocationWidget(adModel: adDetailsModel,),
 
         Text(
           "الوصف",

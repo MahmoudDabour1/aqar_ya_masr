@@ -34,43 +34,40 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          title: Text("نطاط"),
-          backgroundColor: AppColors.whiteColor,
-          actions: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: SvgPicture.asset(
-                "assets/images/notification2.svg",
-                width: 24.w,
-                height: 24.h,
-              ),
-            ),
-          ],
-          bottom: PreferredSize(
-            preferredSize: Size.fromHeight(120.h),
-            child: TapBarWidget(
-              tapController: _tapController,
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        title: Text("نطاط"),
+        backgroundColor: AppColors.whiteColor,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: SvgPicture.asset(
+              "assets/images/notification2.svg",
+              width: 24.w,
+              height: 24.h,
             ),
           ),
+        ],
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(120.h),
+          child: TapBarWidget(
+            tapController: _tapController,
+          ),
         ),
-        body: Column(
-          children: [
-            Expanded(
-              child: TabBarView(
-                controller: _tapController,
-                children: [
-                  ContentForSales(),
-                  ContentForRent(),
-                ],
-              ),
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: TabBarView(
+              controller: _tapController,
+              children: [
+                ContentForSales(),
+                ContentForRent(),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
