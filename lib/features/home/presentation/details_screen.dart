@@ -12,6 +12,7 @@ import '../logic/home_cubit.dart';
 
 class DetailsScreen extends StatelessWidget {
   final int adId;
+
   const DetailsScreen({super.key, required this.adId});
 
   @override
@@ -20,17 +21,16 @@ class DetailsScreen extends StatelessWidget {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         body: SafeArea(
-          child: SingleChildScrollView(
-            child: BlocBuilder<HomeCubit, HomeState>(
-              builder: (context, state) {
-                return state.maybeWhen(
-                  adDetailsLoading: () => setupLoading(),
-                  adDetailsSuccess: (adModel) => setupSuccess(adModel),
-                  adDetailsFailure: (e) => setupError(e),
-                  orElse: () => const SizedBox.shrink(),
-                );
-              },
-            ),
+          child: BlocBuilder<HomeCubit, HomeState>(
+            builder: (context, state) {
+              return state.maybeWhen(
+                adDetailsLoading: () => setupLoading(),
+                adDetailsSuccess: (adModel) =>
+                    SingleChildScrollView(child: setupSuccess(adModel)),
+                adDetailsFailure: (e) => setupError(e),
+                orElse: () => const SizedBox.shrink(),
+              );
+            },
           ),
         ),
       ),
@@ -51,9 +51,11 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 
-  Widget setupLoading() => CircularProgressIndicator(
-     color: AppColors.primaryColor,
-   );
+  Widget setupLoading() => Center(
+        child: CircularProgressIndicator(
+          color: AppColors.primaryColor,
+        ),
+      );
 
   Widget setupError(String error) {
     return Center(

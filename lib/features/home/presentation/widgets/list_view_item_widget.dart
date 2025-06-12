@@ -29,7 +29,7 @@ class ListViewItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.sizeOf(context).width - 70,
+      width: MediaQuery.sizeOf(context).width - 50.w,
       decoration: BoxDecoration(
         color: AppColors.whiteColor,
         borderRadius: BorderRadius.circular(8.r),
