@@ -1,3 +1,5 @@
+import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
+import 'package:aqar_ya_masr/core/routing/routes.dart';
 import 'package:aqar_ya_masr/core/theming/app_styles.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/login/widgets/have_an_account_widget.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/login/widgets/login_button.dart';
@@ -35,6 +37,19 @@ class LoginScreen extends StatelessWidget {
                 LoginButton(formKey: loginFormKey,),
                 verticalSpace(16.h),
                 HaveAnAccountWidget(),
+                Center(
+                  child: TextButton(
+                    onPressed: () {
+                      context.pushNamed(Routes.homeScreen);
+                    },
+                    child: Text(
+                      "تخطى",
+                      style: AppStyles.font18PrimaryMedium.copyWith(
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
