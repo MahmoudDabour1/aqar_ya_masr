@@ -17,10 +17,7 @@ class AppRouter {
     switch (settings.name) {
       case Routes.homeScreen:
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-            create: (context) => HomeCubit(sl()),
-            child: HomeScreen(),
-          ),
+          builder: (_) => HomeScreen(),
         );
       case Routes.detailsScreen:
         int adId = settings.arguments as int;

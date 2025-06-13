@@ -1,4 +1,5 @@
 import 'package:aqar_ya_masr/features/home/presentation/widgets/text_with_icon_widget.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,6 +16,7 @@ class ListViewItemWidget extends StatelessWidget {
   final String price;
   final List<dynamic> barIcons;
   final bool isAqarMomayas;
+  final bool? isVerticalScroll;
 
   const ListViewItemWidget({
     super.key,
@@ -24,12 +26,15 @@ class ListViewItemWidget extends StatelessWidget {
     required this.price,
     required this.barIcons,
     this.isAqarMomayas = false,
+    this.isVerticalScroll = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.sizeOf(context).width - 50.w,
+      width: isVerticalScroll == true
+          ? MediaQuery.sizeOf(context).width
+          : MediaQuery.sizeOf(context).width - 50.w,
       decoration: BoxDecoration(
         color: AppColors.whiteColor,
         borderRadius: BorderRadius.circular(8.r),
@@ -66,7 +71,7 @@ class ListViewItemWidget extends StatelessWidget {
               ),
             ),
             verticalSpace(8),
-            Text(title,
+            AutoSizeText(title,
                 style: AppStyles.font18BlackMedium,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1),
@@ -105,6 +110,7 @@ class ListViewItemWidget extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
             ),
+            isVerticalScroll == true ? verticalSpace(16) : verticalSpace(0)
           ],
         ),
       ),

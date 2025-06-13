@@ -10,17 +10,17 @@ import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
 import '../models/flat_sakany_model.dart';
 
 abstract class HomeRepo {
-  Future<ApiResult<AqarMomayasModel>> getAqarMomayasData();
+  Future<ApiResult<AqarMomayasModel>> getAqarMomayasData(int limit);
 
-  Future<ApiResult<QsrSakanyModel>> getQsrSakanyData();
+  Future<ApiResult<QsrSakanyModel>> getQsrSakanyData(int limit);
 
-  Future<ApiResult<VillaSakanyModel>> getVillaSakanyData();
+  Future<ApiResult<VillaSakanyModel>> getVillaSakanyData(int limit);
 
-  Future<ApiResult<FlatSakanyModel>> getFlatSakanyData();
+  Future<ApiResult<FlatSakanyModel>> getFlatSakanyData(int limit);
 
   Future<ApiResult<AdDetailsModel>> getAdDetailsData(int adId);
 
-  Future<ApiResult<CompoundModel>> getCompoundData();
+  Future<ApiResult<CompoundModel>> getCompoundData(int limit);
 }
 
 class HomeRepoImpl implements HomeRepo {
@@ -29,9 +29,9 @@ class HomeRepoImpl implements HomeRepo {
   HomeRepoImpl({required this.homeRemoteDataSource});
 
   @override
-  Future<ApiResult<AqarMomayasModel>> getAqarMomayasData() async {
+  Future<ApiResult<AqarMomayasModel>> getAqarMomayasData(int limit) async {
     try {
-      final response = await homeRemoteDataSource.getAqarMomayasData();
+      final response = await homeRemoteDataSource.getAqarMomayasData(limit);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e));
@@ -39,9 +39,9 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<ApiResult<QsrSakanyModel>> getQsrSakanyData() async {
+  Future<ApiResult<QsrSakanyModel>> getQsrSakanyData(int limit) async {
     try {
-      final response = await homeRemoteDataSource.getQsrSakanyData();
+      final response = await homeRemoteDataSource.getQsrSakanyData(limit);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e.toString()));
@@ -49,9 +49,9 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<ApiResult<FlatSakanyModel>> getFlatSakanyData() async {
+  Future<ApiResult<FlatSakanyModel>> getFlatSakanyData(int limit) async {
     try {
-      final response = await homeRemoteDataSource.getFlatSakanyData();
+      final response = await homeRemoteDataSource.getFlatSakanyData(limit);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e.toString()));
@@ -59,9 +59,9 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<ApiResult<VillaSakanyModel>> getVillaSakanyData() async {
+  Future<ApiResult<VillaSakanyModel>> getVillaSakanyData(int limit) async {
     try {
-      final response = await homeRemoteDataSource.getVillaSakanyData();
+      final response = await homeRemoteDataSource.getVillaSakanyData(limit);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e.toString()));
@@ -79,9 +79,9 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<ApiResult<CompoundModel>> getCompoundData() async {
+  Future<ApiResult<CompoundModel>> getCompoundData(int limit) async {
     try {
-      final response = await homeRemoteDataSource.getCompoundData();
+      final response = await homeRemoteDataSource.getCompoundData(limit);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e.toString()));

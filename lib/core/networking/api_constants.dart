@@ -1,16 +1,16 @@
 class ApiConstants {
   static const String apiBaseUrl = "https://aqaryamasr.com/api/v2/";
-  static const String aqarMomayasEP = "ads?is_featured=1&limit=6";
-  static const String qsrSakanyEP = "ads?type_id=6&limit=6";
-  static const String villaSakanyEP = "ads?type_id=7&limit=6";
-  static const String flatSakanyEP = "ads?type_id=8&limit=6";
+  static const String aqarMomayasEP = "ads?is_featured=1&limit={limit}";
+  static const String qsrSakanyEP = "ads?type_id=6&limit={limit}";
+  static const String villaSakanyEP = "ads?type_id=7&limit={limit}";
+  static const String flatSakanyEP = "ads?type_id=8&limit={limit}";
   static const String adDetailsEP = "ads/{adId}";
   static const String registerEP = "auth/register";
   static const String appInitEP = "init";
   static const String verifyCodeEP = "auth/verify-code";
   static const String loginEP = "auth/login";
   static const String forgetPasswordEP = "auth/resend-code";
-  static const String compoundEP = "ads?is_planned=1&limit=500";
+  static const String compoundEP = "ads?is_planned=1&limit={limit}";
 }
 
 class ApiErrors {

@@ -17,24 +17,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin , AutomaticKeepAliveClientMixin {
   late TabController _tapController;
 
   @override
   void initState() {
     super.initState();
     _tapController = TabController(length: 2, vsync: this);
-    Future.wait([
-      context.read<HomeCubit>().getAqarMomayasData(),
-      context.read<HomeCubit>().getCompounds(),
-      context.read<HomeCubit>().getQsrSakanyData(),
-      context.read<HomeCubit>().getVillaSakanyData(),
-      context.read<HomeCubit>().getFlatSakanyData(),
-    ]);
   }
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -72,4 +66,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }

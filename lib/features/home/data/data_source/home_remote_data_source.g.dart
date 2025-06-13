@@ -20,7 +20,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<AqarMomayasModel> getAqarMomayasData() async {
+  Future<AqarMomayasModel> getAqarMomayasData(int limit) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -29,7 +29,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'ads?is_featured=1&limit=6',
+            'ads?is_featured=1&limit=${limit}',
             queryParameters: queryParameters,
             data: _data,
           )
@@ -47,7 +47,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
   }
 
   @override
-  Future<QsrSakanyModel> getQsrSakanyData() async {
+  Future<QsrSakanyModel> getQsrSakanyData(int limit) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -56,7 +56,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'ads?type_id=6&limit=6',
+            'ads?type_id=6&limit=${limit}',
             queryParameters: queryParameters,
             data: _data,
           )
@@ -74,7 +74,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
   }
 
   @override
-  Future<VillaSakanyModel> getVillaSakanyData() async {
+  Future<VillaSakanyModel> getVillaSakanyData(int limit) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -83,7 +83,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'ads?type_id=7&limit=6',
+            'ads?type_id=7&limit=${limit}',
             queryParameters: queryParameters,
             data: _data,
           )
@@ -101,7 +101,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
   }
 
   @override
-  Future<FlatSakanyModel> getFlatSakanyData() async {
+  Future<FlatSakanyModel> getFlatSakanyData(int limit) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -110,7 +110,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'ads?type_id=8&limit=6',
+            'ads?type_id=8&limit=${limit}',
             queryParameters: queryParameters,
             data: _data,
           )
@@ -155,7 +155,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
   }
 
   @override
-  Future<CompoundModel> getCompoundData() async {
+  Future<CompoundModel> getCompoundData(int limit) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -164,7 +164,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'ads?is_planned=1&limit=500',
+            'ads?is_planned=1&limit=${limit}',
             queryParameters: queryParameters,
             data: _data,
           )

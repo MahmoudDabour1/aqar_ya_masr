@@ -6,9 +6,15 @@ import 'package:flutter/material.dart';
 import 'compound_section.dart';
 import 'flat_sakany_section.dart';
 
-class ContentForSales extends StatelessWidget {
+class ContentForSales extends StatefulWidget {
   const ContentForSales({super.key});
 
+  @override
+  State<ContentForSales> createState() => _ContentForSalesState();
+}
+
+class _ContentForSalesState extends State<ContentForSales>
+    with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -23,4 +29,7 @@ class ContentForSales extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }

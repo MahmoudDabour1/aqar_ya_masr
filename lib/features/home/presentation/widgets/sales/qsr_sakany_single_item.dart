@@ -9,6 +9,8 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/utils/spacing.dart';
+import '../../all_aqars_screen.dart';
+import '../all_aqar_button.dart';
 
 class QsrSakanySingleItem extends StatelessWidget {
   final QsrSakanyModel qsrSakanyModel;
@@ -29,19 +31,11 @@ class QsrSakanySingleItem extends StatelessWidget {
                 style: AppStyles.font18BlackBold,
               ),
               const Spacer(),
-              Row(
-                children: [
-                  Text(
-                    "الكل",
-                    style: AppStyles.font18BlackMedium,
-                  ),
-                  horizontalSpace(6),
-                  SvgPicture.asset(
-                    "assets/images/left_arrow.svg",
-                    height: 25.h,
-                    width: 25.w,
-                  ),
-                ],
+              AllAqarButton(
+                navigationTarget: AllAqarScreen(
+                  model: "QsrSakanyModel",
+                  appBatTitle: "قصر سكنى",
+                ),
               ),
             ],
           ),
@@ -52,7 +46,7 @@ class QsrSakanySingleItem extends StatelessWidget {
           child: SizedBox(
             height: 360.h,
             child: ListView.builder(
-                itemCount: qsrSakanyModel.qsrData?.ads?.length,
+                itemCount:   qsrSakanyModel.qsrData?.ads?.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Padding(

@@ -7,6 +7,8 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/utils/spacing.dart';
+import '../../all_aqars_screen.dart';
+import '../all_aqar_button.dart';
 import '../list_view_item_widget.dart';
 
 class FlatSakanySingleModel extends StatelessWidget {
@@ -28,19 +30,11 @@ class FlatSakanySingleModel extends StatelessWidget {
                 style: AppStyles.font18BlackBold,
               ),
               const Spacer(),
-              Row(
-                children: [
-                  Text(
-                    "الكل",
-                    style: AppStyles.font18BlackMedium,
-                  ),
-                  horizontalSpace(6),
-                  SvgPicture.asset(
-                    "assets/images/left_arrow.svg",
-                    height: 25.h,
-                    width: 25.w,
-                  ),
-                ],
+              AllAqarButton(
+                navigationTarget: AllAqarScreen(
+                  model: "FlatSakanyModel",
+                  appBatTitle: "شقة سكنية",
+                ),
               ),
             ],
           ),
@@ -51,7 +45,7 @@ class FlatSakanySingleModel extends StatelessWidget {
           child: SizedBox(
             height: 360.h,
             child: ListView.builder(
-              itemCount: flatSakanyModel.flatData?.ads?.length,
+              itemCount:  flatSakanyModel.flatData?.ads?.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 final villaData = flatSakanyModel.flatData?.ads?[index];
