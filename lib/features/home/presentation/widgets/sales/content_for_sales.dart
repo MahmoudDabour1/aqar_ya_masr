@@ -3,6 +3,7 @@ import 'package:aqar_ya_masr/features/home/presentation/widgets/sales/qsr_sakany
 import 'package:aqar_ya_masr/features/home/presentation/widgets/sales/villa_sakany_section.dart';
 import 'package:flutter/material.dart';
 
+import 'compound_section.dart';
 import 'flat_sakany_section.dart';
 
 class ContentForSales extends StatelessWidget {
@@ -14,6 +15,7 @@ class ContentForSales extends StatelessWidget {
       child: Column(
         children: [
           AqarMomayasSection(),
+          CompoundSection(),
           QsrSakanySection(),
           VillaSakanySection(),
           FlatSakanySection()

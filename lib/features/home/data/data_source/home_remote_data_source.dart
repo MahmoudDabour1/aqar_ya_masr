@@ -1,6 +1,7 @@
 import 'package:aqar_ya_masr/core/networking/api_constants.dart';
 import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/flat_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
@@ -31,4 +32,7 @@ abstract class HomeRemoteDataSource {
   Future<AdDetailsModel> getAdDetails({
     @Path('adId') required int adId,
   });
+
+  @GET(ApiConstants.compoundEP)
+  Future<CompoundModel> getCompoundData ();
 }

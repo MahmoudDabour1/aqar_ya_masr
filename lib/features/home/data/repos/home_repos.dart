@@ -3,6 +3,7 @@ import 'package:aqar_ya_masr/core/networking/api_result.dart';
 import 'package:aqar_ya_masr/features/home/data/data_source/home_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
 
@@ -18,6 +19,8 @@ abstract class HomeRepo {
   Future<ApiResult<FlatSakanyModel>> getFlatSakanyData();
 
   Future<ApiResult<AdDetailsModel>> getAdDetailsData(int adId);
+
+  Future<ApiResult<CompoundModel>> getCompoundData();
 }
 
 class HomeRepoImpl implements HomeRepo {
@@ -69,6 +72,16 @@ class HomeRepoImpl implements HomeRepo {
   Future<ApiResult<AdDetailsModel>> getAdDetailsData(int adId) async {
     try {
       final response = await homeRemoteDataSource.getAdDetails(adId: adId);
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e.toString()));
+    }
+  }
+
+  @override
+  Future<ApiResult<CompoundModel>> getCompoundData() async {
+    try {
+      final response = await homeRemoteDataSource.getCompoundData();
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ApiErrorHandler.handle(e.toString()));

@@ -1,5 +1,6 @@
 import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/flat_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
@@ -46,8 +47,16 @@ class HomeState<T> with _$HomeState<T> {
   const factory HomeState.adDetailsLoading() = AdDetailsLoading;
 
   const factory HomeState.adDetailsSuccess(AdDetailsModel adDetailsModel) =
-  AdDetailsSuccess;
+      AdDetailsSuccess;
 
   const factory HomeState.adDetailsFailure({required String errorMessage}) =
-  AdDetailsFailure;
+      AdDetailsFailure;
+
+  const factory HomeState.compoundLoading() = CompoundLoading;
+
+  const factory HomeState.compoundSuccess(CompoundModel  compoundModel ) =
+  CompoundSuccess;
+
+  const factory HomeState.compoundFailure({required String errorMessage}) =
+  CompoundFailure;
 }
