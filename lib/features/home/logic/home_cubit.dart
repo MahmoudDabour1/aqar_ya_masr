@@ -92,4 +92,21 @@ class HomeCubit extends Cubit<HomeState> {
       },
     );
   }
+
+  Future<void> getCompounds() async {
+    emit(HomeState.compoundLoading());
+    final response = await homeRepo.getCompoundData();
+    response.when(
+      success: (data) {
+        emit(HomeState.compoundSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.compoundFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
 }

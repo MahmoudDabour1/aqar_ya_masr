@@ -37,6 +37,9 @@ mixin _$HomeState<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +60,9 @@ mixin _$HomeState<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -77,6 +83,9 @@ mixin _$HomeState<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -98,6 +107,9 @@ mixin _$HomeState<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -118,6 +130,9 @@ mixin _$HomeState<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -138,6 +153,9 @@ mixin _$HomeState<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -224,6 +242,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return initial();
   }
@@ -247,6 +268,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return initial?.call();
   }
@@ -270,6 +294,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -297,6 +324,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return initial(this);
   }
@@ -320,6 +350,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return initial?.call(this);
   }
@@ -343,6 +376,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -417,6 +453,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return aqarMomayasLoading();
   }
@@ -440,6 +479,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return aqarMomayasLoading?.call();
   }
@@ -463,6 +505,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -490,6 +535,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return aqarMomayasLoading(this);
   }
@@ -513,6 +561,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return aqarMomayasLoading?.call(this);
   }
@@ -536,6 +587,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -638,6 +692,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return aqarMomayasSuccess(aqarMomayasModel);
   }
@@ -661,6 +718,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return aqarMomayasSuccess?.call(aqarMomayasModel);
   }
@@ -684,6 +744,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -711,6 +774,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return aqarMomayasSuccess(this);
   }
@@ -734,6 +800,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return aqarMomayasSuccess?.call(this);
   }
@@ -757,6 +826,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -868,6 +940,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return aqarMomayasFailure(errorMessage);
   }
@@ -891,6 +966,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return aqarMomayasFailure?.call(errorMessage);
   }
@@ -914,6 +992,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -941,6 +1022,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return aqarMomayasFailure(this);
   }
@@ -964,6 +1048,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return aqarMomayasFailure?.call(this);
   }
@@ -987,6 +1074,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -1070,6 +1160,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return qsrSakanyLoading();
   }
@@ -1093,6 +1186,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return qsrSakanyLoading?.call();
   }
@@ -1116,6 +1212,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -1143,6 +1242,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return qsrSakanyLoading(this);
   }
@@ -1166,6 +1268,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return qsrSakanyLoading?.call(this);
   }
@@ -1189,6 +1294,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -1291,6 +1399,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return qsrSakanySuccess(qsrSakanyModel);
   }
@@ -1314,6 +1425,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return qsrSakanySuccess?.call(qsrSakanyModel);
   }
@@ -1337,6 +1451,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -1364,6 +1481,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return qsrSakanySuccess(this);
   }
@@ -1387,6 +1507,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return qsrSakanySuccess?.call(this);
   }
@@ -1410,6 +1533,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -1521,6 +1647,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return qsrSakanyFailure(errorMessage);
   }
@@ -1544,6 +1673,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return qsrSakanyFailure?.call(errorMessage);
   }
@@ -1567,6 +1699,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -1594,6 +1729,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return qsrSakanyFailure(this);
   }
@@ -1617,6 +1755,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return qsrSakanyFailure?.call(this);
   }
@@ -1640,6 +1781,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -1723,6 +1867,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return villaSakanyLoading();
   }
@@ -1746,6 +1893,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return villaSakanyLoading?.call();
   }
@@ -1769,6 +1919,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -1796,6 +1949,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return villaSakanyLoading(this);
   }
@@ -1819,6 +1975,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return villaSakanyLoading?.call(this);
   }
@@ -1842,6 +2001,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -1944,6 +2106,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return villaSakanySuccess(villaSakanyModel);
   }
@@ -1967,6 +2132,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return villaSakanySuccess?.call(villaSakanyModel);
   }
@@ -1990,6 +2158,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -2017,6 +2188,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return villaSakanySuccess(this);
   }
@@ -2040,6 +2214,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return villaSakanySuccess?.call(this);
   }
@@ -2063,6 +2240,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -2174,6 +2354,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return villaSakanyFailure(errorMessage);
   }
@@ -2197,6 +2380,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return villaSakanyFailure?.call(errorMessage);
   }
@@ -2220,6 +2406,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -2247,6 +2436,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return villaSakanyFailure(this);
   }
@@ -2270,6 +2462,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return villaSakanyFailure?.call(this);
   }
@@ -2293,6 +2488,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -2376,6 +2574,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return flatSakanyLoading();
   }
@@ -2399,6 +2600,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return flatSakanyLoading?.call();
   }
@@ -2422,6 +2626,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -2449,6 +2656,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return flatSakanyLoading(this);
   }
@@ -2472,6 +2682,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return flatSakanyLoading?.call(this);
   }
@@ -2495,6 +2708,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -2598,6 +2814,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return flatSakanySuccess(flatSakanyModel);
   }
@@ -2621,6 +2840,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return flatSakanySuccess?.call(flatSakanyModel);
   }
@@ -2644,6 +2866,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -2671,6 +2896,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return flatSakanySuccess(this);
   }
@@ -2694,6 +2922,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return flatSakanySuccess?.call(this);
   }
@@ -2717,6 +2948,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -2829,6 +3063,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return flatSakanyFailure(errorMessage);
   }
@@ -2852,6 +3089,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return flatSakanyFailure?.call(errorMessage);
   }
@@ -2875,6 +3115,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -2902,6 +3145,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return flatSakanyFailure(this);
   }
@@ -2925,6 +3171,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return flatSakanyFailure?.call(this);
   }
@@ -2948,6 +3197,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -3031,6 +3283,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return adDetailsLoading();
   }
@@ -3054,6 +3309,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return adDetailsLoading?.call();
   }
@@ -3077,6 +3335,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsLoading != null) {
@@ -3104,6 +3365,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return adDetailsLoading(this);
   }
@@ -3127,6 +3391,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return adDetailsLoading?.call(this);
   }
@@ -3150,6 +3417,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsLoading != null) {
@@ -3252,6 +3522,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return adDetailsSuccess(adDetailsModel);
   }
@@ -3275,6 +3548,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return adDetailsSuccess?.call(adDetailsModel);
   }
@@ -3298,6 +3574,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsSuccess != null) {
@@ -3325,6 +3604,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return adDetailsSuccess(this);
   }
@@ -3348,6 +3630,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return adDetailsSuccess?.call(this);
   }
@@ -3371,6 +3656,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsSuccess != null) {
@@ -3482,6 +3770,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     required TResult Function() adDetailsLoading,
     required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
     required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
   }) {
     return adDetailsFailure(errorMessage);
   }
@@ -3505,6 +3796,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult? Function()? adDetailsLoading,
     TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
   }) {
     return adDetailsFailure?.call(errorMessage);
   }
@@ -3528,6 +3822,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult Function()? adDetailsLoading,
     TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
     TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsFailure != null) {
@@ -3555,6 +3852,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
     required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
     required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
   }) {
     return adDetailsFailure(this);
   }
@@ -3578,6 +3878,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
   }) {
     return adDetailsFailure?.call(this);
   }
@@ -3601,6 +3904,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
     TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
     TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
     required TResult orElse(),
   }) {
     if (adDetailsFailure != null) {
@@ -3620,5 +3926,711 @@ abstract class AdDetailsFailure<T> implements HomeState<T> {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdDetailsFailureImplCopyWith<T, _$AdDetailsFailureImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CompoundLoadingImplCopyWith<T, $Res> {
+  factory _$$CompoundLoadingImplCopyWith(_$CompoundLoadingImpl<T> value,
+          $Res Function(_$CompoundLoadingImpl<T>) then) =
+      __$$CompoundLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$CompoundLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$CompoundLoadingImpl<T>>
+    implements _$$CompoundLoadingImplCopyWith<T, $Res> {
+  __$$CompoundLoadingImplCopyWithImpl(_$CompoundLoadingImpl<T> _value,
+      $Res Function(_$CompoundLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
+  const _$CompoundLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.compoundLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$CompoundLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return compoundLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return compoundLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundLoading != null) {
+      return compoundLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return compoundLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return compoundLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundLoading != null) {
+      return compoundLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CompoundLoading<T> implements HomeState<T> {
+  const factory CompoundLoading() = _$CompoundLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$CompoundSuccessImplCopyWith<T, $Res> {
+  factory _$$CompoundSuccessImplCopyWith(_$CompoundSuccessImpl<T> value,
+          $Res Function(_$CompoundSuccessImpl<T>) then) =
+      __$$CompoundSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({CompoundModel compoundModel});
+}
+
+/// @nodoc
+class __$$CompoundSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$CompoundSuccessImpl<T>>
+    implements _$$CompoundSuccessImplCopyWith<T, $Res> {
+  __$$CompoundSuccessImplCopyWithImpl(_$CompoundSuccessImpl<T> _value,
+      $Res Function(_$CompoundSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? compoundModel = null,
+  }) {
+    return _then(_$CompoundSuccessImpl<T>(
+      null == compoundModel
+          ? _value.compoundModel
+          : compoundModel // ignore: cast_nullable_to_non_nullable
+              as CompoundModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
+  const _$CompoundSuccessImpl(this.compoundModel);
+
+  @override
+  final CompoundModel compoundModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.compoundSuccess(compoundModel: $compoundModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CompoundSuccessImpl<T> &&
+            (identical(other.compoundModel, compoundModel) ||
+                other.compoundModel == compoundModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, compoundModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CompoundSuccessImplCopyWith<T, _$CompoundSuccessImpl<T>> get copyWith =>
+      __$$CompoundSuccessImplCopyWithImpl<T, _$CompoundSuccessImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return compoundSuccess(compoundModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return compoundSuccess?.call(compoundModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundSuccess != null) {
+      return compoundSuccess(compoundModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return compoundSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return compoundSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundSuccess != null) {
+      return compoundSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CompoundSuccess<T> implements HomeState<T> {
+  const factory CompoundSuccess(final CompoundModel compoundModel) =
+      _$CompoundSuccessImpl<T>;
+
+  CompoundModel get compoundModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$CompoundSuccessImplCopyWith<T, _$CompoundSuccessImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CompoundFailureImplCopyWith<T, $Res> {
+  factory _$$CompoundFailureImplCopyWith(_$CompoundFailureImpl<T> value,
+          $Res Function(_$CompoundFailureImpl<T>) then) =
+      __$$CompoundFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$CompoundFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$CompoundFailureImpl<T>>
+    implements _$$CompoundFailureImplCopyWith<T, $Res> {
+  __$$CompoundFailureImplCopyWithImpl(_$CompoundFailureImpl<T> _value,
+      $Res Function(_$CompoundFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$CompoundFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
+  const _$CompoundFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.compoundFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CompoundFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CompoundFailureImplCopyWith<T, _$CompoundFailureImpl<T>> get copyWith =>
+      __$$CompoundFailureImplCopyWithImpl<T, _$CompoundFailureImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return compoundFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return compoundFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundFailure != null) {
+      return compoundFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return compoundFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return compoundFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (compoundFailure != null) {
+      return compoundFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CompoundFailure<T> implements HomeState<T> {
+  const factory CompoundFailure({required final String errorMessage}) =
+      _$CompoundFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$CompoundFailureImplCopyWith<T, _$CompoundFailureImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
