@@ -1,4 +1,5 @@
 import 'package:aqar_ya_masr/core/routing/routes.dart';
+import 'package:aqar_ya_masr/features/auth/presentation/forget_password/forget_password_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/login/login_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/verify_code/verify_code_screen.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
@@ -49,6 +50,10 @@ class AppRouter {
       case Routes.loginScreen:
         return MaterialPageRoute(
           builder: (_) => LoginScreen(),
+        );
+      case Routes.forgetPasswordScreen:
+        return MaterialPageRoute(
+          builder: (_) => ForgetPasswordScreen(),
         );
 
       default:

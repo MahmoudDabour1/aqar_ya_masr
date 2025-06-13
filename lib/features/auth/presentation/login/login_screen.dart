@@ -27,7 +27,9 @@ class LoginScreen extends StatelessWidget {
                 LogoAndTextWidget(text: "تسجيل الدخول"),
                 LoginInputsWidget(formKey: loginFormKey,),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.pushNamed(Routes.forgetPasswordScreen);
+                  },
                   child: Text(
                     "نسيت كلمة المرور؟",
                     style: AppStyles.font18PrimaryMedium,

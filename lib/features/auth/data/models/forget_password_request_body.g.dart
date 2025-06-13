@@ -1,23 +1,19 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'verify_code_request_model.dart';
+part of 'forget_password_request_body.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-VerifyCodeRequestModel _$VerifyCodeRequestModelFromJson(
+ForgetPasswordRequestBody _$ForgetPasswordRequestBodyFromJson(
         Map<String, dynamic> json) =>
-    VerifyCodeRequestModel(
+    ForgetPasswordRequestBody(
       phone: json['phone'] as String,
-      code: json['code'] as String,
-      resetPass: json['reset-pass'] as bool?,
     );
 
-Map<String, dynamic> _$VerifyCodeRequestModelToJson(
-        VerifyCodeRequestModel instance) =>
+Map<String, dynamic> _$ForgetPasswordRequestBodyToJson(
+        ForgetPasswordRequestBody instance) =>
     <String, dynamic>{
       'phone': instance.phone,
-      'code': instance.code,
-      'reset-pass': instance.resetPass,
     };
