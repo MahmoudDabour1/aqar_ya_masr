@@ -31,6 +31,9 @@ mixin _$AuthState<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -48,6 +51,9 @@ mixin _$AuthState<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +71,9 @@ mixin _$AuthState<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -83,6 +92,12 @@ mixin _$AuthState<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -100,6 +115,9 @@ mixin _$AuthState<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -117,6 +135,9 @@ mixin _$AuthState<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -197,6 +218,9 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return initial();
   }
@@ -217,6 +241,9 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return initial?.call();
   }
@@ -237,6 +264,9 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -261,6 +291,12 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return initial(this);
   }
@@ -281,6 +317,9 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return initial?.call(this);
   }
@@ -301,6 +340,9 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -369,6 +411,9 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return getAppInitLoading();
   }
@@ -389,6 +434,9 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return getAppInitLoading?.call();
   }
@@ -409,6 +457,9 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitLoading != null) {
@@ -433,6 +484,12 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return getAppInitLoading(this);
   }
@@ -453,6 +510,9 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return getAppInitLoading?.call(this);
   }
@@ -473,6 +533,9 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitLoading != null) {
@@ -570,6 +633,9 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return getAppInitSuccess(data);
   }
@@ -590,6 +656,9 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return getAppInitSuccess?.call(data);
   }
@@ -610,6 +679,9 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitSuccess != null) {
@@ -634,6 +706,12 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return getAppInitSuccess(this);
   }
@@ -654,6 +732,9 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return getAppInitSuccess?.call(this);
   }
@@ -674,6 +755,9 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitSuccess != null) {
@@ -779,6 +863,9 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return getAppInitFailure(errorMessage);
   }
@@ -799,6 +886,9 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return getAppInitFailure?.call(errorMessage);
   }
@@ -819,6 +909,9 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitFailure != null) {
@@ -843,6 +936,12 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return getAppInitFailure(this);
   }
@@ -863,6 +962,9 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return getAppInitFailure?.call(this);
   }
@@ -883,6 +985,9 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (getAppInitFailure != null) {
@@ -959,6 +1064,9 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return registerLoading();
   }
@@ -979,6 +1087,9 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return registerLoading?.call();
   }
@@ -999,6 +1110,9 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerLoading != null) {
@@ -1023,6 +1137,12 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return registerLoading(this);
   }
@@ -1043,6 +1163,9 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return registerLoading?.call(this);
   }
@@ -1063,6 +1186,9 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerLoading != null) {
@@ -1159,6 +1285,9 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return registerSuccess(data);
   }
@@ -1179,6 +1308,9 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return registerSuccess?.call(data);
   }
@@ -1199,6 +1331,9 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerSuccess != null) {
@@ -1223,6 +1358,12 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return registerSuccess(this);
   }
@@ -1243,6 +1384,9 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return registerSuccess?.call(this);
   }
@@ -1263,6 +1407,9 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerSuccess != null) {
@@ -1367,6 +1514,9 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return registerFailure(errorMessage);
   }
@@ -1387,6 +1537,9 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return registerFailure?.call(errorMessage);
   }
@@ -1407,6 +1560,9 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerFailure != null) {
@@ -1431,6 +1587,12 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return registerFailure(this);
   }
@@ -1451,6 +1613,9 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return registerFailure?.call(this);
   }
@@ -1471,6 +1636,9 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (registerFailure != null) {
@@ -1548,6 +1716,9 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return verifyCodeLoading();
   }
@@ -1568,6 +1739,9 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return verifyCodeLoading?.call();
   }
@@ -1588,6 +1762,9 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeLoading != null) {
@@ -1612,6 +1789,12 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return verifyCodeLoading(this);
   }
@@ -1632,6 +1815,9 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return verifyCodeLoading?.call(this);
   }
@@ -1652,6 +1838,9 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeLoading != null) {
@@ -1749,6 +1938,9 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return verifyCodeSuccess(data);
   }
@@ -1769,6 +1961,9 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return verifyCodeSuccess?.call(data);
   }
@@ -1789,6 +1984,9 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeSuccess != null) {
@@ -1813,6 +2011,12 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return verifyCodeSuccess(this);
   }
@@ -1833,6 +2037,9 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return verifyCodeSuccess?.call(this);
   }
@@ -1853,6 +2060,9 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeSuccess != null) {
@@ -1958,6 +2168,9 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return verifyCodeFailure(errorMessage);
   }
@@ -1978,6 +2191,9 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return verifyCodeFailure?.call(errorMessage);
   }
@@ -1998,6 +2214,9 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeFailure != null) {
@@ -2022,6 +2241,12 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return verifyCodeFailure(this);
   }
@@ -2042,6 +2267,9 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return verifyCodeFailure?.call(this);
   }
@@ -2062,6 +2290,9 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (verifyCodeFailure != null) {
@@ -2138,6 +2369,9 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return loginLoading();
   }
@@ -2158,6 +2392,9 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return loginLoading?.call();
   }
@@ -2178,6 +2415,9 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginLoading != null) {
@@ -2202,6 +2442,12 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return loginLoading(this);
   }
@@ -2222,6 +2468,9 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return loginLoading?.call(this);
   }
@@ -2242,6 +2491,9 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginLoading != null) {
@@ -2338,6 +2590,9 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return loginSuccess(data);
   }
@@ -2358,6 +2613,9 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return loginSuccess?.call(data);
   }
@@ -2378,6 +2636,9 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginSuccess != null) {
@@ -2402,6 +2663,12 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return loginSuccess(this);
   }
@@ -2422,6 +2689,9 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return loginSuccess?.call(this);
   }
@@ -2442,6 +2712,9 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginSuccess != null) {
@@ -2546,6 +2819,9 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     required TResult Function() loginLoading,
     required TResult Function(T data) loginSuccess,
     required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
   }) {
     return loginFailure(errorMessage);
   }
@@ -2566,6 +2842,9 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     TResult? Function()? loginLoading,
     TResult? Function(T data)? loginSuccess,
     TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
   }) {
     return loginFailure?.call(errorMessage);
   }
@@ -2586,6 +2865,9 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     TResult Function()? loginLoading,
     TResult Function(T data)? loginSuccess,
     TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginFailure != null) {
@@ -2610,6 +2892,12 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     required TResult Function(LogineLoading<T> value) loginLoading,
     required TResult Function(LogineSuccess<T> value) loginSuccess,
     required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
   }) {
     return loginFailure(this);
   }
@@ -2630,6 +2918,9 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     TResult? Function(LogineLoading<T> value)? loginLoading,
     TResult? Function(LogineSuccess<T> value)? loginSuccess,
     TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
   }) {
     return loginFailure?.call(this);
   }
@@ -2650,6 +2941,9 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
     TResult Function(LogineLoading<T> value)? loginLoading,
     TResult Function(LogineSuccess<T> value)? loginSuccess,
     TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
     required TResult orElse(),
   }) {
     if (loginFailure != null) {
@@ -2670,4 +2964,663 @@ abstract class LogineFailure<T> implements AuthState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LogineFailureImplCopyWith<T, _$LogineFailureImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ForgetPasswordLoadingImplCopyWith<T, $Res> {
+  factory _$$ForgetPasswordLoadingImplCopyWith(
+          _$ForgetPasswordLoadingImpl<T> value,
+          $Res Function(_$ForgetPasswordLoadingImpl<T>) then) =
+      __$$ForgetPasswordLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$ForgetPasswordLoadingImplCopyWithImpl<T, $Res>
+    extends _$AuthStateCopyWithImpl<T, $Res, _$ForgetPasswordLoadingImpl<T>>
+    implements _$$ForgetPasswordLoadingImplCopyWith<T, $Res> {
+  __$$ForgetPasswordLoadingImplCopyWithImpl(
+      _$ForgetPasswordLoadingImpl<T> _value,
+      $Res Function(_$ForgetPasswordLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
+  const _$ForgetPasswordLoadingImpl();
+
+  @override
+  String toString() {
+    return 'AuthState<$T>.forgetPasswordLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ForgetPasswordLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() registerLoading,
+    required TResult Function(T data) registerSuccess,
+    required TResult Function(String errorMessage) registerFailure,
+    required TResult Function() verifyCodeLoading,
+    required TResult Function(T data) verifyCodeSuccess,
+    required TResult Function(String errorMessage) verifyCodeFailure,
+    required TResult Function() loginLoading,
+    required TResult Function(T data) loginSuccess,
+    required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
+  }) {
+    return forgetPasswordLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? registerLoading,
+    TResult? Function(T data)? registerSuccess,
+    TResult? Function(String errorMessage)? registerFailure,
+    TResult? Function()? verifyCodeLoading,
+    TResult? Function(T data)? verifyCodeSuccess,
+    TResult? Function(String errorMessage)? verifyCodeFailure,
+    TResult? Function()? loginLoading,
+    TResult? Function(T data)? loginSuccess,
+    TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? registerLoading,
+    TResult Function(T data)? registerSuccess,
+    TResult Function(String errorMessage)? registerFailure,
+    TResult Function()? verifyCodeLoading,
+    TResult Function(T data)? verifyCodeSuccess,
+    TResult Function(String errorMessage)? verifyCodeFailure,
+    TResult Function()? loginLoading,
+    TResult Function(T data)? loginSuccess,
+    TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordLoading != null) {
+      return forgetPasswordLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AuthInitial<T> value) initial,
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(RegisterLoading<T> value) registerLoading,
+    required TResult Function(RegisterSuccess<T> value) registerSuccess,
+    required TResult Function(RegisterFailure<T> value) registerFailure,
+    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
+    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
+    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
+    required TResult Function(LogineLoading<T> value) loginLoading,
+    required TResult Function(LogineSuccess<T> value) loginSuccess,
+    required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
+  }) {
+    return forgetPasswordLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AuthInitial<T> value)? initial,
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(RegisterLoading<T> value)? registerLoading,
+    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult? Function(RegisterFailure<T> value)? registerFailure,
+    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult? Function(LogineLoading<T> value)? loginLoading,
+    TResult? Function(LogineSuccess<T> value)? loginSuccess,
+    TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AuthInitial<T> value)? initial,
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(RegisterLoading<T> value)? registerLoading,
+    TResult Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult Function(RegisterFailure<T> value)? registerFailure,
+    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult Function(LogineLoading<T> value)? loginLoading,
+    TResult Function(LogineSuccess<T> value)? loginSuccess,
+    TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordLoading != null) {
+      return forgetPasswordLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ForgetPasswordLoading<T> implements AuthState<T> {
+  const factory ForgetPasswordLoading() = _$ForgetPasswordLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$forgetPasswordSuccessImplCopyWith<T, $Res> {
+  factory _$$forgetPasswordSuccessImplCopyWith(
+          _$forgetPasswordSuccessImpl<T> value,
+          $Res Function(_$forgetPasswordSuccessImpl<T>) then) =
+      __$$forgetPasswordSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$forgetPasswordSuccessImplCopyWithImpl<T, $Res>
+    extends _$AuthStateCopyWithImpl<T, $Res, _$forgetPasswordSuccessImpl<T>>
+    implements _$$forgetPasswordSuccessImplCopyWith<T, $Res> {
+  __$$forgetPasswordSuccessImplCopyWithImpl(
+      _$forgetPasswordSuccessImpl<T> _value,
+      $Res Function(_$forgetPasswordSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$forgetPasswordSuccessImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
+  const _$forgetPasswordSuccessImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'AuthState<$T>.forgetPasswordSuccess(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$forgetPasswordSuccessImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$forgetPasswordSuccessImplCopyWith<T, _$forgetPasswordSuccessImpl<T>>
+      get copyWith => __$$forgetPasswordSuccessImplCopyWithImpl<T,
+          _$forgetPasswordSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() registerLoading,
+    required TResult Function(T data) registerSuccess,
+    required TResult Function(String errorMessage) registerFailure,
+    required TResult Function() verifyCodeLoading,
+    required TResult Function(T data) verifyCodeSuccess,
+    required TResult Function(String errorMessage) verifyCodeFailure,
+    required TResult Function() loginLoading,
+    required TResult Function(T data) loginSuccess,
+    required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
+  }) {
+    return forgetPasswordSuccess(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? registerLoading,
+    TResult? Function(T data)? registerSuccess,
+    TResult? Function(String errorMessage)? registerFailure,
+    TResult? Function()? verifyCodeLoading,
+    TResult? Function(T data)? verifyCodeSuccess,
+    TResult? Function(String errorMessage)? verifyCodeFailure,
+    TResult? Function()? loginLoading,
+    TResult? Function(T data)? loginSuccess,
+    TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordSuccess?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? registerLoading,
+    TResult Function(T data)? registerSuccess,
+    TResult Function(String errorMessage)? registerFailure,
+    TResult Function()? verifyCodeLoading,
+    TResult Function(T data)? verifyCodeSuccess,
+    TResult Function(String errorMessage)? verifyCodeFailure,
+    TResult Function()? loginLoading,
+    TResult Function(T data)? loginSuccess,
+    TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordSuccess != null) {
+      return forgetPasswordSuccess(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AuthInitial<T> value) initial,
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(RegisterLoading<T> value) registerLoading,
+    required TResult Function(RegisterSuccess<T> value) registerSuccess,
+    required TResult Function(RegisterFailure<T> value) registerFailure,
+    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
+    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
+    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
+    required TResult Function(LogineLoading<T> value) loginLoading,
+    required TResult Function(LogineSuccess<T> value) loginSuccess,
+    required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
+  }) {
+    return forgetPasswordSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AuthInitial<T> value)? initial,
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(RegisterLoading<T> value)? registerLoading,
+    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult? Function(RegisterFailure<T> value)? registerFailure,
+    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult? Function(LogineLoading<T> value)? loginLoading,
+    TResult? Function(LogineSuccess<T> value)? loginSuccess,
+    TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AuthInitial<T> value)? initial,
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(RegisterLoading<T> value)? registerLoading,
+    TResult Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult Function(RegisterFailure<T> value)? registerFailure,
+    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult Function(LogineLoading<T> value)? loginLoading,
+    TResult Function(LogineSuccess<T> value)? loginSuccess,
+    TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordSuccess != null) {
+      return forgetPasswordSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class forgetPasswordSuccess<T> implements AuthState<T> {
+  const factory forgetPasswordSuccess(final T data) =
+      _$forgetPasswordSuccessImpl<T>;
+
+  T get data;
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$forgetPasswordSuccessImplCopyWith<T, _$forgetPasswordSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ForgetPasswordFailureImplCopyWith<T, $Res> {
+  factory _$$ForgetPasswordFailureImplCopyWith(
+          _$ForgetPasswordFailureImpl<T> value,
+          $Res Function(_$ForgetPasswordFailureImpl<T>) then) =
+      __$$ForgetPasswordFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ForgetPasswordFailureImplCopyWithImpl<T, $Res>
+    extends _$AuthStateCopyWithImpl<T, $Res, _$ForgetPasswordFailureImpl<T>>
+    implements _$$ForgetPasswordFailureImplCopyWith<T, $Res> {
+  __$$ForgetPasswordFailureImplCopyWithImpl(
+      _$ForgetPasswordFailureImpl<T> _value,
+      $Res Function(_$ForgetPasswordFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ForgetPasswordFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
+  const _$ForgetPasswordFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'AuthState<$T>.forgetPasswordFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ForgetPasswordFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ForgetPasswordFailureImplCopyWith<T, _$ForgetPasswordFailureImpl<T>>
+      get copyWith => __$$ForgetPasswordFailureImplCopyWithImpl<T,
+          _$ForgetPasswordFailureImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() registerLoading,
+    required TResult Function(T data) registerSuccess,
+    required TResult Function(String errorMessage) registerFailure,
+    required TResult Function() verifyCodeLoading,
+    required TResult Function(T data) verifyCodeSuccess,
+    required TResult Function(String errorMessage) verifyCodeFailure,
+    required TResult Function() loginLoading,
+    required TResult Function(T data) loginSuccess,
+    required TResult Function(String errorMessage) loginFailure,
+    required TResult Function() forgetPasswordLoading,
+    required TResult Function(T data) forgetPasswordSuccess,
+    required TResult Function(String errorMessage) forgetPasswordFailure,
+  }) {
+    return forgetPasswordFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? registerLoading,
+    TResult? Function(T data)? registerSuccess,
+    TResult? Function(String errorMessage)? registerFailure,
+    TResult? Function()? verifyCodeLoading,
+    TResult? Function(T data)? verifyCodeSuccess,
+    TResult? Function(String errorMessage)? verifyCodeFailure,
+    TResult? Function()? loginLoading,
+    TResult? Function(T data)? loginSuccess,
+    TResult? Function(String errorMessage)? loginFailure,
+    TResult? Function()? forgetPasswordLoading,
+    TResult? Function(T data)? forgetPasswordSuccess,
+    TResult? Function(String errorMessage)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? registerLoading,
+    TResult Function(T data)? registerSuccess,
+    TResult Function(String errorMessage)? registerFailure,
+    TResult Function()? verifyCodeLoading,
+    TResult Function(T data)? verifyCodeSuccess,
+    TResult Function(String errorMessage)? verifyCodeFailure,
+    TResult Function()? loginLoading,
+    TResult Function(T data)? loginSuccess,
+    TResult Function(String errorMessage)? loginFailure,
+    TResult Function()? forgetPasswordLoading,
+    TResult Function(T data)? forgetPasswordSuccess,
+    TResult Function(String errorMessage)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordFailure != null) {
+      return forgetPasswordFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AuthInitial<T> value) initial,
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(RegisterLoading<T> value) registerLoading,
+    required TResult Function(RegisterSuccess<T> value) registerSuccess,
+    required TResult Function(RegisterFailure<T> value) registerFailure,
+    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
+    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
+    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
+    required TResult Function(LogineLoading<T> value) loginLoading,
+    required TResult Function(LogineSuccess<T> value) loginSuccess,
+    required TResult Function(LogineFailure<T> value) loginFailure,
+    required TResult Function(ForgetPasswordLoading<T> value)
+        forgetPasswordLoading,
+    required TResult Function(forgetPasswordSuccess<T> value)
+        forgetPasswordSuccess,
+    required TResult Function(ForgetPasswordFailure<T> value)
+        forgetPasswordFailure,
+  }) {
+    return forgetPasswordFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AuthInitial<T> value)? initial,
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(RegisterLoading<T> value)? registerLoading,
+    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult? Function(RegisterFailure<T> value)? registerFailure,
+    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult? Function(LogineLoading<T> value)? loginLoading,
+    TResult? Function(LogineSuccess<T> value)? loginSuccess,
+    TResult? Function(LogineFailure<T> value)? loginFailure,
+    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+  }) {
+    return forgetPasswordFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AuthInitial<T> value)? initial,
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(RegisterLoading<T> value)? registerLoading,
+    TResult Function(RegisterSuccess<T> value)? registerSuccess,
+    TResult Function(RegisterFailure<T> value)? registerFailure,
+    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
+    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
+    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
+    TResult Function(LogineLoading<T> value)? loginLoading,
+    TResult Function(LogineSuccess<T> value)? loginSuccess,
+    TResult Function(LogineFailure<T> value)? loginFailure,
+    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
+    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
+    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
+    required TResult orElse(),
+  }) {
+    if (forgetPasswordFailure != null) {
+      return forgetPasswordFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ForgetPasswordFailure<T> implements AuthState<T> {
+  const factory ForgetPasswordFailure({required final String errorMessage}) =
+      _$ForgetPasswordFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of AuthState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ForgetPasswordFailureImplCopyWith<T, _$ForgetPasswordFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

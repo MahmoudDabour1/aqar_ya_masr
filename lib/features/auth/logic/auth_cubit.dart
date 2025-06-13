@@ -1,6 +1,7 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/helpers/helper_methods.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/auth/data/models/forget_password_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/verify_code_request_model.dart';
@@ -30,6 +31,7 @@ class AuthCubit extends Cubit<AuthState> {
 
   //Verify Code
   String? verifyCodeNumber;
+  bool? isFromForgetPassword = false;
 
   Future<void> getAppInitData() async {
     emit(AuthState.getAppInitLoading());
@@ -42,11 +44,12 @@ class AuthCubit extends Cubit<AuthState> {
         cities = initData.data?.cities ?? [];
         license = initData.data?.about?.licenseAgreement;
       },
-      failure: (e) => emit(
-        AuthState.getAppInitFailure(
-          errorMessage: e.toString(),
-        ),
-      ),
+      failure: (e) =>
+          emit(
+            AuthState.getAppInitFailure(
+              errorMessage: e.toString(),
+            ),
+          ),
     );
   }
 
@@ -82,6 +85,7 @@ class AuthCubit extends Cubit<AuthState> {
       VerifyCodeRequestModel(
         phone: phoneController.text,
         code: verifyCodeNumber.toString(),
+        resetPass: isFromForgetPassword == true ? true : null,
       ),
     );
     response.when(
@@ -113,6 +117,27 @@ class AuthCubit extends Cubit<AuthState> {
       failure: (e) {
         showToast(message: e.message ?? "");
         emit(AuthState.loginFailure(errorMessage: e.toString()));
+      },
+    );
+  }
+
+  Future<void> forgetPassword(BuildContext context) async {
+    emit(AuthState.forgetPasswordLoading());
+    final response = await authRepos.forgetPassword(
+        ForgetPasswordRequestBody(phone: phoneController.text),
+    );
+    response.when(
+      success: (data) {
+        emit(AuthState.forgetPasswordSuccess(data));
+        showToast(message: "Check your phone for the code");
+        context.pushNamed(
+          Routes.verifyCodeScreen,
+          arguments: phoneController.text,
+        );
+      },
+      failure: (e) {
+        showToast(message: e.message ?? "");
+        emit(AuthState.forgetPasswordFailure(errorMessage: e.toString()));
       },
     );
   }
