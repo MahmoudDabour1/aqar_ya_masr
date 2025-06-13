@@ -8,9 +8,9 @@ class HomeCubit extends Cubit<HomeState> {
 
   HomeCubit(this.homeRepo) : super(HomeState.initial());
 
-  Future<void> getAqarMomayasData() async {
+  Future<void> getAqarMomayasData(int limit) async {
     emit(HomeState.aqarMomayasLoading());
-    final response = await homeRepo.getAqarMomayasData();
+    final response = await homeRepo.getAqarMomayasData(limit);
     response.when(
       success: (data) {
         emit(HomeState.aqarMomayasSuccess(data));
@@ -25,9 +25,9 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  Future<void> getQsrSakanyData() async {
+  Future<void> getQsrSakanyData(int limit) async {
     emit(HomeState.qsrSakanyLoading());
-    final response = await homeRepo.getQsrSakanyData();
+    final response = await homeRepo.getQsrSakanyData(limit);
     response.when(
       success: (data) {
         emit(HomeState.qsrSakanySuccess(data));
@@ -42,9 +42,9 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  Future<void> getVillaSakanyData() async {
+  Future<void> getVillaSakanyData(int limit) async {
     emit(HomeState.villaSakanyLoading());
-    final response = await homeRepo.getVillaSakanyData();
+    final response = await homeRepo.getVillaSakanyData(limit);
     response.when(
       success: (data) {
         emit(HomeState.villaSakanySuccess(data));
@@ -59,9 +59,9 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  Future<void> getFlatSakanyData() async {
+  Future<void> getFlatSakanyData(int limit) async {
     emit(HomeState.flatSakanyLoading());
-    final response = await homeRepo.getFlatSakanyData();
+    final response = await homeRepo.getFlatSakanyData(limit);
     response.when(
       success: (data) {
         emit(HomeState.flatSakanySuccess(data));
@@ -93,9 +93,9 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  Future<void> getCompounds() async {
+  Future<void> getCompounds(int limit) async {
     emit(HomeState.compoundLoading());
-    final response = await homeRepo.getCompoundData();
+    final response = await homeRepo.getCompoundData(limit);
     response.when(
       success: (data) {
         emit(HomeState.compoundSuccess(data));

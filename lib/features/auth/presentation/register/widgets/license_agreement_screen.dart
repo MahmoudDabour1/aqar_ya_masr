@@ -39,7 +39,7 @@ class LicenseAgreementScreen extends StatelessWidget {
           children: [
             Html(data: cubit.license.toString(), style: {
               "p": Style(
-                fontSize: FontSize(16.sp),
+                fontSize: FontSize.xLarge,
                 color: AppColors.blackColor,
               ),
             }),

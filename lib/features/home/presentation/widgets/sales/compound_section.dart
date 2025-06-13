@@ -22,7 +22,7 @@ class CompoundSection extends StatelessWidget {
           compoundLoading: () => setupLoading(),
           compoundSuccess: (compoundData) => setupSuccess(compoundData),
           compoundFailure: (error) => setupError(error),
-          orElse: () => const SizedBox.shrink(),
+          orElse: () =>setupLoading(),
         );
       },
     );

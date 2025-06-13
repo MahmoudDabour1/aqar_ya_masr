@@ -17,16 +17,24 @@ abstract class HomeRemoteDataSource {
       _HomeRemoteDataSource;
 
   @GET(ApiConstants.aqarMomayasEP)
-  Future<AqarMomayasModel> getAqarMomayasData();
+  Future<AqarMomayasModel> getAqarMomayasData(
+      @Path('limit') int limit,
+      );
 
   @GET(ApiConstants.qsrSakanyEP)
-  Future<QsrSakanyModel> getQsrSakanyData ();
+  Future<QsrSakanyModel> getQsrSakanyData (
+      @Path('limit') int limit,
+      );
 
   @GET(ApiConstants.villaSakanyEP)
-  Future<VillaSakanyModel> getVillaSakanyData ();
+  Future<VillaSakanyModel> getVillaSakanyData (
+      @Path('limit') int limit,
+      );
 
   @GET(ApiConstants.flatSakanyEP)
-  Future<FlatSakanyModel> getFlatSakanyData ();
+  Future<FlatSakanyModel> getFlatSakanyData (
+      @Path('limit') int limit,
+      );
 
   @GET(ApiConstants.adDetailsEP)
   Future<AdDetailsModel> getAdDetails({
@@ -34,5 +42,7 @@ abstract class HomeRemoteDataSource {
   });
 
   @GET(ApiConstants.compoundEP)
-  Future<CompoundModel> getCompoundData ();
+  Future<CompoundModel> getCompoundData (
+      @Path('limit') int limit,
+      );
 }
