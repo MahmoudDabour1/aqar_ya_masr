@@ -8,6 +8,25 @@ class HomeCubit extends Cubit<HomeState> {
 
   HomeCubit(this.homeRepo) : super(HomeState.initial());
 
+  Future<void> getAppInitData() async {
+    emit(HomeState.getAppInitLoading());
+    final response = await homeRepo.getAppInitData();
+    response.when(
+      success: (initData) {
+        emit(
+          HomeState.getAppInitSuccess(initData),
+        );
+        // cities = initData.data?.cities ?? [];
+        // license = initData.data?.about?.licenseAgreement;
+      },
+      failure: (e) => emit(
+        HomeState.getAppInitFailure(
+          errorMessage: e.toString(),
+        ),
+      ),
+    );
+  }
+
   Future<void> getAqarMomayasData(int limit) async {
     emit(HomeState.aqarMomayasLoading());
     final response = await homeRepo.getAqarMomayasData(limit);

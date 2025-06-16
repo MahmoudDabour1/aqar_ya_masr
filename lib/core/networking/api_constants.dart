@@ -11,6 +11,8 @@ class ApiConstants {
   static const String loginEP = "auth/login";
   static const String forgetPasswordEP = "auth/resend-code";
   static const String compoundEP = "ads?is_planned=1&limit={limit}";
+  static const String priceGuideEP = "price-guide";
+  static const String profileEP = "profile";
 }
 
 class ApiErrors {

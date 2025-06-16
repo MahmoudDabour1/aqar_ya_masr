@@ -1,5 +1,6 @@
 import 'package:aqar_ya_masr/core/networking/api_error_handler.dart';
 import 'package:aqar_ya_masr/core/networking/api_result.dart';
+import 'package:aqar_ya_masr/features/home/data/data_source/home_local_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/data_source/home_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
@@ -7,6 +8,7 @@ import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
 
+import '../models/app_init_model.dart';
 import '../models/flat_sakany_model.dart';
 
 abstract class HomeRepo {
@@ -21,12 +23,31 @@ abstract class HomeRepo {
   Future<ApiResult<AdDetailsModel>> getAdDetailsData(int adId);
 
   Future<ApiResult<CompoundModel>> getCompoundData(int limit);
+  Future<ApiResult<AppInitModel>> getAppInitData();
+
 }
 
 class HomeRepoImpl implements HomeRepo {
   final HomeRemoteDataSource homeRemoteDataSource;
+  final HomeLocalRemoteDataSource homeLocalRemoteDataSource;
 
-  HomeRepoImpl({required this.homeRemoteDataSource});
+  HomeRepoImpl(this.homeLocalRemoteDataSource, {required this.homeRemoteDataSource});
+
+  @override
+  Future<ApiResult<AppInitModel>> getAppInitData() async {
+    try {
+      final response = await homeRemoteDataSource.getAppInit();
+      await homeLocalRemoteDataSource.cacheAppInitData(response);
+      return ApiResult.success(response);
+    } catch (e) {
+      final cachedData =  homeLocalRemoteDataSource.getAppInitData();
+      if (cachedData != null) {
+        return ApiResult.success(cachedData);
+      }
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+
 
   @override
   Future<ApiResult<AqarMomayasModel>> getAqarMomayasData(int limit) async {

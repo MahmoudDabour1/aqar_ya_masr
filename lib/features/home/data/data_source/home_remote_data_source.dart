@@ -9,6 +9,8 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
 
+import '../models/app_init_model.dart';
+
 part 'home_remote_data_source.g.dart';
 
 @RestApi(baseUrl: ApiConstants.apiBaseUrl)
@@ -45,4 +47,7 @@ abstract class HomeRemoteDataSource {
   Future<CompoundModel> getCompoundData (
       @Path('limit') int limit,
       );
+
+  @GET(ApiConstants.appInitEP)
+  Future<AppInitModel> getAppInit();
 }

@@ -6,13 +6,6 @@ part 'auth_state.freezed.dart';
 class AuthState<T> with _$AuthState<T> {
   const factory AuthState.initial() = AuthInitial;
 
-  const factory AuthState.getAppInitLoading() = GetAppInitLoading;
-
-  const factory AuthState.getAppInitSuccess(T data) = GetAppInitSuccess<T>;
-
-  const factory AuthState.getAppInitFailure({required String errorMessage}) =
-      GetAppInitFailure<T>;
-
   const factory AuthState.registerLoading() = RegisterLoading;
 
   const factory AuthState.registerSuccess(T data) = RegisterSuccess<T>;
