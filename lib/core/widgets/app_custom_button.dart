@@ -13,16 +13,20 @@ class AppCustomButton extends StatelessWidget {
   final bool isLoading;
   final double radius;
   final bool isBorder;
+  final Color? backgroundColor;
+  final Color? textColor;
 
   const AppCustomButton({
     super.key,
     required this.textButton,
     required this.btnWidth,
-    required this.btnHeight ,
+    required this.btnHeight,
     required this.onPressed,
     this.isLoading = false,
     this.radius = 8,
     this.isBorder = false,
+    this.backgroundColor,
+    this.textColor,
   });
 
   @override
@@ -30,7 +34,7 @@ class AppCustomButton extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius.r),
-        color: AppColors.primaryColor,
+        color: backgroundColor?? AppColors.primaryColor,
       ),
       child: TextButton(
         style: ButtonStyle(
@@ -46,7 +50,9 @@ class AppCustomButton extends StatelessWidget {
             ? AppCustomLoadingIndicator()
             : Text(
                 textButton,
-                style: AppStyles.font16whiteMedium,
+                style: AppStyles.font16whiteMedium.copyWith(
+                  color: textColor,
+                ),
                 textAlign: TextAlign.center,
               ),
       ),

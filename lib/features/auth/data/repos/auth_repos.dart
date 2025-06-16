@@ -1,7 +1,7 @@
 import 'package:aqar_ya_masr/core/networking/api_error_handler.dart';
 import 'package:aqar_ya_masr/core/networking/api_result.dart';
 import 'package:aqar_ya_masr/features/auth/data/data_source/auth_remote_data_source.dart';
-import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/app_init_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/forget_password_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_response_model.dart';
@@ -13,7 +13,6 @@ import 'package:aqar_ya_masr/features/auth/data/models/verify_response_model.dar
 import '../models/forget_password_request_body.dart';
 
 abstract class AuthRepos {
-  Future<ApiResult<AppInitModel>> getAppInitData();
 
   Future<ApiResult<RegisterResponseModel>> register(
       RegisterRequestBody registerRequestBody);
@@ -34,15 +33,7 @@ class AuthReposImpl implements AuthRepos {
 
   AuthReposImpl(this.authRemoteDataSource);
 
-  @override
-  Future<ApiResult<AppInitModel>> getAppInitData() async {
-    try {
-      final response = await authRemoteDataSource.getAppInit();
-      return ApiResult.success(response);
-    } catch (e) {
-      return ApiResult.failure(ApiErrorHandler.handle(e));
-    }
-  }
+
 
   @override
   Future<ApiResult<RegisterResponseModel>> register(

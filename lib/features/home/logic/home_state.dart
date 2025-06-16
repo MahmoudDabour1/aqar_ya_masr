@@ -10,6 +10,13 @@ part 'home_state.freezed.dart';
 
 @freezed
 class HomeState<T> with _$HomeState<T> {
+  const factory HomeState.getAppInitLoading() = GetAppInitLoading;
+
+  const factory HomeState.getAppInitSuccess(T data) = GetAppInitSuccess<T>;
+
+  const factory HomeState.getAppInitFailure({required String errorMessage}) =
+  GetAppInitFailure<T>;
+
   const factory HomeState.initial() = HomeInitial;
 
   const factory HomeState.aqarMomayasLoading() = AqarMomayasLoading;

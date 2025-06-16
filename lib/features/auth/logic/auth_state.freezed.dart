@@ -19,9 +19,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -39,9 +36,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -59,9 +53,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -80,9 +71,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -103,9 +91,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -123,9 +108,6 @@ mixin _$AuthState<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -206,9 +188,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -229,9 +208,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -252,9 +228,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -279,9 +252,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -305,9 +275,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -328,9 +295,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -354,660 +318,6 @@ class _$AuthInitialImpl<T> implements AuthInitial<T> {
 
 abstract class AuthInitial<T> implements AuthState<T> {
   const factory AuthInitial() = _$AuthInitialImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$GetAppInitLoadingImplCopyWith<T, $Res> {
-  factory _$$GetAppInitLoadingImplCopyWith(_$GetAppInitLoadingImpl<T> value,
-          $Res Function(_$GetAppInitLoadingImpl<T>) then) =
-      __$$GetAppInitLoadingImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$GetAppInitLoadingImplCopyWithImpl<T, $Res>
-    extends _$AuthStateCopyWithImpl<T, $Res, _$GetAppInitLoadingImpl<T>>
-    implements _$$GetAppInitLoadingImplCopyWith<T, $Res> {
-  __$$GetAppInitLoadingImplCopyWithImpl(_$GetAppInitLoadingImpl<T> _value,
-      $Res Function(_$GetAppInitLoadingImpl<T>) _then)
-      : super(_value, _then);
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
-  const _$GetAppInitLoadingImpl();
-
-  @override
-  String toString() {
-    return 'AuthState<$T>.getAppInitLoading()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$GetAppInitLoadingImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
-    required TResult Function() registerLoading,
-    required TResult Function(T data) registerSuccess,
-    required TResult Function(String errorMessage) registerFailure,
-    required TResult Function() verifyCodeLoading,
-    required TResult Function(T data) verifyCodeSuccess,
-    required TResult Function(String errorMessage) verifyCodeFailure,
-    required TResult Function() loginLoading,
-    required TResult Function(T data) loginSuccess,
-    required TResult Function(String errorMessage) loginFailure,
-    required TResult Function() forgetPasswordLoading,
-    required TResult Function(T data) forgetPasswordSuccess,
-    required TResult Function(String errorMessage) forgetPasswordFailure,
-  }) {
-    return getAppInitLoading();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
-    TResult? Function()? registerLoading,
-    TResult? Function(T data)? registerSuccess,
-    TResult? Function(String errorMessage)? registerFailure,
-    TResult? Function()? verifyCodeLoading,
-    TResult? Function(T data)? verifyCodeSuccess,
-    TResult? Function(String errorMessage)? verifyCodeFailure,
-    TResult? Function()? loginLoading,
-    TResult? Function(T data)? loginSuccess,
-    TResult? Function(String errorMessage)? loginFailure,
-    TResult? Function()? forgetPasswordLoading,
-    TResult? Function(T data)? forgetPasswordSuccess,
-    TResult? Function(String errorMessage)? forgetPasswordFailure,
-  }) {
-    return getAppInitLoading?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
-    TResult Function()? registerLoading,
-    TResult Function(T data)? registerSuccess,
-    TResult Function(String errorMessage)? registerFailure,
-    TResult Function()? verifyCodeLoading,
-    TResult Function(T data)? verifyCodeSuccess,
-    TResult Function(String errorMessage)? verifyCodeFailure,
-    TResult Function()? loginLoading,
-    TResult Function(T data)? loginSuccess,
-    TResult Function(String errorMessage)? loginFailure,
-    TResult Function()? forgetPasswordLoading,
-    TResult Function(T data)? forgetPasswordSuccess,
-    TResult Function(String errorMessage)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitLoading != null) {
-      return getAppInitLoading();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
-    required TResult Function(RegisterLoading<T> value) registerLoading,
-    required TResult Function(RegisterSuccess<T> value) registerSuccess,
-    required TResult Function(RegisterFailure<T> value) registerFailure,
-    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
-    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
-    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
-    required TResult Function(LogineLoading<T> value) loginLoading,
-    required TResult Function(LogineSuccess<T> value) loginSuccess,
-    required TResult Function(LogineFailure<T> value) loginFailure,
-    required TResult Function(ForgetPasswordLoading<T> value)
-        forgetPasswordLoading,
-    required TResult Function(forgetPasswordSuccess<T> value)
-        forgetPasswordSuccess,
-    required TResult Function(ForgetPasswordFailure<T> value)
-        forgetPasswordFailure,
-  }) {
-    return getAppInitLoading(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult? Function(RegisterLoading<T> value)? registerLoading,
-    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult? Function(RegisterFailure<T> value)? registerFailure,
-    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult? Function(LogineLoading<T> value)? loginLoading,
-    TResult? Function(LogineSuccess<T> value)? loginSuccess,
-    TResult? Function(LogineFailure<T> value)? loginFailure,
-    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-  }) {
-    return getAppInitLoading?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult Function(RegisterLoading<T> value)? registerLoading,
-    TResult Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult Function(RegisterFailure<T> value)? registerFailure,
-    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult Function(LogineLoading<T> value)? loginLoading,
-    TResult Function(LogineSuccess<T> value)? loginSuccess,
-    TResult Function(LogineFailure<T> value)? loginFailure,
-    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitLoading != null) {
-      return getAppInitLoading(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class GetAppInitLoading<T> implements AuthState<T> {
-  const factory GetAppInitLoading() = _$GetAppInitLoadingImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$GetAppInitSuccessImplCopyWith<T, $Res> {
-  factory _$$GetAppInitSuccessImplCopyWith(_$GetAppInitSuccessImpl<T> value,
-          $Res Function(_$GetAppInitSuccessImpl<T>) then) =
-      __$$GetAppInitSuccessImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({T data});
-}
-
-/// @nodoc
-class __$$GetAppInitSuccessImplCopyWithImpl<T, $Res>
-    extends _$AuthStateCopyWithImpl<T, $Res, _$GetAppInitSuccessImpl<T>>
-    implements _$$GetAppInitSuccessImplCopyWith<T, $Res> {
-  __$$GetAppInitSuccessImplCopyWithImpl(_$GetAppInitSuccessImpl<T> _value,
-      $Res Function(_$GetAppInitSuccessImpl<T>) _then)
-      : super(_value, _then);
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = freezed,
-  }) {
-    return _then(_$GetAppInitSuccessImpl<T>(
-      freezed == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
-  const _$GetAppInitSuccessImpl(this.data);
-
-  @override
-  final T data;
-
-  @override
-  String toString() {
-    return 'AuthState<$T>.getAppInitSuccess(data: $data)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$GetAppInitSuccessImpl<T> &&
-            const DeepCollectionEquality().equals(other.data, data));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$GetAppInitSuccessImplCopyWith<T, _$GetAppInitSuccessImpl<T>>
-      get copyWith =>
-          __$$GetAppInitSuccessImplCopyWithImpl<T, _$GetAppInitSuccessImpl<T>>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
-    required TResult Function() registerLoading,
-    required TResult Function(T data) registerSuccess,
-    required TResult Function(String errorMessage) registerFailure,
-    required TResult Function() verifyCodeLoading,
-    required TResult Function(T data) verifyCodeSuccess,
-    required TResult Function(String errorMessage) verifyCodeFailure,
-    required TResult Function() loginLoading,
-    required TResult Function(T data) loginSuccess,
-    required TResult Function(String errorMessage) loginFailure,
-    required TResult Function() forgetPasswordLoading,
-    required TResult Function(T data) forgetPasswordSuccess,
-    required TResult Function(String errorMessage) forgetPasswordFailure,
-  }) {
-    return getAppInitSuccess(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
-    TResult? Function()? registerLoading,
-    TResult? Function(T data)? registerSuccess,
-    TResult? Function(String errorMessage)? registerFailure,
-    TResult? Function()? verifyCodeLoading,
-    TResult? Function(T data)? verifyCodeSuccess,
-    TResult? Function(String errorMessage)? verifyCodeFailure,
-    TResult? Function()? loginLoading,
-    TResult? Function(T data)? loginSuccess,
-    TResult? Function(String errorMessage)? loginFailure,
-    TResult? Function()? forgetPasswordLoading,
-    TResult? Function(T data)? forgetPasswordSuccess,
-    TResult? Function(String errorMessage)? forgetPasswordFailure,
-  }) {
-    return getAppInitSuccess?.call(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
-    TResult Function()? registerLoading,
-    TResult Function(T data)? registerSuccess,
-    TResult Function(String errorMessage)? registerFailure,
-    TResult Function()? verifyCodeLoading,
-    TResult Function(T data)? verifyCodeSuccess,
-    TResult Function(String errorMessage)? verifyCodeFailure,
-    TResult Function()? loginLoading,
-    TResult Function(T data)? loginSuccess,
-    TResult Function(String errorMessage)? loginFailure,
-    TResult Function()? forgetPasswordLoading,
-    TResult Function(T data)? forgetPasswordSuccess,
-    TResult Function(String errorMessage)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitSuccess != null) {
-      return getAppInitSuccess(data);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
-    required TResult Function(RegisterLoading<T> value) registerLoading,
-    required TResult Function(RegisterSuccess<T> value) registerSuccess,
-    required TResult Function(RegisterFailure<T> value) registerFailure,
-    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
-    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
-    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
-    required TResult Function(LogineLoading<T> value) loginLoading,
-    required TResult Function(LogineSuccess<T> value) loginSuccess,
-    required TResult Function(LogineFailure<T> value) loginFailure,
-    required TResult Function(ForgetPasswordLoading<T> value)
-        forgetPasswordLoading,
-    required TResult Function(forgetPasswordSuccess<T> value)
-        forgetPasswordSuccess,
-    required TResult Function(ForgetPasswordFailure<T> value)
-        forgetPasswordFailure,
-  }) {
-    return getAppInitSuccess(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult? Function(RegisterLoading<T> value)? registerLoading,
-    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult? Function(RegisterFailure<T> value)? registerFailure,
-    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult? Function(LogineLoading<T> value)? loginLoading,
-    TResult? Function(LogineSuccess<T> value)? loginSuccess,
-    TResult? Function(LogineFailure<T> value)? loginFailure,
-    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-  }) {
-    return getAppInitSuccess?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult Function(RegisterLoading<T> value)? registerLoading,
-    TResult Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult Function(RegisterFailure<T> value)? registerFailure,
-    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult Function(LogineLoading<T> value)? loginLoading,
-    TResult Function(LogineSuccess<T> value)? loginSuccess,
-    TResult Function(LogineFailure<T> value)? loginFailure,
-    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitSuccess != null) {
-      return getAppInitSuccess(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class GetAppInitSuccess<T> implements AuthState<T> {
-  const factory GetAppInitSuccess(final T data) = _$GetAppInitSuccessImpl<T>;
-
-  T get data;
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$GetAppInitSuccessImplCopyWith<T, _$GetAppInitSuccessImpl<T>>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$GetAppInitFailureImplCopyWith<T, $Res> {
-  factory _$$GetAppInitFailureImplCopyWith(_$GetAppInitFailureImpl<T> value,
-          $Res Function(_$GetAppInitFailureImpl<T>) then) =
-      __$$GetAppInitFailureImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({String errorMessage});
-}
-
-/// @nodoc
-class __$$GetAppInitFailureImplCopyWithImpl<T, $Res>
-    extends _$AuthStateCopyWithImpl<T, $Res, _$GetAppInitFailureImpl<T>>
-    implements _$$GetAppInitFailureImplCopyWith<T, $Res> {
-  __$$GetAppInitFailureImplCopyWithImpl(_$GetAppInitFailureImpl<T> _value,
-      $Res Function(_$GetAppInitFailureImpl<T>) _then)
-      : super(_value, _then);
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? errorMessage = null,
-  }) {
-    return _then(_$GetAppInitFailureImpl<T>(
-      errorMessage: null == errorMessage
-          ? _value.errorMessage
-          : errorMessage // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
-  const _$GetAppInitFailureImpl({required this.errorMessage});
-
-  @override
-  final String errorMessage;
-
-  @override
-  String toString() {
-    return 'AuthState<$T>.getAppInitFailure(errorMessage: $errorMessage)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$GetAppInitFailureImpl<T> &&
-            (identical(other.errorMessage, errorMessage) ||
-                other.errorMessage == errorMessage));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, errorMessage);
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$GetAppInitFailureImplCopyWith<T, _$GetAppInitFailureImpl<T>>
-      get copyWith =>
-          __$$GetAppInitFailureImplCopyWithImpl<T, _$GetAppInitFailureImpl<T>>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
-    required TResult Function() registerLoading,
-    required TResult Function(T data) registerSuccess,
-    required TResult Function(String errorMessage) registerFailure,
-    required TResult Function() verifyCodeLoading,
-    required TResult Function(T data) verifyCodeSuccess,
-    required TResult Function(String errorMessage) verifyCodeFailure,
-    required TResult Function() loginLoading,
-    required TResult Function(T data) loginSuccess,
-    required TResult Function(String errorMessage) loginFailure,
-    required TResult Function() forgetPasswordLoading,
-    required TResult Function(T data) forgetPasswordSuccess,
-    required TResult Function(String errorMessage) forgetPasswordFailure,
-  }) {
-    return getAppInitFailure(errorMessage);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
-    TResult? Function()? registerLoading,
-    TResult? Function(T data)? registerSuccess,
-    TResult? Function(String errorMessage)? registerFailure,
-    TResult? Function()? verifyCodeLoading,
-    TResult? Function(T data)? verifyCodeSuccess,
-    TResult? Function(String errorMessage)? verifyCodeFailure,
-    TResult? Function()? loginLoading,
-    TResult? Function(T data)? loginSuccess,
-    TResult? Function(String errorMessage)? loginFailure,
-    TResult? Function()? forgetPasswordLoading,
-    TResult? Function(T data)? forgetPasswordSuccess,
-    TResult? Function(String errorMessage)? forgetPasswordFailure,
-  }) {
-    return getAppInitFailure?.call(errorMessage);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
-    TResult Function()? registerLoading,
-    TResult Function(T data)? registerSuccess,
-    TResult Function(String errorMessage)? registerFailure,
-    TResult Function()? verifyCodeLoading,
-    TResult Function(T data)? verifyCodeSuccess,
-    TResult Function(String errorMessage)? verifyCodeFailure,
-    TResult Function()? loginLoading,
-    TResult Function(T data)? loginSuccess,
-    TResult Function(String errorMessage)? loginFailure,
-    TResult Function()? forgetPasswordLoading,
-    TResult Function(T data)? forgetPasswordSuccess,
-    TResult Function(String errorMessage)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitFailure != null) {
-      return getAppInitFailure(errorMessage);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
-    required TResult Function(RegisterLoading<T> value) registerLoading,
-    required TResult Function(RegisterSuccess<T> value) registerSuccess,
-    required TResult Function(RegisterFailure<T> value) registerFailure,
-    required TResult Function(VerifyCodeLoading<T> value) verifyCodeLoading,
-    required TResult Function(VerifyCodeSuccess<T> value) verifyCodeSuccess,
-    required TResult Function(VerifyCodeFailure<T> value) verifyCodeFailure,
-    required TResult Function(LogineLoading<T> value) loginLoading,
-    required TResult Function(LogineSuccess<T> value) loginSuccess,
-    required TResult Function(LogineFailure<T> value) loginFailure,
-    required TResult Function(ForgetPasswordLoading<T> value)
-        forgetPasswordLoading,
-    required TResult Function(forgetPasswordSuccess<T> value)
-        forgetPasswordSuccess,
-    required TResult Function(ForgetPasswordFailure<T> value)
-        forgetPasswordFailure,
-  }) {
-    return getAppInitFailure(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult? Function(RegisterLoading<T> value)? registerLoading,
-    TResult? Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult? Function(RegisterFailure<T> value)? registerFailure,
-    TResult? Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult? Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult? Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult? Function(LogineLoading<T> value)? loginLoading,
-    TResult? Function(LogineSuccess<T> value)? loginSuccess,
-    TResult? Function(LogineFailure<T> value)? loginFailure,
-    TResult? Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult? Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult? Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-  }) {
-    return getAppInitFailure?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
-    TResult Function(RegisterLoading<T> value)? registerLoading,
-    TResult Function(RegisterSuccess<T> value)? registerSuccess,
-    TResult Function(RegisterFailure<T> value)? registerFailure,
-    TResult Function(VerifyCodeLoading<T> value)? verifyCodeLoading,
-    TResult Function(VerifyCodeSuccess<T> value)? verifyCodeSuccess,
-    TResult Function(VerifyCodeFailure<T> value)? verifyCodeFailure,
-    TResult Function(LogineLoading<T> value)? loginLoading,
-    TResult Function(LogineSuccess<T> value)? loginSuccess,
-    TResult Function(LogineFailure<T> value)? loginFailure,
-    TResult Function(ForgetPasswordLoading<T> value)? forgetPasswordLoading,
-    TResult Function(forgetPasswordSuccess<T> value)? forgetPasswordSuccess,
-    TResult Function(ForgetPasswordFailure<T> value)? forgetPasswordFailure,
-    required TResult orElse(),
-  }) {
-    if (getAppInitFailure != null) {
-      return getAppInitFailure(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class GetAppInitFailure<T> implements AuthState<T> {
-  const factory GetAppInitFailure({required final String errorMessage}) =
-      _$GetAppInitFailureImpl<T>;
-
-  String get errorMessage;
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$GetAppInitFailureImplCopyWith<T, _$GetAppInitFailureImpl<T>>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1052,9 +362,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -1075,9 +382,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -1098,9 +402,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -1125,9 +426,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -1151,9 +449,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -1174,9 +469,6 @@ class _$RegisterLoadingImpl<T> implements RegisterLoading<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -1273,9 +565,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -1296,9 +585,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -1319,9 +605,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -1346,9 +629,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -1372,9 +652,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -1395,9 +672,6 @@ class _$RegisterSuccessImpl<T> implements RegisterSuccess<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -1502,9 +776,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -1525,9 +796,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -1548,9 +816,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -1575,9 +840,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -1601,9 +863,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -1624,9 +883,6 @@ class _$RegisterFailureImpl<T> implements RegisterFailure<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -1704,9 +960,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -1727,9 +980,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -1750,9 +1000,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -1777,9 +1024,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -1803,9 +1047,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -1826,9 +1067,6 @@ class _$VerifyCodeLoadingImpl<T> implements VerifyCodeLoading<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -1926,9 +1164,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -1949,9 +1184,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -1972,9 +1204,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -1999,9 +1228,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -2025,9 +1251,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -2048,9 +1271,6 @@ class _$VerifyCodeSuccessImpl<T> implements VerifyCodeSuccess<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -2156,9 +1376,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -2179,9 +1396,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -2202,9 +1416,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -2229,9 +1440,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -2255,9 +1463,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -2278,9 +1483,6 @@ class _$VerifyCodeFailureImpl<T> implements VerifyCodeFailure<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -2357,9 +1559,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -2380,9 +1579,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -2403,9 +1599,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -2430,9 +1623,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -2456,9 +1646,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -2479,9 +1666,6 @@ class _$LogineLoadingImpl<T> implements LogineLoading<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -2578,9 +1762,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -2601,9 +1782,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -2624,9 +1802,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -2651,9 +1826,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -2677,9 +1849,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -2700,9 +1869,6 @@ class _$LogineSuccessImpl<T> implements LogineSuccess<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -2807,9 +1973,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -2830,9 +1993,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -2853,9 +2013,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -2880,9 +2037,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -2906,9 +2060,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -2929,9 +2080,6 @@ class _$LogineFailureImpl<T> implements LogineFailure<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -3011,9 +2159,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -3034,9 +2179,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -3057,9 +2199,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -3084,9 +2223,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -3110,9 +2246,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -3133,9 +2266,6 @@ class _$ForgetPasswordLoadingImpl<T> implements ForgetPasswordLoading<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -3234,9 +2364,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -3257,9 +2384,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -3280,9 +2404,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -3307,9 +2428,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -3333,9 +2451,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -3356,9 +2471,6 @@ class _$forgetPasswordSuccessImpl<T> implements forgetPasswordSuccess<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,
@@ -3466,9 +2578,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() getAppInitLoading,
-    required TResult Function(T data) getAppInitSuccess,
-    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() registerLoading,
     required TResult Function(T data) registerSuccess,
     required TResult Function(String errorMessage) registerFailure,
@@ -3489,9 +2598,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? getAppInitLoading,
-    TResult? Function(T data)? getAppInitSuccess,
-    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? registerLoading,
     TResult? Function(T data)? registerSuccess,
     TResult? Function(String errorMessage)? registerFailure,
@@ -3512,9 +2618,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? getAppInitLoading,
-    TResult Function(T data)? getAppInitSuccess,
-    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? registerLoading,
     TResult Function(T data)? registerSuccess,
     TResult Function(String errorMessage)? registerFailure,
@@ -3539,9 +2642,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(AuthInitial<T> value) initial,
-    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
-    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
-    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(RegisterLoading<T> value) registerLoading,
     required TResult Function(RegisterSuccess<T> value) registerSuccess,
     required TResult Function(RegisterFailure<T> value) registerFailure,
@@ -3565,9 +2665,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(AuthInitial<T> value)? initial,
-    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(RegisterLoading<T> value)? registerLoading,
     TResult? Function(RegisterSuccess<T> value)? registerSuccess,
     TResult? Function(RegisterFailure<T> value)? registerFailure,
@@ -3588,9 +2685,6 @@ class _$ForgetPasswordFailureImpl<T> implements ForgetPasswordFailure<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AuthInitial<T> value)? initial,
-    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
-    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
-    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(RegisterLoading<T> value)? registerLoading,
     TResult Function(RegisterSuccess<T> value)? registerSuccess,
     TResult Function(RegisterFailure<T> value)? registerFailure,

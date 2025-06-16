@@ -12,21 +12,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../widgets/logo_and_text_widget.dart';
 
-class RegisterScreen extends StatefulWidget {
+class RegisterScreen extends StatelessWidget {
   final GlobalKey<FormState> registerFormKey = GlobalKey<FormState>();
 
   RegisterScreen({super.key});
-
-  @override
-  State<RegisterScreen> createState() => _RegisterScreenState();
-}
-
-class _RegisterScreenState extends State<RegisterScreen> {
-  @override
-  void initState() {
-    super.initState();
-    context.read<AuthCubit>().getAppInitData();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +39,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 text: "مستخدم جديد",
               ),
               RegisterInputWidget(
-                formKey: widget.registerFormKey,
+                formKey: registerFormKey,
               ),
               RegisterCheckBoxsWidget(),
               RegisterButton(
-                formKey: widget.registerFormKey,
+                formKey: registerFormKey,
               ),
               verticalSpace(16),
               DoYouHaveAccountWidget(),

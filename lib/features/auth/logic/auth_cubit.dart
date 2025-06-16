@@ -1,6 +1,6 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/helpers/helper_methods.dart';
-import 'package:aqar_ya_masr/features/auth/data/models/app_init_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/app_init_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/forget_password_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
@@ -9,6 +9,9 @@ import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../../../core/helpers/shared_pref_helper.dart';
+import '../../../core/helpers/shared_pref_keys.dart';
+import '../../../core/networking/dio_factory.dart';
 import '../../../core/routing/routes.dart';
 import 'auth_state.dart';
 
@@ -19,8 +22,8 @@ class AuthCubit extends Cubit<AuthState> {
 
 //Register
   final nameController = TextEditingController();
-  final phoneController = TextEditingController();
-  final passwordController = TextEditingController();
+  final phoneController = TextEditingController(text: "01099101469");
+  final passwordController = TextEditingController(text: "12345678");
   final cityController = TextEditingController();
   String? cityId;
   String? selectedCityName;
@@ -33,25 +36,7 @@ class AuthCubit extends Cubit<AuthState> {
   String? verifyCodeNumber;
   bool? isFromForgetPassword = false;
 
-  Future<void> getAppInitData() async {
-    emit(AuthState.getAppInitLoading());
-    final response = await authRepos.getAppInitData();
-    response.when(
-      success: (initData) {
-        emit(
-          AuthState.getAppInitSuccess(initData),
-        );
-        cities = initData.data?.cities ?? [];
-        license = initData.data?.about?.licenseAgreement;
-      },
-      failure: (e) =>
-          emit(
-            AuthState.getAppInitFailure(
-              errorMessage: e.toString(),
-            ),
-          ),
-    );
-  }
+
 
   Future<void> register(BuildContext context) async {
     emit(AuthState.registerLoading());
@@ -66,7 +51,7 @@ class AuthCubit extends Cubit<AuthState> {
     );
     response.when(
       success: (data) {
-        emit(AuthState.getAppInitSuccess(data));
+        emit(AuthState.registerSuccess(data));
         context.pushNamed(Routes.verifyCodeScreen,
             arguments: phoneController.text);
       },
@@ -109,8 +94,9 @@ class AuthCubit extends Cubit<AuthState> {
       ),
     );
     response.when(
-      success: (data) {
+      success: (data) async {
         emit(AuthState.loginSuccess(data));
+        await saveUserToken(data.data?.token ?? "");
         showToast(message: "Login successful");
         context.pushNamed(Routes.homeScreen);
       },
@@ -124,7 +110,7 @@ class AuthCubit extends Cubit<AuthState> {
   Future<void> forgetPassword(BuildContext context) async {
     emit(AuthState.forgetPasswordLoading());
     final response = await authRepos.forgetPassword(
-        ForgetPasswordRequestBody(phone: phoneController.text),
+      ForgetPasswordRequestBody(phone: phoneController.text),
     );
     response.when(
       success: (data) {
@@ -140,6 +126,14 @@ class AuthCubit extends Cubit<AuthState> {
         emit(AuthState.forgetPasswordFailure(errorMessage: e.toString()));
       },
     );
+  }
+
+  Future<void> saveUserToken(String token) async {
+    if (token.isEmpty) {
+      throw Exception("Token is empty or invalid.");
+    }
+    await SharedPrefHelper.setSecuredString(SharedPrefKeys.userToken, token);
+    DioFactory.setTokenIntoHeaderAfterLogin(token);
   }
 
 // Future<void> resendCode(BuildContext context) async {

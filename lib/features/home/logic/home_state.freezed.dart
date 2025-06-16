@@ -18,6 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$HomeState<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -44,6 +47,9 @@ mixin _$HomeState<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -67,6 +73,9 @@ mixin _$HomeState<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -91,6 +100,9 @@ mixin _$HomeState<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -114,6 +126,9 @@ mixin _$HomeState<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -137,6 +152,9 @@ mixin _$HomeState<T> {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -183,6 +201,768 @@ class _$HomeStateCopyWithImpl<T, $Res, $Val extends HomeState<T>>
 }
 
 /// @nodoc
+abstract class _$$GetAppInitLoadingImplCopyWith<T, $Res> {
+  factory _$$GetAppInitLoadingImplCopyWith(_$GetAppInitLoadingImpl<T> value,
+          $Res Function(_$GetAppInitLoadingImpl<T>) then) =
+      __$$GetAppInitLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$GetAppInitLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetAppInitLoadingImpl<T>>
+    implements _$$GetAppInitLoadingImplCopyWith<T, $Res> {
+  __$$GetAppInitLoadingImplCopyWithImpl(_$GetAppInitLoadingImpl<T> _value,
+      $Res Function(_$GetAppInitLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
+  const _$GetAppInitLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getAppInitLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetAppInitLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return getAppInitLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return getAppInitLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitLoading != null) {
+      return getAppInitLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return getAppInitLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return getAppInitLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitLoading != null) {
+      return getAppInitLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetAppInitLoading<T> implements HomeState<T> {
+  const factory GetAppInitLoading() = _$GetAppInitLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$GetAppInitSuccessImplCopyWith<T, $Res> {
+  factory _$$GetAppInitSuccessImplCopyWith(_$GetAppInitSuccessImpl<T> value,
+          $Res Function(_$GetAppInitSuccessImpl<T>) then) =
+      __$$GetAppInitSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$GetAppInitSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetAppInitSuccessImpl<T>>
+    implements _$$GetAppInitSuccessImplCopyWith<T, $Res> {
+  __$$GetAppInitSuccessImplCopyWithImpl(_$GetAppInitSuccessImpl<T> _value,
+      $Res Function(_$GetAppInitSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$GetAppInitSuccessImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
+  const _$GetAppInitSuccessImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getAppInitSuccess(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetAppInitSuccessImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GetAppInitSuccessImplCopyWith<T, _$GetAppInitSuccessImpl<T>>
+      get copyWith =>
+          __$$GetAppInitSuccessImplCopyWithImpl<T, _$GetAppInitSuccessImpl<T>>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return getAppInitSuccess(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return getAppInitSuccess?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitSuccess != null) {
+      return getAppInitSuccess(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return getAppInitSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return getAppInitSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitSuccess != null) {
+      return getAppInitSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetAppInitSuccess<T> implements HomeState<T> {
+  const factory GetAppInitSuccess(final T data) = _$GetAppInitSuccessImpl<T>;
+
+  T get data;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$GetAppInitSuccessImplCopyWith<T, _$GetAppInitSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetAppInitFailureImplCopyWith<T, $Res> {
+  factory _$$GetAppInitFailureImplCopyWith(_$GetAppInitFailureImpl<T> value,
+          $Res Function(_$GetAppInitFailureImpl<T>) then) =
+      __$$GetAppInitFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$GetAppInitFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetAppInitFailureImpl<T>>
+    implements _$$GetAppInitFailureImplCopyWith<T, $Res> {
+  __$$GetAppInitFailureImplCopyWithImpl(_$GetAppInitFailureImpl<T> _value,
+      $Res Function(_$GetAppInitFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$GetAppInitFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
+  const _$GetAppInitFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getAppInitFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetAppInitFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GetAppInitFailureImplCopyWith<T, _$GetAppInitFailureImpl<T>>
+      get copyWith =>
+          __$$GetAppInitFailureImplCopyWithImpl<T, _$GetAppInitFailureImpl<T>>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+  }) {
+    return getAppInitFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+  }) {
+    return getAppInitFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitFailure != null) {
+      return getAppInitFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+  }) {
+    return getAppInitFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+  }) {
+    return getAppInitFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    required TResult orElse(),
+  }) {
+    if (getAppInitFailure != null) {
+      return getAppInitFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetAppInitFailure<T> implements HomeState<T> {
+  const factory GetAppInitFailure({required final String errorMessage}) =
+      _$GetAppInitFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$GetAppInitFailureImplCopyWith<T, _$GetAppInitFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 abstract class _$$HomeInitialImplCopyWith<T, $Res> {
   factory _$$HomeInitialImplCopyWith(_$HomeInitialImpl<T> value,
           $Res Function(_$HomeInitialImpl<T>) then) =
@@ -223,6 +1003,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -252,6 +1035,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -278,6 +1064,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -308,6 +1097,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -334,6 +1126,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -360,6 +1155,9 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -434,6 +1232,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -463,6 +1264,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -489,6 +1293,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -519,6 +1326,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -545,6 +1355,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -571,6 +1384,9 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -673,6 +1489,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -702,6 +1521,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -728,6 +1550,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -758,6 +1583,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -784,6 +1612,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -810,6 +1641,9 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -921,6 +1755,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -950,6 +1787,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -976,6 +1816,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1006,6 +1849,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -1032,6 +1878,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1058,6 +1907,9 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1141,6 +1993,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -1170,6 +2025,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1196,6 +2054,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1226,6 +2087,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -1252,6 +2116,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1278,6 +2145,9 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1380,6 +2250,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -1409,6 +2282,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1435,6 +2311,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1465,6 +2344,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -1491,6 +2373,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1517,6 +2402,9 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1628,6 +2516,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -1657,6 +2548,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1683,6 +2577,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1713,6 +2610,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -1739,6 +2639,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1765,6 +2668,9 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1848,6 +2754,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -1877,6 +2786,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1903,6 +2815,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -1933,6 +2848,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -1959,6 +2877,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -1985,6 +2906,9 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2087,6 +3011,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -2116,6 +3043,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2142,6 +3072,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2172,6 +3105,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -2198,6 +3134,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2224,6 +3163,9 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2335,6 +3277,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -2364,6 +3309,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2390,6 +3338,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2420,6 +3371,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -2446,6 +3400,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2472,6 +3429,9 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2555,6 +3515,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -2584,6 +3547,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2610,6 +3576,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2640,6 +3609,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -2666,6 +3638,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2692,6 +3667,9 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2795,6 +3773,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -2824,6 +3805,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2850,6 +3834,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -2880,6 +3867,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -2906,6 +3896,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -2932,6 +3925,9 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3044,6 +4040,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -3073,6 +4072,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3099,6 +4101,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3129,6 +4134,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -3155,6 +4163,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3181,6 +4192,9 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3264,6 +4278,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -3293,6 +4310,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3319,6 +4339,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3349,6 +4372,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -3375,6 +4401,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3401,6 +4430,9 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3503,6 +4535,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -3532,6 +4567,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3558,6 +4596,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3588,6 +4629,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -3614,6 +4658,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3640,6 +4687,9 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3751,6 +4801,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -3780,6 +4833,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3806,6 +4862,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -3836,6 +4895,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -3862,6 +4924,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3888,6 +4953,9 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -3970,6 +5038,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -3999,6 +5070,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4025,6 +5099,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4055,6 +5132,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -4081,6 +5161,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -4107,6 +5190,9 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -4209,6 +5295,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -4238,6 +5327,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4264,6 +5356,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4294,6 +5389,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -4320,6 +5418,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -4346,6 +5447,9 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -4457,6 +5561,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
     required TResult Function() initial,
     required TResult Function() aqarMomayasLoading,
     required TResult Function(AqarMomayasModel aqarMomayasModel)
@@ -4486,6 +5593,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
     TResult? Function()? initial,
     TResult? Function()? aqarMomayasLoading,
     TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4512,6 +5622,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
     TResult Function()? initial,
     TResult Function()? aqarMomayasLoading,
     TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
@@ -4542,6 +5655,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
     required TResult Function(HomeInitial<T> value) initial,
     required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
     required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
@@ -4568,6 +5684,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult? Function(HomeInitial<T> value)? initial,
     TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
@@ -4594,6 +5713,9 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
     TResult Function(HomeInitial<T> value)? initial,
     TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
     TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
