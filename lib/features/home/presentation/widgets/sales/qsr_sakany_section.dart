@@ -1,10 +1,10 @@
-import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:aqar_ya_masr/features/home/presentation/widgets/sales/qsr_sakany_single_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/theming/app_styles.dart';
+import '../../../data/models/sale/qsr_sakany_model.dart';
 import '../../../logic/home_state.dart';
 
 class QsrSakanySection extends StatelessWidget {
@@ -19,7 +19,7 @@ class QsrSakanySection extends StatelessWidget {
           current is QsrSakanyFailure,
       builder: (context, state) {
         return state.maybeWhen(
-          qsrSakanyLoading: () => setupLoading(),
+          // qsrSakanyLoading: () => setupLoading(),
           qsrSakanySuccess: (asrSakany) => setupSuccess(asrSakany),
           qsrSakanyFailure: (error) => setupError(error),
           orElse: () => const SizedBox.shrink(),

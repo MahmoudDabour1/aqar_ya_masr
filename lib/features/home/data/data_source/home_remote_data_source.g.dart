@@ -36,7 +36,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
     )
         .compose(
           _dio.options,
-          'ads?is_featured=1&limit=${limit}',
+          'ads?is_featured=1&limit=${limit}&contract_type=sale',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -69,7 +69,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
     )
         .compose(
           _dio.options,
-          'ads?type_id=6&limit=${limit}',
+          'ads?type_id=6&limit=${limit}&contract_type=sale',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -102,7 +102,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
     )
         .compose(
           _dio.options,
-          'ads?type_id=7&limit=${limit}',
+          'ads?type_id=7&limit=${limit}&contract_type=sale',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -135,7 +135,7 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
     )
         .compose(
           _dio.options,
-          'ads?type_id=8&limit=${limit}',
+          'ads?type_id=8&limit=${limit}&contract_type=sale',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -247,6 +247,138 @@ class _HomeRemoteDataSource implements HomeRemoteDataSource {
     late AppInitModel _value;
     try {
       _value = AppInitModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AqarMomayasRentModel> getAqarMomayasRentData(int limit) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<AqarMomayasRentModel>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'ads?is_featured=1&limit=${limit}&contract_type=rent',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AqarMomayasRentModel _value;
+    try {
+      _value = AqarMomayasRentModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<QsrSakanyRentModel> getQsrSakanyRentData(int limit) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<QsrSakanyRentModel>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'ads?type_id=6&limit=${limit}&contract_type=rent',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late QsrSakanyRentModel _value;
+    try {
+      _value = QsrSakanyRentModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<VillaSakanyRentModel> getVillaSakanyRentData(int limit) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<VillaSakanyRentModel>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'ads?type_id=7&limit=${limit}&contract_type=rent',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late VillaSakanyRentModel _value;
+    try {
+      _value = VillaSakanyRentModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<FlatSakanyRentModel> getFlatSakanyRentData(int limit) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<FlatSakanyRentModel>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'ads?type_id=8&limit=${limit}&contract_type=rent',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late FlatSakanyRentModel _value;
+    try {
+      _value = FlatSakanyRentModel.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;

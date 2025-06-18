@@ -28,12 +28,12 @@ class DioFactory {
     final token =
         await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken);
 
-    if (token == null || token.isEmpty) {
-      throw Exception("User token is missing or invalid.");
-    }
+    // if (token == null || token.isEmpty) {
+    //   throw Exception("User token is missing or invalid.");
+    // }
     dio?.options.headers = {
       'Accept': 'application/json',
-      // 'Authorization': 'Bearer $token',
+      'Authorization': 'Bearer $token',
       'x-secret-key':"2KwG1hilCWiCLyEX4bwhdZJBmtjvIpqNGwn",
       'Content-Type': 'application/json',
     };

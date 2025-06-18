@@ -6,6 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:aqar_ya_masr/aqar_ya_masr.dart';
+import 'package:aqar_ya_masr/core/helpers/shared_pref_helper.dart';
 import 'package:aqar_ya_masr/core/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -13,7 +14,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(AqarYaMasr(appRouter: AppRouter()));
+    await tester.pumpWidget(AqarYaMasr(appRouter: AppRouter(),type: "sale",));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

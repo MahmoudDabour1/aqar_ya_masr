@@ -24,4 +24,23 @@ class InfoCubit extends Cubit<InfoState> {
       },
     );
   }
+
+  Future<void> getProfileData() async {
+    emit(InfoState.profileDataLoading());
+    final response = await infoRepos.getProfileData();
+    response.when(
+      success: (profileData) {
+        emit(
+          InfoState.profileDataSuccess(profileData),
+        );
+      },
+      failure: (e) {
+        emit(
+          InfoState.profileDataFailure(error: e.data!.errors.toString()),
+        );
+      },
+    );
+  }
+
+
 }

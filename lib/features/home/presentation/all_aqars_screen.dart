@@ -13,12 +13,12 @@ import '../logic/home_state.dart';
 
 class AllAqarScreen extends StatefulWidget {
   final String appBatTitle;
-  final String model;
+  final AqarType aqarType;
 
   const AllAqarScreen({
     super.key,
     required this.appBatTitle,
-    required this.model,
+    required this.aqarType,
   });
 
   @override
@@ -30,23 +30,33 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
   void initState() {
     final cubit = context.read<HomeCubit>();
     super.initState();
-    switch (widget.model) {
-      case "AqarMomayasModel":
+    switch (widget.aqarType) {
+      case AqarType.aqarMomayas:
         cubit.getAqarMomayasData(500);
         break;
-      case "CompoundModel":
+      case AqarType.compound:
         cubit.getCompounds(500);
         break;
-      case "QsrSakanyModel":
+      case AqarType.qsrSakany:
         cubit.getQsrSakanyData(500);
         break;
-      case "VillaSakanyModel":
+      case AqarType.villaSakany:
         cubit.getVillaSakanyData(500);
         break;
-      case "FlatSakanyModel":
+      case AqarType.flatSakany:
         cubit.getFlatSakanyData(500);
         break;
-      default:
+      case AqarType.aqarMomayasRent:
+        cubit.getAqarMomayasRentData(500);
+        break;
+      case AqarType.qsrSakanyRent:
+        cubit.getQsrSakanyRentData(500);
+        break;
+      case AqarType.villaSakanyRent:
+        cubit.getVillaSakanyRentData(500);
+        break;
+      case AqarType.flatSakanyRent:
+        cubit.getFlatSakanyRentData(500);
         break;
     }
   }
@@ -88,7 +98,19 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
             current is CompoundFailure ||
             current is AqarMomayasLoading ||
             current is AqarMomayasSuccess ||
-            current is AqarMomayasFailure,
+            current is AqarMomayasFailure||
+            current is AqarMomayasRentLoading ||
+            current is AqarMomayasRentSuccess ||
+            current is AqarMomayasRentFailure ||
+            current is QsrSakanyRentLoading ||
+            current is QsrSakanyRentSuccess ||
+            current is QsrSakanyRentFailure ||
+            current is VillaSakanyRentLoading ||
+            current is VillaSakanyRentSuccess ||
+            current is VillaSakanyRentFailure ||
+            current is FlatSakanyRentLoading ||
+            current is FlatSakanyRentSuccess ||
+            current is FlatSakanyRentFailure,
         builder: (context, state) {
           return state.maybeWhen(
             aqarMomayasSuccess: (aqarMomayas) =>
@@ -106,6 +128,19 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
             qsrSakanyLoading: () => setupLoading(),
             villaSakanyLoading: () => setupLoading(),
             flatSakanyLoading: () => setupLoading(),
+           villaSakanyRentLoading: () => setupLoading(),
+            villaSakanyRentSuccess: (villaSakanyRent) =>
+                setupSuccess(villaSakanyRent.data?.ads ?? []),
+            flatSakanyRentLoading: () => setupLoading(),
+            flatSakanyRentSuccess: (flatSakanyRent) =>
+                setupSuccess(flatSakanyRent.data?.ads ?? []),
+            qsrSakanyRentLoading: () => setupLoading(),
+            qsrSakanyRentSuccess: (qsrSakanyRent) =>
+                setupSuccess(qsrSakanyRent.data?.ads ?? []),
+            aqarMomayasRentLoading: () => setupLoading(),
+            aqarMomayasRentSuccess: (aqarMomayasRent) =>
+                setupSuccess(aqarMomayasRent.data?.ads ?? []),
+
             orElse: () => SizedBox.shrink(),
           );
         },
@@ -138,4 +173,16 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
       ),
     );
   }
+}
+
+enum AqarType {
+  aqarMomayas,
+  compound,
+  qsrSakany,
+  villaSakany,
+  flatSakany,
+  aqarMomayasRent,
+  qsrSakanyRent,
+  villaSakanyRent,
+  flatSakanyRent,
 }

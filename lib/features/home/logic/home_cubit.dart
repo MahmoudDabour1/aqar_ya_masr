@@ -16,8 +16,6 @@ class HomeCubit extends Cubit<HomeState> {
         emit(
           HomeState.getAppInitSuccess(initData),
         );
-        // cities = initData.data?.cities ?? [];
-        // license = initData.data?.about?.licenseAgreement;
       },
       failure: (e) => emit(
         HomeState.getAppInitFailure(
@@ -122,6 +120,88 @@ class HomeCubit extends Cubit<HomeState> {
       failure: (error) {
         emit(
           HomeState.compoundFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
+
+  void getSaleData() async {
+    emit(HomeState.getSaleLoading());
+    await Future.wait([
+      getAqarMomayasData(6),
+      getCompounds(6),
+      getQsrSakanyData(6),
+      getVillaSakanyData(6),
+      getFlatSakanyData(6),
+    ]);
+
+    emit(HomeState.getSaleSuccess());
+  }
+
+  //rent
+  Future<void> getAqarMomayasRentData(int limit) async {
+    emit(HomeState.aqarMomayasRentLoading());
+    final response = await homeRepo.getAqarMomayasRentData(limit);
+    response.when(
+      success: (data) {
+        emit(HomeState.aqarMomayasRentSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.aqarMomayasRentFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> getQsrSakanyRentData(int limit) async {
+    emit(HomeState.qsrSakanyRentLoading());
+    final response = await homeRepo.getQsrSakanyRentData(limit);
+    response.when(
+      success: (data) {
+        emit(HomeState.qsrSakanyRentSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.qsrSakanyRentFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> getVillaSakanyRentData(int limit) async {
+    emit(HomeState.villaSakanyRentLoading());
+    final response = await homeRepo.getVillaSakanyRentData(limit);
+    response.when(
+      success: (data) {
+        emit(HomeState.villaSakanyRentSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.villaSakanyRentFailure(
+            errorMessage: error.toString(),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> getFlatSakanyRentData(int limit) async {
+    emit(HomeState.flatSakanyRentLoading());
+    final response = await homeRepo.getFlatSakanyRentData(limit);
+    response.when(
+      success: (data) {
+        emit(HomeState.flatSakanyRentSuccess(data));
+      },
+      failure: (error) {
+        emit(
+          HomeState.flatSakanyRentFailure(
             errorMessage: error.toString(),
           ),
         );

@@ -7,4 +7,5 @@ class SharedPrefKeys {
   static const String userType = 'userType';
   static const String userTypeId = 'userTypeId';
   static const String userBusinessTypeId = 'userBusinessTypeId';
+  static const String selectedTab = 'selectedTab';
 }

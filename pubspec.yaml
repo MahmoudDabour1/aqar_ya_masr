@@ -67,6 +67,8 @@ dependencies:
   verification_code_field: ^1.0.8
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  google_nav_bar: ^5.0.7
+
 
 # Automatically generate code for converting to and from JSON by annotating Dart classes
 # Code generator (mainly used with cubit & retrofit)

@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_styles.dart';
-import '../../../data/models/aqar_momayas_model.dart';
+import '../../../data/models/sale/aqar_momayas_model.dart';
 import '../all_aqar_button.dart';
 import '../list_view_item_widget.dart';
 
@@ -31,7 +31,7 @@ class AqarMomayasSingleItem extends StatelessWidget {
               const Spacer(),
               AllAqarButton(
                 navigationTarget: AllAqarScreen(
-                  model: "AqarMomayasModel",
+                  aqarType: AqarType.aqarMomayas,
                   appBatTitle: "العقارات المميزه",
                 ),
               ),
