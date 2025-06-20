@@ -99,11 +99,15 @@ class _MoreServicesContainerWidgetState
                                 title: "هل أنت متأكد من تسجيل الخروج؟",
                                 buttonText: "تسجيل الخروج",
                                 onPressed: () async {
-                                  await SharedPrefHelper.clearAllSecuredData();
+                                  await SharedPrefHelper.removeSecuredString(
+                                      SharedPrefKeys.userToken);
                                   Navigator.of(context).pop();
                                   setState(() {
                                     isLoggedInUser = false;
                                   });
+                                  context.pushNameAndRemoveUntil(
+                                      Routes.loginScreen,
+                                      predicate: (route) => false);
                                 },
                               );
                             },

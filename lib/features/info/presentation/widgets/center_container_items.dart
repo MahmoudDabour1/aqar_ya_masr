@@ -24,7 +24,7 @@ class CenterContainerItems extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => AllAqarScreen(
-                  model: "CompoundModel",
+                  aqarType: AqarType.compound,
                   appBatTitle: "كومبوندات",
                 ),
               ),

@@ -1,10 +1,15 @@
 import 'package:aqar_ya_masr/features/home/data/models/ad_details_model.dart';
-import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
-import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
-import 'package:aqar_ya_masr/features/home/data/models/flat_sakany_model.dart';
-import 'package:aqar_ya_masr/features/home/data/models/qsr_sakany_model.dart';
-import 'package:aqar_ya_masr/features/home/data/models/villa_sakany_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/sale/aqar_momayas_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+
+import '../data/models/rent/aqar_momayas_rent_model.dart';
+import '../data/models/rent/falt_sakany_rent_model.dart';
+import '../data/models/rent/qsr_sakany_rent_model.dart';
+import '../data/models/rent/villa_sakany_rent_model.dart';
+import '../data/models/sale/compound_model.dart';
+import '../data/models/sale/flat_sakany_model.dart';
+import '../data/models/sale/qsr_sakany_model.dart';
+import '../data/models/sale/villa_sakany_model.dart';
 
 part 'home_state.freezed.dart';
 
@@ -15,7 +20,7 @@ class HomeState<T> with _$HomeState<T> {
   const factory HomeState.getAppInitSuccess(T data) = GetAppInitSuccess<T>;
 
   const factory HomeState.getAppInitFailure({required String errorMessage}) =
-  GetAppInitFailure<T>;
+      GetAppInitFailure<T>;
 
   const factory HomeState.initial() = HomeInitial;
 
@@ -61,9 +66,47 @@ class HomeState<T> with _$HomeState<T> {
 
   const factory HomeState.compoundLoading() = CompoundLoading;
 
-  const factory HomeState.compoundSuccess(CompoundModel  compoundModel ) =
-  CompoundSuccess;
+  const factory HomeState.compoundSuccess(CompoundModel compoundModel) =
+      CompoundSuccess;
 
   const factory HomeState.compoundFailure({required String errorMessage}) =
-  CompoundFailure;
+      CompoundFailure;
+
+  const factory HomeState.getSaleLoading() = GetSaleLoading;
+  const factory HomeState.getSaleSuccess() = GetSaleSuccess;
+  const factory HomeState.getSaleFailure(String error) = GetSaleFailure;
+
+
+  //rent
+  const factory HomeState.aqarMomayasRentLoading() = AqarMomayasRentLoading;
+
+  const factory HomeState.aqarMomayasRentSuccess(
+      AqarMomayasRentModel aqarMomayasModel) = AqarMomayasRentSuccess;
+
+  const factory HomeState.aqarMomayasRentFailure(
+      {required String errorMessage}) = AqarMomayasRentFailure;
+
+  const factory HomeState.qsrSakanyRentLoading() = QsrSakanyRentLoading;
+
+  const factory HomeState.qsrSakanyRentSuccess(
+      QsrSakanyRentModel qsrSakanyModel) = QsrSakanyRentSuccess;
+
+  const factory HomeState.qsrSakanyRentFailure({required String errorMessage}) =
+      QsrSakanyRentFailure;
+
+  const factory HomeState.villaSakanyRentLoading() = VillaSakanyRentLoading;
+
+  const factory HomeState.villaSakanyRentSuccess(
+      VillaSakanyRentModel villaSakanyModel) = VillaSakanyRentSuccess;
+
+  const factory HomeState.villaSakanyRentFailure(
+      {required String errorMessage}) = VillaSakanyRentFailure;
+
+  const factory HomeState.flatSakanyRentLoading() = FlatSakanyRentLoading;
+
+  const factory HomeState.flatSakanyRentSuccess(
+      FlatSakanyRentModel flatSakanyModel) = FlatSakanyRentSuccess;
+
+  const factory HomeState.flatSakanyRentFailure(
+      {required String errorMessage}) = FlatSakanyRentFailure;
 }

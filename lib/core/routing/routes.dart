@@ -10,6 +10,9 @@ abstract class Routes{
   static const String priceGuideScreen = '/PriceGuideScreen';
   static const String aboutAqarMasrScreen = '/AboutAqarMasrScreen';
   static const String contactUsScreen = '/ContactUsScreen';
+  static const String editUserDataScreen = '/EditUserDataScreen';
+  static const String bottomNavBarLayout = '/BottomNavBarLayout';
+  static const String mapsScreen = '/MapsScreen';
 
 
 }

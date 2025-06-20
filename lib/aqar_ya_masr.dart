@@ -1,5 +1,6 @@
 import 'package:aqar_ya_masr/core/routing/app_router.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
+import 'package:aqar_ya_masr/features/info/logic/info_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -13,10 +14,12 @@ import 'features/home/logic/home_cubit.dart';
 
 class AqarYaMasr extends StatelessWidget {
   final AppRouter appRouter;
+  final String type ;
 
   const AqarYaMasr({
     super.key,
     required this.appRouter,
+    required this.type,
   });
 
   @override
@@ -27,13 +30,9 @@ class AqarYaMasr extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => AuthCubit(sl())),
         BlocProvider(
-          create: (context) => HomeCubit(sl())
-            ..getAqarMomayasData(6)
-            ..getCompounds(6)
-            ..getQsrSakanyData(6)
-            ..getVillaSakanyData(6)
-            ..getFlatSakanyData(6),
+          create: (context) => HomeCubit(sl()),
         ),
+        BlocProvider(create: (_) => InfoCubit(sl())),
       ],
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
@@ -57,7 +56,7 @@ class AqarYaMasr extends StatelessWidget {
             onGenerateRoute: appRouter.generateRoute,
             debugShowCheckedModeBanner: false,
             navigatorObservers: [NavigatorObserver(), routeObserver],
-            initialRoute: Routes.infoScreen,
+            initialRoute: Routes.bottomNavBarLayout,
           ),
         ),
       ),

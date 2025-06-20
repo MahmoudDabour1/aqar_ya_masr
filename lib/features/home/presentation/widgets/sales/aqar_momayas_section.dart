@@ -1,5 +1,5 @@
 import 'package:aqar_ya_masr/core/theming/app_styles.dart';
-import 'package:aqar_ya_masr/features/home/data/models/aqar_momayas_model.dart';
+import 'package:aqar_ya_masr/features/home/data/models/sale/aqar_momayas_model.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,7 +19,7 @@ class AqarMomayasSection extends StatelessWidget {
           current is AqarMomayasFailure,
       builder: (context, state) {
         return state.maybeWhen(
-          aqarMomayasLoading: () => setupLoading(),
+          // aqarMomayasLoading: () => setupLoading(),
           aqarMomayasSuccess: (aqarMomayas) => setupSuccess(aqarMomayas),
           aqarMomayasFailure: (error) => setupError(error),
           orElse: () => const SizedBox.shrink(),

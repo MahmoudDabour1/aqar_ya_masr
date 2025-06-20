@@ -1,5 +1,4 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
-import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -7,6 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/theming/app_styles.dart';
 import '../../../../../core/utils/spacing.dart';
+import '../../../data/models/sale/compound_model.dart';
 import '../../all_aqars_screen.dart';
 import '../all_aqar_button.dart';
 import '../list_view_item_widget.dart';
@@ -35,7 +35,7 @@ class CompoundSingleItem extends StatelessWidget {
               const Spacer(),
               AllAqarButton(
                 navigationTarget: AllAqarScreen(
-                  model: "CompoundModel",
+                  aqarType: AqarType.compound,
                   appBatTitle: "كومبوندات",
                 ),
               ),

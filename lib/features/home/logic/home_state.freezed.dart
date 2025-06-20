@@ -43,6 +43,25 @@ mixin _$HomeState<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +88,24 @@ mixin _$HomeState<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -95,6 +132,24 @@ mixin _$HomeState<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -122,6 +177,33 @@ mixin _$HomeState<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -148,6 +230,21 @@ mixin _$HomeState<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -174,6 +271,21 @@ mixin _$HomeState<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -267,6 +379,25 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return getAppInitLoading();
   }
@@ -296,6 +427,24 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return getAppInitLoading?.call();
   }
@@ -325,6 +474,24 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitLoading != null) {
@@ -358,6 +525,33 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return getAppInitLoading(this);
   }
@@ -387,6 +581,21 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return getAppInitLoading?.call(this);
   }
@@ -416,6 +625,21 @@ class _$GetAppInitLoadingImpl<T> implements GetAppInitLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitLoading != null) {
@@ -525,6 +749,25 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return getAppInitSuccess(data);
   }
@@ -554,6 +797,24 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return getAppInitSuccess?.call(data);
   }
@@ -583,6 +844,24 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitSuccess != null) {
@@ -616,6 +895,33 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return getAppInitSuccess(this);
   }
@@ -645,6 +951,21 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return getAppInitSuccess?.call(this);
   }
@@ -674,6 +995,21 @@ class _$GetAppInitSuccessImpl<T> implements GetAppInitSuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitSuccess != null) {
@@ -791,6 +1127,25 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return getAppInitFailure(errorMessage);
   }
@@ -820,6 +1175,24 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return getAppInitFailure?.call(errorMessage);
   }
@@ -849,6 +1222,24 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitFailure != null) {
@@ -882,6 +1273,33 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return getAppInitFailure(this);
   }
@@ -911,6 +1329,21 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return getAppInitFailure?.call(this);
   }
@@ -940,6 +1373,21 @@ class _$GetAppInitFailureImpl<T> implements GetAppInitFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (getAppInitFailure != null) {
@@ -1028,6 +1476,25 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return initial();
   }
@@ -1057,6 +1524,24 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return initial?.call();
   }
@@ -1086,6 +1571,24 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -1119,6 +1622,33 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return initial(this);
   }
@@ -1148,6 +1678,21 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return initial?.call(this);
   }
@@ -1177,6 +1722,21 @@ class _$HomeInitialImpl<T> implements HomeInitial<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -1257,6 +1817,25 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return aqarMomayasLoading();
   }
@@ -1286,6 +1865,24 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return aqarMomayasLoading?.call();
   }
@@ -1315,6 +1912,24 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -1348,6 +1963,33 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return aqarMomayasLoading(this);
   }
@@ -1377,6 +2019,21 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return aqarMomayasLoading?.call(this);
   }
@@ -1406,6 +2063,21 @@ class _$AqarMomayasLoadingImpl<T> implements AqarMomayasLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasLoading != null) {
@@ -1514,6 +2186,25 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return aqarMomayasSuccess(aqarMomayasModel);
   }
@@ -1543,6 +2234,24 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return aqarMomayasSuccess?.call(aqarMomayasModel);
   }
@@ -1572,6 +2281,24 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -1605,6 +2332,33 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return aqarMomayasSuccess(this);
   }
@@ -1634,6 +2388,21 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return aqarMomayasSuccess?.call(this);
   }
@@ -1663,6 +2432,21 @@ class _$AqarMomayasSuccessImpl<T> implements AqarMomayasSuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasSuccess != null) {
@@ -1780,6 +2564,25 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return aqarMomayasFailure(errorMessage);
   }
@@ -1809,6 +2612,24 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return aqarMomayasFailure?.call(errorMessage);
   }
@@ -1838,6 +2659,24 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -1871,6 +2710,33 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return aqarMomayasFailure(this);
   }
@@ -1900,6 +2766,21 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return aqarMomayasFailure?.call(this);
   }
@@ -1929,6 +2810,21 @@ class _$AqarMomayasFailureImpl<T> implements AqarMomayasFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (aqarMomayasFailure != null) {
@@ -2018,6 +2914,25 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return qsrSakanyLoading();
   }
@@ -2047,6 +2962,24 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return qsrSakanyLoading?.call();
   }
@@ -2076,6 +3009,24 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -2109,6 +3060,33 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return qsrSakanyLoading(this);
   }
@@ -2138,6 +3116,21 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return qsrSakanyLoading?.call(this);
   }
@@ -2167,6 +3160,21 @@ class _$QsrSakanyLoadingImpl<T> implements QsrSakanyLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyLoading != null) {
@@ -2275,6 +3283,25 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return qsrSakanySuccess(qsrSakanyModel);
   }
@@ -2304,6 +3331,24 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return qsrSakanySuccess?.call(qsrSakanyModel);
   }
@@ -2333,6 +3378,24 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -2366,6 +3429,33 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return qsrSakanySuccess(this);
   }
@@ -2395,6 +3485,21 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return qsrSakanySuccess?.call(this);
   }
@@ -2424,6 +3529,21 @@ class _$QsrSakanySuccessImpl<T> implements QsrSakanySuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanySuccess != null) {
@@ -2541,6 +3661,25 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return qsrSakanyFailure(errorMessage);
   }
@@ -2570,6 +3709,24 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return qsrSakanyFailure?.call(errorMessage);
   }
@@ -2599,6 +3756,24 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -2632,6 +3807,33 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return qsrSakanyFailure(this);
   }
@@ -2661,6 +3863,21 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return qsrSakanyFailure?.call(this);
   }
@@ -2690,6 +3907,21 @@ class _$QsrSakanyFailureImpl<T> implements QsrSakanyFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (qsrSakanyFailure != null) {
@@ -2779,6 +4011,25 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return villaSakanyLoading();
   }
@@ -2808,6 +4059,24 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return villaSakanyLoading?.call();
   }
@@ -2837,6 +4106,24 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -2870,6 +4157,33 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return villaSakanyLoading(this);
   }
@@ -2899,6 +4213,21 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return villaSakanyLoading?.call(this);
   }
@@ -2928,6 +4257,21 @@ class _$VillaSakanyLoadingImpl<T> implements VillaSakanyLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyLoading != null) {
@@ -3036,6 +4380,25 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return villaSakanySuccess(villaSakanyModel);
   }
@@ -3065,6 +4428,24 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return villaSakanySuccess?.call(villaSakanyModel);
   }
@@ -3094,6 +4475,24 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -3127,6 +4526,33 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return villaSakanySuccess(this);
   }
@@ -3156,6 +4582,21 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return villaSakanySuccess?.call(this);
   }
@@ -3185,6 +4626,21 @@ class _$VillaSakanySuccessImpl<T> implements VillaSakanySuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanySuccess != null) {
@@ -3302,6 +4758,25 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return villaSakanyFailure(errorMessage);
   }
@@ -3331,6 +4806,24 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return villaSakanyFailure?.call(errorMessage);
   }
@@ -3360,6 +4853,24 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -3393,6 +4904,33 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return villaSakanyFailure(this);
   }
@@ -3422,6 +4960,21 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return villaSakanyFailure?.call(this);
   }
@@ -3451,6 +5004,21 @@ class _$VillaSakanyFailureImpl<T> implements VillaSakanyFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (villaSakanyFailure != null) {
@@ -3540,6 +5108,25 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return flatSakanyLoading();
   }
@@ -3569,6 +5156,24 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return flatSakanyLoading?.call();
   }
@@ -3598,6 +5203,24 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -3631,6 +5254,33 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return flatSakanyLoading(this);
   }
@@ -3660,6 +5310,21 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return flatSakanyLoading?.call(this);
   }
@@ -3689,6 +5354,21 @@ class _$FlatSakanyLoadingImpl<T> implements FlatSakanyLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyLoading != null) {
@@ -3798,6 +5478,25 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return flatSakanySuccess(flatSakanyModel);
   }
@@ -3827,6 +5526,24 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return flatSakanySuccess?.call(flatSakanyModel);
   }
@@ -3856,6 +5573,24 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -3889,6 +5624,33 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return flatSakanySuccess(this);
   }
@@ -3918,6 +5680,21 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return flatSakanySuccess?.call(this);
   }
@@ -3947,6 +5724,21 @@ class _$FlatSakanySuccessImpl<T> implements FlatSakanySuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanySuccess != null) {
@@ -4065,6 +5857,25 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return flatSakanyFailure(errorMessage);
   }
@@ -4094,6 +5905,24 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return flatSakanyFailure?.call(errorMessage);
   }
@@ -4123,6 +5952,24 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -4156,6 +6003,33 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return flatSakanyFailure(this);
   }
@@ -4185,6 +6059,21 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return flatSakanyFailure?.call(this);
   }
@@ -4214,6 +6103,21 @@ class _$FlatSakanyFailureImpl<T> implements FlatSakanyFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (flatSakanyFailure != null) {
@@ -4303,6 +6207,25 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return adDetailsLoading();
   }
@@ -4332,6 +6255,24 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return adDetailsLoading?.call();
   }
@@ -4361,6 +6302,24 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsLoading != null) {
@@ -4394,6 +6353,33 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return adDetailsLoading(this);
   }
@@ -4423,6 +6409,21 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return adDetailsLoading?.call(this);
   }
@@ -4452,6 +6453,21 @@ class _$AdDetailsLoadingImpl<T> implements AdDetailsLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsLoading != null) {
@@ -4560,6 +6576,25 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return adDetailsSuccess(adDetailsModel);
   }
@@ -4589,6 +6624,24 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return adDetailsSuccess?.call(adDetailsModel);
   }
@@ -4618,6 +6671,24 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsSuccess != null) {
@@ -4651,6 +6722,33 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return adDetailsSuccess(this);
   }
@@ -4680,6 +6778,21 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return adDetailsSuccess?.call(this);
   }
@@ -4709,6 +6822,21 @@ class _$AdDetailsSuccessImpl<T> implements AdDetailsSuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsSuccess != null) {
@@ -4826,6 +6954,25 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return adDetailsFailure(errorMessage);
   }
@@ -4855,6 +7002,24 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return adDetailsFailure?.call(errorMessage);
   }
@@ -4884,6 +7049,24 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsFailure != null) {
@@ -4917,6 +7100,33 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return adDetailsFailure(this);
   }
@@ -4946,6 +7156,21 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return adDetailsFailure?.call(this);
   }
@@ -4975,6 +7200,21 @@ class _$AdDetailsFailureImpl<T> implements AdDetailsFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (adDetailsFailure != null) {
@@ -5063,6 +7303,25 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return compoundLoading();
   }
@@ -5092,6 +7351,24 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return compoundLoading?.call();
   }
@@ -5121,6 +7398,24 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundLoading != null) {
@@ -5154,6 +7449,33 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return compoundLoading(this);
   }
@@ -5183,6 +7505,21 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return compoundLoading?.call(this);
   }
@@ -5212,6 +7549,21 @@ class _$CompoundLoadingImpl<T> implements CompoundLoading<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundLoading != null) {
@@ -5320,6 +7672,25 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return compoundSuccess(compoundModel);
   }
@@ -5349,6 +7720,24 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return compoundSuccess?.call(compoundModel);
   }
@@ -5378,6 +7767,24 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundSuccess != null) {
@@ -5411,6 +7818,33 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return compoundSuccess(this);
   }
@@ -5440,6 +7874,21 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return compoundSuccess?.call(this);
   }
@@ -5469,6 +7918,21 @@ class _$CompoundSuccessImpl<T> implements CompoundSuccess<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundSuccess != null) {
@@ -5586,6 +8050,25 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     required TResult Function() compoundLoading,
     required TResult Function(CompoundModel compoundModel) compoundSuccess,
     required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
   }) {
     return compoundFailure(errorMessage);
   }
@@ -5615,6 +8098,24 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     TResult? Function()? compoundLoading,
     TResult? Function(CompoundModel compoundModel)? compoundSuccess,
     TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
   }) {
     return compoundFailure?.call(errorMessage);
   }
@@ -5644,6 +8145,24 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     TResult Function()? compoundLoading,
     TResult Function(CompoundModel compoundModel)? compoundSuccess,
     TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundFailure != null) {
@@ -5677,6 +8196,33 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     required TResult Function(CompoundLoading<T> value) compoundLoading,
     required TResult Function(CompoundSuccess<T> value) compoundSuccess,
     required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
   }) {
     return compoundFailure(this);
   }
@@ -5706,6 +8252,21 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     TResult? Function(CompoundLoading<T> value)? compoundLoading,
     TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
   }) {
     return compoundFailure?.call(this);
   }
@@ -5735,6 +8296,21 @@ class _$CompoundFailureImpl<T> implements CompoundFailure<T> {
     TResult Function(CompoundLoading<T> value)? compoundLoading,
     TResult Function(CompoundSuccess<T> value)? compoundSuccess,
     TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
     required TResult orElse(),
   }) {
     if (compoundFailure != null) {
@@ -5755,4 +8331,5472 @@ abstract class CompoundFailure<T> implements HomeState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompoundFailureImplCopyWith<T, _$CompoundFailureImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetSaleLoadingImplCopyWith<T, $Res> {
+  factory _$$GetSaleLoadingImplCopyWith(_$GetSaleLoadingImpl<T> value,
+          $Res Function(_$GetSaleLoadingImpl<T>) then) =
+      __$$GetSaleLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$GetSaleLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetSaleLoadingImpl<T>>
+    implements _$$GetSaleLoadingImplCopyWith<T, $Res> {
+  __$$GetSaleLoadingImplCopyWithImpl(_$GetSaleLoadingImpl<T> _value,
+      $Res Function(_$GetSaleLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetSaleLoadingImpl<T> implements GetSaleLoading<T> {
+  const _$GetSaleLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getSaleLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetSaleLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return getSaleLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return getSaleLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleLoading != null) {
+      return getSaleLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return getSaleLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return getSaleLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleLoading != null) {
+      return getSaleLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetSaleLoading<T> implements HomeState<T> {
+  const factory GetSaleLoading() = _$GetSaleLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$GetSaleSuccessImplCopyWith<T, $Res> {
+  factory _$$GetSaleSuccessImplCopyWith(_$GetSaleSuccessImpl<T> value,
+          $Res Function(_$GetSaleSuccessImpl<T>) then) =
+      __$$GetSaleSuccessImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$GetSaleSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetSaleSuccessImpl<T>>
+    implements _$$GetSaleSuccessImplCopyWith<T, $Res> {
+  __$$GetSaleSuccessImplCopyWithImpl(_$GetSaleSuccessImpl<T> _value,
+      $Res Function(_$GetSaleSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$GetSaleSuccessImpl<T> implements GetSaleSuccess<T> {
+  const _$GetSaleSuccessImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getSaleSuccess()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetSaleSuccessImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return getSaleSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return getSaleSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleSuccess != null) {
+      return getSaleSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return getSaleSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return getSaleSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleSuccess != null) {
+      return getSaleSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetSaleSuccess<T> implements HomeState<T> {
+  const factory GetSaleSuccess() = _$GetSaleSuccessImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$GetSaleFailureImplCopyWith<T, $Res> {
+  factory _$$GetSaleFailureImplCopyWith(_$GetSaleFailureImpl<T> value,
+          $Res Function(_$GetSaleFailureImpl<T>) then) =
+      __$$GetSaleFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$GetSaleFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$GetSaleFailureImpl<T>>
+    implements _$$GetSaleFailureImplCopyWith<T, $Res> {
+  __$$GetSaleFailureImplCopyWithImpl(_$GetSaleFailureImpl<T> _value,
+      $Res Function(_$GetSaleFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$GetSaleFailureImpl<T>(
+      null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetSaleFailureImpl<T> implements GetSaleFailure<T> {
+  const _$GetSaleFailureImpl(this.error);
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.getSaleFailure(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetSaleFailureImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GetSaleFailureImplCopyWith<T, _$GetSaleFailureImpl<T>> get copyWith =>
+      __$$GetSaleFailureImplCopyWithImpl<T, _$GetSaleFailureImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return getSaleFailure(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return getSaleFailure?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleFailure != null) {
+      return getSaleFailure(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return getSaleFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return getSaleFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (getSaleFailure != null) {
+      return getSaleFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetSaleFailure<T> implements HomeState<T> {
+  const factory GetSaleFailure(final String error) = _$GetSaleFailureImpl<T>;
+
+  String get error;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$GetSaleFailureImplCopyWith<T, _$GetSaleFailureImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AqarMomayasRentLoadingImplCopyWith<T, $Res> {
+  factory _$$AqarMomayasRentLoadingImplCopyWith(
+          _$AqarMomayasRentLoadingImpl<T> value,
+          $Res Function(_$AqarMomayasRentLoadingImpl<T>) then) =
+      __$$AqarMomayasRentLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$AqarMomayasRentLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AqarMomayasRentLoadingImpl<T>>
+    implements _$$AqarMomayasRentLoadingImplCopyWith<T, $Res> {
+  __$$AqarMomayasRentLoadingImplCopyWithImpl(
+      _$AqarMomayasRentLoadingImpl<T> _value,
+      $Res Function(_$AqarMomayasRentLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$AqarMomayasRentLoadingImpl<T> implements AqarMomayasRentLoading<T> {
+  const _$AqarMomayasRentLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.aqarMomayasRentLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AqarMomayasRentLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentLoading != null) {
+      return aqarMomayasRentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentLoading != null) {
+      return aqarMomayasRentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AqarMomayasRentLoading<T> implements HomeState<T> {
+  const factory AqarMomayasRentLoading() = _$AqarMomayasRentLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$AqarMomayasRentSuccessImplCopyWith<T, $Res> {
+  factory _$$AqarMomayasRentSuccessImplCopyWith(
+          _$AqarMomayasRentSuccessImpl<T> value,
+          $Res Function(_$AqarMomayasRentSuccessImpl<T>) then) =
+      __$$AqarMomayasRentSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({AqarMomayasRentModel aqarMomayasModel});
+}
+
+/// @nodoc
+class __$$AqarMomayasRentSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AqarMomayasRentSuccessImpl<T>>
+    implements _$$AqarMomayasRentSuccessImplCopyWith<T, $Res> {
+  __$$AqarMomayasRentSuccessImplCopyWithImpl(
+      _$AqarMomayasRentSuccessImpl<T> _value,
+      $Res Function(_$AqarMomayasRentSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? aqarMomayasModel = null,
+  }) {
+    return _then(_$AqarMomayasRentSuccessImpl<T>(
+      null == aqarMomayasModel
+          ? _value.aqarMomayasModel
+          : aqarMomayasModel // ignore: cast_nullable_to_non_nullable
+              as AqarMomayasRentModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AqarMomayasRentSuccessImpl<T> implements AqarMomayasRentSuccess<T> {
+  const _$AqarMomayasRentSuccessImpl(this.aqarMomayasModel);
+
+  @override
+  final AqarMomayasRentModel aqarMomayasModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.aqarMomayasRentSuccess(aqarMomayasModel: $aqarMomayasModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AqarMomayasRentSuccessImpl<T> &&
+            (identical(other.aqarMomayasModel, aqarMomayasModel) ||
+                other.aqarMomayasModel == aqarMomayasModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, aqarMomayasModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AqarMomayasRentSuccessImplCopyWith<T, _$AqarMomayasRentSuccessImpl<T>>
+      get copyWith => __$$AqarMomayasRentSuccessImplCopyWithImpl<T,
+          _$AqarMomayasRentSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentSuccess(aqarMomayasModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentSuccess?.call(aqarMomayasModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentSuccess != null) {
+      return aqarMomayasRentSuccess(aqarMomayasModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentSuccess != null) {
+      return aqarMomayasRentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AqarMomayasRentSuccess<T> implements HomeState<T> {
+  const factory AqarMomayasRentSuccess(
+          final AqarMomayasRentModel aqarMomayasModel) =
+      _$AqarMomayasRentSuccessImpl<T>;
+
+  AqarMomayasRentModel get aqarMomayasModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AqarMomayasRentSuccessImplCopyWith<T, _$AqarMomayasRentSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AqarMomayasRentFailureImplCopyWith<T, $Res> {
+  factory _$$AqarMomayasRentFailureImplCopyWith(
+          _$AqarMomayasRentFailureImpl<T> value,
+          $Res Function(_$AqarMomayasRentFailureImpl<T>) then) =
+      __$$AqarMomayasRentFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$AqarMomayasRentFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$AqarMomayasRentFailureImpl<T>>
+    implements _$$AqarMomayasRentFailureImplCopyWith<T, $Res> {
+  __$$AqarMomayasRentFailureImplCopyWithImpl(
+      _$AqarMomayasRentFailureImpl<T> _value,
+      $Res Function(_$AqarMomayasRentFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$AqarMomayasRentFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AqarMomayasRentFailureImpl<T> implements AqarMomayasRentFailure<T> {
+  const _$AqarMomayasRentFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.aqarMomayasRentFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AqarMomayasRentFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AqarMomayasRentFailureImplCopyWith<T, _$AqarMomayasRentFailureImpl<T>>
+      get copyWith => __$$AqarMomayasRentFailureImplCopyWithImpl<T,
+          _$AqarMomayasRentFailureImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentFailure != null) {
+      return aqarMomayasRentFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return aqarMomayasRentFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (aqarMomayasRentFailure != null) {
+      return aqarMomayasRentFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AqarMomayasRentFailure<T> implements HomeState<T> {
+  const factory AqarMomayasRentFailure({required final String errorMessage}) =
+      _$AqarMomayasRentFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AqarMomayasRentFailureImplCopyWith<T, _$AqarMomayasRentFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$QsrSakanyRentLoadingImplCopyWith<T, $Res> {
+  factory _$$QsrSakanyRentLoadingImplCopyWith(
+          _$QsrSakanyRentLoadingImpl<T> value,
+          $Res Function(_$QsrSakanyRentLoadingImpl<T>) then) =
+      __$$QsrSakanyRentLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$QsrSakanyRentLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$QsrSakanyRentLoadingImpl<T>>
+    implements _$$QsrSakanyRentLoadingImplCopyWith<T, $Res> {
+  __$$QsrSakanyRentLoadingImplCopyWithImpl(_$QsrSakanyRentLoadingImpl<T> _value,
+      $Res Function(_$QsrSakanyRentLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$QsrSakanyRentLoadingImpl<T> implements QsrSakanyRentLoading<T> {
+  const _$QsrSakanyRentLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.qsrSakanyRentLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$QsrSakanyRentLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentLoading != null) {
+      return qsrSakanyRentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentLoading != null) {
+      return qsrSakanyRentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class QsrSakanyRentLoading<T> implements HomeState<T> {
+  const factory QsrSakanyRentLoading() = _$QsrSakanyRentLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$QsrSakanyRentSuccessImplCopyWith<T, $Res> {
+  factory _$$QsrSakanyRentSuccessImplCopyWith(
+          _$QsrSakanyRentSuccessImpl<T> value,
+          $Res Function(_$QsrSakanyRentSuccessImpl<T>) then) =
+      __$$QsrSakanyRentSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({QsrSakanyRentModel qsrSakanyModel});
+}
+
+/// @nodoc
+class __$$QsrSakanyRentSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$QsrSakanyRentSuccessImpl<T>>
+    implements _$$QsrSakanyRentSuccessImplCopyWith<T, $Res> {
+  __$$QsrSakanyRentSuccessImplCopyWithImpl(_$QsrSakanyRentSuccessImpl<T> _value,
+      $Res Function(_$QsrSakanyRentSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? qsrSakanyModel = null,
+  }) {
+    return _then(_$QsrSakanyRentSuccessImpl<T>(
+      null == qsrSakanyModel
+          ? _value.qsrSakanyModel
+          : qsrSakanyModel // ignore: cast_nullable_to_non_nullable
+              as QsrSakanyRentModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$QsrSakanyRentSuccessImpl<T> implements QsrSakanyRentSuccess<T> {
+  const _$QsrSakanyRentSuccessImpl(this.qsrSakanyModel);
+
+  @override
+  final QsrSakanyRentModel qsrSakanyModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.qsrSakanyRentSuccess(qsrSakanyModel: $qsrSakanyModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$QsrSakanyRentSuccessImpl<T> &&
+            (identical(other.qsrSakanyModel, qsrSakanyModel) ||
+                other.qsrSakanyModel == qsrSakanyModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, qsrSakanyModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$QsrSakanyRentSuccessImplCopyWith<T, _$QsrSakanyRentSuccessImpl<T>>
+      get copyWith => __$$QsrSakanyRentSuccessImplCopyWithImpl<T,
+          _$QsrSakanyRentSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentSuccess(qsrSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentSuccess?.call(qsrSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentSuccess != null) {
+      return qsrSakanyRentSuccess(qsrSakanyModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentSuccess != null) {
+      return qsrSakanyRentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class QsrSakanyRentSuccess<T> implements HomeState<T> {
+  const factory QsrSakanyRentSuccess(final QsrSakanyRentModel qsrSakanyModel) =
+      _$QsrSakanyRentSuccessImpl<T>;
+
+  QsrSakanyRentModel get qsrSakanyModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$QsrSakanyRentSuccessImplCopyWith<T, _$QsrSakanyRentSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$QsrSakanyRentFailureImplCopyWith<T, $Res> {
+  factory _$$QsrSakanyRentFailureImplCopyWith(
+          _$QsrSakanyRentFailureImpl<T> value,
+          $Res Function(_$QsrSakanyRentFailureImpl<T>) then) =
+      __$$QsrSakanyRentFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$QsrSakanyRentFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$QsrSakanyRentFailureImpl<T>>
+    implements _$$QsrSakanyRentFailureImplCopyWith<T, $Res> {
+  __$$QsrSakanyRentFailureImplCopyWithImpl(_$QsrSakanyRentFailureImpl<T> _value,
+      $Res Function(_$QsrSakanyRentFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$QsrSakanyRentFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$QsrSakanyRentFailureImpl<T> implements QsrSakanyRentFailure<T> {
+  const _$QsrSakanyRentFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.qsrSakanyRentFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$QsrSakanyRentFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$QsrSakanyRentFailureImplCopyWith<T, _$QsrSakanyRentFailureImpl<T>>
+      get copyWith => __$$QsrSakanyRentFailureImplCopyWithImpl<T,
+          _$QsrSakanyRentFailureImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentFailure != null) {
+      return qsrSakanyRentFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return qsrSakanyRentFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (qsrSakanyRentFailure != null) {
+      return qsrSakanyRentFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class QsrSakanyRentFailure<T> implements HomeState<T> {
+  const factory QsrSakanyRentFailure({required final String errorMessage}) =
+      _$QsrSakanyRentFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$QsrSakanyRentFailureImplCopyWith<T, _$QsrSakanyRentFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$VillaSakanyRentLoadingImplCopyWith<T, $Res> {
+  factory _$$VillaSakanyRentLoadingImplCopyWith(
+          _$VillaSakanyRentLoadingImpl<T> value,
+          $Res Function(_$VillaSakanyRentLoadingImpl<T>) then) =
+      __$$VillaSakanyRentLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$VillaSakanyRentLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$VillaSakanyRentLoadingImpl<T>>
+    implements _$$VillaSakanyRentLoadingImplCopyWith<T, $Res> {
+  __$$VillaSakanyRentLoadingImplCopyWithImpl(
+      _$VillaSakanyRentLoadingImpl<T> _value,
+      $Res Function(_$VillaSakanyRentLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$VillaSakanyRentLoadingImpl<T> implements VillaSakanyRentLoading<T> {
+  const _$VillaSakanyRentLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.villaSakanyRentLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$VillaSakanyRentLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentLoading != null) {
+      return villaSakanyRentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentLoading != null) {
+      return villaSakanyRentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class VillaSakanyRentLoading<T> implements HomeState<T> {
+  const factory VillaSakanyRentLoading() = _$VillaSakanyRentLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$VillaSakanyRentSuccessImplCopyWith<T, $Res> {
+  factory _$$VillaSakanyRentSuccessImplCopyWith(
+          _$VillaSakanyRentSuccessImpl<T> value,
+          $Res Function(_$VillaSakanyRentSuccessImpl<T>) then) =
+      __$$VillaSakanyRentSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({VillaSakanyRentModel villaSakanyModel});
+}
+
+/// @nodoc
+class __$$VillaSakanyRentSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$VillaSakanyRentSuccessImpl<T>>
+    implements _$$VillaSakanyRentSuccessImplCopyWith<T, $Res> {
+  __$$VillaSakanyRentSuccessImplCopyWithImpl(
+      _$VillaSakanyRentSuccessImpl<T> _value,
+      $Res Function(_$VillaSakanyRentSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? villaSakanyModel = null,
+  }) {
+    return _then(_$VillaSakanyRentSuccessImpl<T>(
+      null == villaSakanyModel
+          ? _value.villaSakanyModel
+          : villaSakanyModel // ignore: cast_nullable_to_non_nullable
+              as VillaSakanyRentModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$VillaSakanyRentSuccessImpl<T> implements VillaSakanyRentSuccess<T> {
+  const _$VillaSakanyRentSuccessImpl(this.villaSakanyModel);
+
+  @override
+  final VillaSakanyRentModel villaSakanyModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.villaSakanyRentSuccess(villaSakanyModel: $villaSakanyModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$VillaSakanyRentSuccessImpl<T> &&
+            (identical(other.villaSakanyModel, villaSakanyModel) ||
+                other.villaSakanyModel == villaSakanyModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, villaSakanyModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$VillaSakanyRentSuccessImplCopyWith<T, _$VillaSakanyRentSuccessImpl<T>>
+      get copyWith => __$$VillaSakanyRentSuccessImplCopyWithImpl<T,
+          _$VillaSakanyRentSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentSuccess(villaSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentSuccess?.call(villaSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentSuccess != null) {
+      return villaSakanyRentSuccess(villaSakanyModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentSuccess != null) {
+      return villaSakanyRentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class VillaSakanyRentSuccess<T> implements HomeState<T> {
+  const factory VillaSakanyRentSuccess(
+          final VillaSakanyRentModel villaSakanyModel) =
+      _$VillaSakanyRentSuccessImpl<T>;
+
+  VillaSakanyRentModel get villaSakanyModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$VillaSakanyRentSuccessImplCopyWith<T, _$VillaSakanyRentSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$VillaSakanyRentFailureImplCopyWith<T, $Res> {
+  factory _$$VillaSakanyRentFailureImplCopyWith(
+          _$VillaSakanyRentFailureImpl<T> value,
+          $Res Function(_$VillaSakanyRentFailureImpl<T>) then) =
+      __$$VillaSakanyRentFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$VillaSakanyRentFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$VillaSakanyRentFailureImpl<T>>
+    implements _$$VillaSakanyRentFailureImplCopyWith<T, $Res> {
+  __$$VillaSakanyRentFailureImplCopyWithImpl(
+      _$VillaSakanyRentFailureImpl<T> _value,
+      $Res Function(_$VillaSakanyRentFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$VillaSakanyRentFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$VillaSakanyRentFailureImpl<T> implements VillaSakanyRentFailure<T> {
+  const _$VillaSakanyRentFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.villaSakanyRentFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$VillaSakanyRentFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$VillaSakanyRentFailureImplCopyWith<T, _$VillaSakanyRentFailureImpl<T>>
+      get copyWith => __$$VillaSakanyRentFailureImplCopyWithImpl<T,
+          _$VillaSakanyRentFailureImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentFailure != null) {
+      return villaSakanyRentFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return villaSakanyRentFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (villaSakanyRentFailure != null) {
+      return villaSakanyRentFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class VillaSakanyRentFailure<T> implements HomeState<T> {
+  const factory VillaSakanyRentFailure({required final String errorMessage}) =
+      _$VillaSakanyRentFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$VillaSakanyRentFailureImplCopyWith<T, _$VillaSakanyRentFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FlatSakanyRentLoadingImplCopyWith<T, $Res> {
+  factory _$$FlatSakanyRentLoadingImplCopyWith(
+          _$FlatSakanyRentLoadingImpl<T> value,
+          $Res Function(_$FlatSakanyRentLoadingImpl<T>) then) =
+      __$$FlatSakanyRentLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$FlatSakanyRentLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$FlatSakanyRentLoadingImpl<T>>
+    implements _$$FlatSakanyRentLoadingImplCopyWith<T, $Res> {
+  __$$FlatSakanyRentLoadingImplCopyWithImpl(
+      _$FlatSakanyRentLoadingImpl<T> _value,
+      $Res Function(_$FlatSakanyRentLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$FlatSakanyRentLoadingImpl<T> implements FlatSakanyRentLoading<T> {
+  const _$FlatSakanyRentLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.flatSakanyRentLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FlatSakanyRentLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentLoading != null) {
+      return flatSakanyRentLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentLoading != null) {
+      return flatSakanyRentLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FlatSakanyRentLoading<T> implements HomeState<T> {
+  const factory FlatSakanyRentLoading() = _$FlatSakanyRentLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$FlatSakanyRentSuccessImplCopyWith<T, $Res> {
+  factory _$$FlatSakanyRentSuccessImplCopyWith(
+          _$FlatSakanyRentSuccessImpl<T> value,
+          $Res Function(_$FlatSakanyRentSuccessImpl<T>) then) =
+      __$$FlatSakanyRentSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({FlatSakanyRentModel flatSakanyModel});
+}
+
+/// @nodoc
+class __$$FlatSakanyRentSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$FlatSakanyRentSuccessImpl<T>>
+    implements _$$FlatSakanyRentSuccessImplCopyWith<T, $Res> {
+  __$$FlatSakanyRentSuccessImplCopyWithImpl(
+      _$FlatSakanyRentSuccessImpl<T> _value,
+      $Res Function(_$FlatSakanyRentSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? flatSakanyModel = null,
+  }) {
+    return _then(_$FlatSakanyRentSuccessImpl<T>(
+      null == flatSakanyModel
+          ? _value.flatSakanyModel
+          : flatSakanyModel // ignore: cast_nullable_to_non_nullable
+              as FlatSakanyRentModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FlatSakanyRentSuccessImpl<T> implements FlatSakanyRentSuccess<T> {
+  const _$FlatSakanyRentSuccessImpl(this.flatSakanyModel);
+
+  @override
+  final FlatSakanyRentModel flatSakanyModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.flatSakanyRentSuccess(flatSakanyModel: $flatSakanyModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FlatSakanyRentSuccessImpl<T> &&
+            (identical(other.flatSakanyModel, flatSakanyModel) ||
+                other.flatSakanyModel == flatSakanyModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, flatSakanyModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FlatSakanyRentSuccessImplCopyWith<T, _$FlatSakanyRentSuccessImpl<T>>
+      get copyWith => __$$FlatSakanyRentSuccessImplCopyWithImpl<T,
+          _$FlatSakanyRentSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentSuccess(flatSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentSuccess?.call(flatSakanyModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentSuccess != null) {
+      return flatSakanyRentSuccess(flatSakanyModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentSuccess != null) {
+      return flatSakanyRentSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FlatSakanyRentSuccess<T> implements HomeState<T> {
+  const factory FlatSakanyRentSuccess(
+          final FlatSakanyRentModel flatSakanyModel) =
+      _$FlatSakanyRentSuccessImpl<T>;
+
+  FlatSakanyRentModel get flatSakanyModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FlatSakanyRentSuccessImplCopyWith<T, _$FlatSakanyRentSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FlatSakanyRentFailureImplCopyWith<T, $Res> {
+  factory _$$FlatSakanyRentFailureImplCopyWith(
+          _$FlatSakanyRentFailureImpl<T> value,
+          $Res Function(_$FlatSakanyRentFailureImpl<T>) then) =
+      __$$FlatSakanyRentFailureImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$FlatSakanyRentFailureImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$FlatSakanyRentFailureImpl<T>>
+    implements _$$FlatSakanyRentFailureImplCopyWith<T, $Res> {
+  __$$FlatSakanyRentFailureImplCopyWithImpl(
+      _$FlatSakanyRentFailureImpl<T> _value,
+      $Res Function(_$FlatSakanyRentFailureImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$FlatSakanyRentFailureImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FlatSakanyRentFailureImpl<T> implements FlatSakanyRentFailure<T> {
+  const _$FlatSakanyRentFailureImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.flatSakanyRentFailure(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FlatSakanyRentFailureImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FlatSakanyRentFailureImplCopyWith<T, _$FlatSakanyRentFailureImpl<T>>
+      get copyWith => __$$FlatSakanyRentFailureImplCopyWithImpl<T,
+          _$FlatSakanyRentFailureImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getAppInitLoading,
+    required TResult Function(T data) getAppInitSuccess,
+    required TResult Function(String errorMessage) getAppInitFailure,
+    required TResult Function() initial,
+    required TResult Function() aqarMomayasLoading,
+    required TResult Function(AqarMomayasModel aqarMomayasModel)
+        aqarMomayasSuccess,
+    required TResult Function(String errorMessage) aqarMomayasFailure,
+    required TResult Function() qsrSakanyLoading,
+    required TResult Function(QsrSakanyModel qsrSakanyModel) qsrSakanySuccess,
+    required TResult Function(String errorMessage) qsrSakanyFailure,
+    required TResult Function() villaSakanyLoading,
+    required TResult Function(VillaSakanyModel villaSakanyModel)
+        villaSakanySuccess,
+    required TResult Function(String errorMessage) villaSakanyFailure,
+    required TResult Function() flatSakanyLoading,
+    required TResult Function(FlatSakanyModel flatSakanyModel)
+        flatSakanySuccess,
+    required TResult Function(String errorMessage) flatSakanyFailure,
+    required TResult Function() adDetailsLoading,
+    required TResult Function(AdDetailsModel adDetailsModel) adDetailsSuccess,
+    required TResult Function(String errorMessage) adDetailsFailure,
+    required TResult Function() compoundLoading,
+    required TResult Function(CompoundModel compoundModel) compoundSuccess,
+    required TResult Function(String errorMessage) compoundFailure,
+    required TResult Function() getSaleLoading,
+    required TResult Function() getSaleSuccess,
+    required TResult Function(String error) getSaleFailure,
+    required TResult Function() aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentModel aqarMomayasModel)
+        aqarMomayasRentSuccess,
+    required TResult Function(String errorMessage) aqarMomayasRentFailure,
+    required TResult Function() qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentModel qsrSakanyModel)
+        qsrSakanyRentSuccess,
+    required TResult Function(String errorMessage) qsrSakanyRentFailure,
+    required TResult Function() villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentModel villaSakanyModel)
+        villaSakanyRentSuccess,
+    required TResult Function(String errorMessage) villaSakanyRentFailure,
+    required TResult Function() flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentModel flatSakanyModel)
+        flatSakanyRentSuccess,
+    required TResult Function(String errorMessage) flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentFailure(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getAppInitLoading,
+    TResult? Function(T data)? getAppInitSuccess,
+    TResult? Function(String errorMessage)? getAppInitFailure,
+    TResult? Function()? initial,
+    TResult? Function()? aqarMomayasLoading,
+    TResult? Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasFailure,
+    TResult? Function()? qsrSakanyLoading,
+    TResult? Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult? Function(String errorMessage)? qsrSakanyFailure,
+    TResult? Function()? villaSakanyLoading,
+    TResult? Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult? Function(String errorMessage)? villaSakanyFailure,
+    TResult? Function()? flatSakanyLoading,
+    TResult? Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult? Function(String errorMessage)? flatSakanyFailure,
+    TResult? Function()? adDetailsLoading,
+    TResult? Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult? Function(String errorMessage)? adDetailsFailure,
+    TResult? Function()? compoundLoading,
+    TResult? Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult? Function(String errorMessage)? compoundFailure,
+    TResult? Function()? getSaleLoading,
+    TResult? Function()? getSaleSuccess,
+    TResult? Function(String error)? getSaleFailure,
+    TResult? Function()? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult? Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult? Function()? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult? Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult? Function()? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult? Function(String errorMessage)? villaSakanyRentFailure,
+    TResult? Function()? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult? Function(String errorMessage)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentFailure?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getAppInitLoading,
+    TResult Function(T data)? getAppInitSuccess,
+    TResult Function(String errorMessage)? getAppInitFailure,
+    TResult Function()? initial,
+    TResult Function()? aqarMomayasLoading,
+    TResult Function(AqarMomayasModel aqarMomayasModel)? aqarMomayasSuccess,
+    TResult Function(String errorMessage)? aqarMomayasFailure,
+    TResult Function()? qsrSakanyLoading,
+    TResult Function(QsrSakanyModel qsrSakanyModel)? qsrSakanySuccess,
+    TResult Function(String errorMessage)? qsrSakanyFailure,
+    TResult Function()? villaSakanyLoading,
+    TResult Function(VillaSakanyModel villaSakanyModel)? villaSakanySuccess,
+    TResult Function(String errorMessage)? villaSakanyFailure,
+    TResult Function()? flatSakanyLoading,
+    TResult Function(FlatSakanyModel flatSakanyModel)? flatSakanySuccess,
+    TResult Function(String errorMessage)? flatSakanyFailure,
+    TResult Function()? adDetailsLoading,
+    TResult Function(AdDetailsModel adDetailsModel)? adDetailsSuccess,
+    TResult Function(String errorMessage)? adDetailsFailure,
+    TResult Function()? compoundLoading,
+    TResult Function(CompoundModel compoundModel)? compoundSuccess,
+    TResult Function(String errorMessage)? compoundFailure,
+    TResult Function()? getSaleLoading,
+    TResult Function()? getSaleSuccess,
+    TResult Function(String error)? getSaleFailure,
+    TResult Function()? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentModel aqarMomayasModel)?
+        aqarMomayasRentSuccess,
+    TResult Function(String errorMessage)? aqarMomayasRentFailure,
+    TResult Function()? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentModel qsrSakanyModel)? qsrSakanyRentSuccess,
+    TResult Function(String errorMessage)? qsrSakanyRentFailure,
+    TResult Function()? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentModel villaSakanyModel)?
+        villaSakanyRentSuccess,
+    TResult Function(String errorMessage)? villaSakanyRentFailure,
+    TResult Function()? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentModel flatSakanyModel)?
+        flatSakanyRentSuccess,
+    TResult Function(String errorMessage)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentFailure != null) {
+      return flatSakanyRentFailure(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetAppInitLoading<T> value) getAppInitLoading,
+    required TResult Function(GetAppInitSuccess<T> value) getAppInitSuccess,
+    required TResult Function(GetAppInitFailure<T> value) getAppInitFailure,
+    required TResult Function(HomeInitial<T> value) initial,
+    required TResult Function(AqarMomayasLoading<T> value) aqarMomayasLoading,
+    required TResult Function(AqarMomayasSuccess<T> value) aqarMomayasSuccess,
+    required TResult Function(AqarMomayasFailure<T> value) aqarMomayasFailure,
+    required TResult Function(QsrSakanyLoading<T> value) qsrSakanyLoading,
+    required TResult Function(QsrSakanySuccess<T> value) qsrSakanySuccess,
+    required TResult Function(QsrSakanyFailure<T> value) qsrSakanyFailure,
+    required TResult Function(VillaSakanyLoading<T> value) villaSakanyLoading,
+    required TResult Function(VillaSakanySuccess<T> value) villaSakanySuccess,
+    required TResult Function(VillaSakanyFailure<T> value) villaSakanyFailure,
+    required TResult Function(FlatSakanyLoading<T> value) flatSakanyLoading,
+    required TResult Function(FlatSakanySuccess<T> value) flatSakanySuccess,
+    required TResult Function(FlatSakanyFailure<T> value) flatSakanyFailure,
+    required TResult Function(AdDetailsLoading<T> value) adDetailsLoading,
+    required TResult Function(AdDetailsSuccess<T> value) adDetailsSuccess,
+    required TResult Function(AdDetailsFailure<T> value) adDetailsFailure,
+    required TResult Function(CompoundLoading<T> value) compoundLoading,
+    required TResult Function(CompoundSuccess<T> value) compoundSuccess,
+    required TResult Function(CompoundFailure<T> value) compoundFailure,
+    required TResult Function(GetSaleLoading<T> value) getSaleLoading,
+    required TResult Function(GetSaleSuccess<T> value) getSaleSuccess,
+    required TResult Function(GetSaleFailure<T> value) getSaleFailure,
+    required TResult Function(AqarMomayasRentLoading<T> value)
+        aqarMomayasRentLoading,
+    required TResult Function(AqarMomayasRentSuccess<T> value)
+        aqarMomayasRentSuccess,
+    required TResult Function(AqarMomayasRentFailure<T> value)
+        aqarMomayasRentFailure,
+    required TResult Function(QsrSakanyRentLoading<T> value)
+        qsrSakanyRentLoading,
+    required TResult Function(QsrSakanyRentSuccess<T> value)
+        qsrSakanyRentSuccess,
+    required TResult Function(QsrSakanyRentFailure<T> value)
+        qsrSakanyRentFailure,
+    required TResult Function(VillaSakanyRentLoading<T> value)
+        villaSakanyRentLoading,
+    required TResult Function(VillaSakanyRentSuccess<T> value)
+        villaSakanyRentSuccess,
+    required TResult Function(VillaSakanyRentFailure<T> value)
+        villaSakanyRentFailure,
+    required TResult Function(FlatSakanyRentLoading<T> value)
+        flatSakanyRentLoading,
+    required TResult Function(FlatSakanyRentSuccess<T> value)
+        flatSakanyRentSuccess,
+    required TResult Function(FlatSakanyRentFailure<T> value)
+        flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult? Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult? Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult? Function(HomeInitial<T> value)? initial,
+    TResult? Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult? Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult? Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult? Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult? Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult? Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult? Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult? Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult? Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult? Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult? Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult? Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult? Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult? Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult? Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult? Function(CompoundLoading<T> value)? compoundLoading,
+    TResult? Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult? Function(CompoundFailure<T> value)? compoundFailure,
+    TResult? Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult? Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult? Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult? Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult? Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult? Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult? Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult? Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult? Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult? Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult? Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult? Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult? Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult? Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult? Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+  }) {
+    return flatSakanyRentFailure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetAppInitLoading<T> value)? getAppInitLoading,
+    TResult Function(GetAppInitSuccess<T> value)? getAppInitSuccess,
+    TResult Function(GetAppInitFailure<T> value)? getAppInitFailure,
+    TResult Function(HomeInitial<T> value)? initial,
+    TResult Function(AqarMomayasLoading<T> value)? aqarMomayasLoading,
+    TResult Function(AqarMomayasSuccess<T> value)? aqarMomayasSuccess,
+    TResult Function(AqarMomayasFailure<T> value)? aqarMomayasFailure,
+    TResult Function(QsrSakanyLoading<T> value)? qsrSakanyLoading,
+    TResult Function(QsrSakanySuccess<T> value)? qsrSakanySuccess,
+    TResult Function(QsrSakanyFailure<T> value)? qsrSakanyFailure,
+    TResult Function(VillaSakanyLoading<T> value)? villaSakanyLoading,
+    TResult Function(VillaSakanySuccess<T> value)? villaSakanySuccess,
+    TResult Function(VillaSakanyFailure<T> value)? villaSakanyFailure,
+    TResult Function(FlatSakanyLoading<T> value)? flatSakanyLoading,
+    TResult Function(FlatSakanySuccess<T> value)? flatSakanySuccess,
+    TResult Function(FlatSakanyFailure<T> value)? flatSakanyFailure,
+    TResult Function(AdDetailsLoading<T> value)? adDetailsLoading,
+    TResult Function(AdDetailsSuccess<T> value)? adDetailsSuccess,
+    TResult Function(AdDetailsFailure<T> value)? adDetailsFailure,
+    TResult Function(CompoundLoading<T> value)? compoundLoading,
+    TResult Function(CompoundSuccess<T> value)? compoundSuccess,
+    TResult Function(CompoundFailure<T> value)? compoundFailure,
+    TResult Function(GetSaleLoading<T> value)? getSaleLoading,
+    TResult Function(GetSaleSuccess<T> value)? getSaleSuccess,
+    TResult Function(GetSaleFailure<T> value)? getSaleFailure,
+    TResult Function(AqarMomayasRentLoading<T> value)? aqarMomayasRentLoading,
+    TResult Function(AqarMomayasRentSuccess<T> value)? aqarMomayasRentSuccess,
+    TResult Function(AqarMomayasRentFailure<T> value)? aqarMomayasRentFailure,
+    TResult Function(QsrSakanyRentLoading<T> value)? qsrSakanyRentLoading,
+    TResult Function(QsrSakanyRentSuccess<T> value)? qsrSakanyRentSuccess,
+    TResult Function(QsrSakanyRentFailure<T> value)? qsrSakanyRentFailure,
+    TResult Function(VillaSakanyRentLoading<T> value)? villaSakanyRentLoading,
+    TResult Function(VillaSakanyRentSuccess<T> value)? villaSakanyRentSuccess,
+    TResult Function(VillaSakanyRentFailure<T> value)? villaSakanyRentFailure,
+    TResult Function(FlatSakanyRentLoading<T> value)? flatSakanyRentLoading,
+    TResult Function(FlatSakanyRentSuccess<T> value)? flatSakanyRentSuccess,
+    TResult Function(FlatSakanyRentFailure<T> value)? flatSakanyRentFailure,
+    required TResult orElse(),
+  }) {
+    if (flatSakanyRentFailure != null) {
+      return flatSakanyRentFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FlatSakanyRentFailure<T> implements HomeState<T> {
+  const factory FlatSakanyRentFailure({required final String errorMessage}) =
+      _$FlatSakanyRentFailureImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FlatSakanyRentFailureImplCopyWith<T, _$FlatSakanyRentFailureImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

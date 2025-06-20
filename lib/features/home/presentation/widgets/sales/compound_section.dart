@@ -1,9 +1,9 @@
-import 'package:aqar_ya_masr/features/home/data/models/compound_model.dart';
 import 'package:aqar_ya_masr/features/home/presentation/widgets/sales/compound_single_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/theming/app_styles.dart';
+import '../../../data/models/sale/compound_model.dart';
 import '../../../logic/home_cubit.dart';
 import '../../../logic/home_state.dart';
 
@@ -19,7 +19,7 @@ class CompoundSection extends StatelessWidget {
           current is CompoundFailure,
       builder: (context, state) {
         return state.maybeWhen(
-          compoundLoading: () => setupLoading(),
+          // compoundLoading: () => setupLoading(),
           compoundSuccess: (compoundData) => setupSuccess(compoundData),
           compoundFailure: (error) => setupError(error),
           orElse: () =>setupLoading(),
