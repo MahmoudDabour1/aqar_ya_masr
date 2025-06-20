@@ -3,6 +3,7 @@ import 'package:aqar_ya_masr/features/auth/presentation/forget_password/forget_p
 import 'package:aqar_ya_masr/features/auth/presentation/login/login_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/verify_code/verify_code_screen.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
+import 'package:aqar_ya_masr/features/info/data/models/profile_data_model.dart';
 import 'package:aqar_ya_masr/features/layout/logic/bottom_nav_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -77,8 +78,13 @@ class AppRouter {
           builder: (_) => ContactUsScreen(),
         );
       case Routes.editUserDataScreen:
+        ProfileDataModel? profileDataModel = settings.arguments as ProfileDataModel? ;
+
         return MaterialPageRoute(
-          builder: (_) => EditUserDataScreen(),
+          builder: (_) => EditUserDataScreen(
+            profileDataModel: profileDataModel! ,
+          ),
+
         );
       case Routes.bottomNavBarLayout:
         return MaterialPageRoute(

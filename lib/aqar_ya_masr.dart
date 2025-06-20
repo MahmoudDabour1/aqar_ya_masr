@@ -32,7 +32,7 @@ class AqarYaMasr extends StatelessWidget {
         BlocProvider(
           create: (context) => HomeCubit(sl()),
         ),
-        BlocProvider(create: (_) => InfoCubit(sl())),
+        BlocProvider(create: (_) => InfoCubit(sl())..getProfileData()),
       ],
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
@@ -42,8 +42,8 @@ class AqarYaMasr extends StatelessWidget {
           child: MaterialApp(
             locale: const Locale("ar"),
             supportedLocales: const [
-              Locale("ar"), // RTL
-              Locale("en"), // LTR (if needed)
+              Locale("ar"),
+              Locale("en"),
             ],
             localizationsDelegates: const [
               GlobalMaterialLocalizations.delegate,

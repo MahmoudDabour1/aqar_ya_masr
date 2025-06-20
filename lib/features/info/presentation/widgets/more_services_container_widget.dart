@@ -21,13 +21,13 @@ class MoreServicesContainerWidget extends StatefulWidget {
 
 class _MoreServicesContainerWidgetState
     extends State<MoreServicesContainerWidget> {
-  bool isLoggedInUser = false;
+  bool _isLoggedIn = false;
 
-  void _checkLogin() async {
-    final token = await SharedPrefHelper.getString(SharedPrefKeys.userToken);
-    if (token != null && mounted) {
+  Future<void> _checkLoginStatus() async {
+    final isLogged = await SharedPrefHelper.getBool(SharedPrefKeys.isLogged) ?? false;
+    if (mounted) {
       setState(() {
-        isLoggedInUser = true;
+        _isLoggedIn = isLogged;
       });
     }
   }
@@ -35,7 +35,7 @@ class _MoreServicesContainerWidgetState
   @override
   void initState() {
     super.initState();
-    _checkLogin();
+    _checkLoginStatus();
   }
 
   @override
@@ -85,7 +85,7 @@ class _MoreServicesContainerWidgetState
               },
             ),
             Divider(),
-            isLoggedInUser
+            _isLoggedIn
                 ? Column(
                     children: [
                       MoreServicesSingleItem(
@@ -101,9 +101,10 @@ class _MoreServicesContainerWidgetState
                                 onPressed: () async {
                                   await SharedPrefHelper.removeSecuredString(
                                       SharedPrefKeys.userToken);
+                                  await SharedPrefHelper.setData(SharedPrefKeys.isLogged, false);
                                   Navigator.of(context).pop();
                                   setState(() {
-                                    isLoggedInUser = false;
+                                    _isLoggedIn = false;
                                   });
                                   context.pushNameAndRemoveUntil(
                                       Routes.loginScreen,
@@ -127,7 +128,7 @@ class _MoreServicesContainerWidgetState
                                 buttonText: "حذف الحساب",
                                 onPressed: () async {
                                   setState(() {
-                                    isLoggedInUser = false;
+                                    _isLoggedIn = false;
                                   });
                                 },
                               );

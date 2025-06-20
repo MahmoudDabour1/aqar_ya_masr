@@ -5,19 +5,31 @@ import 'package:flutter/material.dart';
 import '../../../../core/theming/app_styles.dart';
 import '../../../../core/utils/spacing.dart';
 import '../../../../core/widgets/app_text_form_field.dart';
+import '../../data/models/profile_data_model.dart';
 
 class EditUserDataInputs extends StatefulWidget {
-  const EditUserDataInputs({super.key});
+  final ProfileDataModel? profileDataModel;
+
+  const EditUserDataInputs({super.key, required this.profileDataModel});
 
   @override
   State<EditUserDataInputs> createState() => _EditUserDataInputsState();
 }
 
 class _EditUserDataInputsState extends State<EditUserDataInputs> {
-  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController(
+  );
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
+  @override
+  void initState() {
+    super.initState();
+    if (widget.profileDataModel != null) {
+      _nameController.text = widget.profileDataModel!.data!.profile!.name ?? '';
+      _phoneController.text = widget.profileDataModel!.data!.profile!.phone ?? '';
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Column(

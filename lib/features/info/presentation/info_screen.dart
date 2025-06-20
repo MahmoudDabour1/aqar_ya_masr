@@ -24,9 +24,11 @@ class _InfoScreenState extends State<InfoScreen> {
     super.initState();
     _checkAndGetProfileData();
   }
+
   void _checkAndGetProfileData() async {
-    final token = await SharedPrefHelper.getString(SharedPrefKeys.userToken);
-    if (token != null&& mounted) {
+    final isLogged =
+        await SharedPrefHelper.getBool(SharedPrefKeys.isLogged) ?? false;
+    if (isLogged) {
       context.read<InfoCubit>().getProfileData();
     }
   }
@@ -39,18 +41,15 @@ class _InfoScreenState extends State<InfoScreen> {
           children: [
             BlocBuilder<InfoCubit, InfoState>(
               builder: (context, state) {
-                return state.maybeWhen(
-                  profileDataSuccess: (data) => UserImageAndDataWidget(
-                    profileDataModel: data,
-                  ),
-                  profileDataLoading: () => Center(
-                    child: CircularProgressIndicator(),
-                  ),
-                  profileDataFailure: (error) => Center(
-                    child: Text(error),
-                  ),
-                  orElse: () => SizedBox.shrink(),
-                );
+                if (state is ProfileDataSuccess) {
+                  return UserImageAndDataWidget(
+                    profileDataModel: state.profileDataModel,
+                  );
+                } else {
+                  return UserImageAndDataWidget(
+                    profileDataModel: null,
+                  );
+                }
               },
             ),
             Expanded(
