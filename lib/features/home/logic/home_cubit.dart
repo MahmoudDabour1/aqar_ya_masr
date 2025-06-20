@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 
+import '../data/models/ad_details_model.dart';
 import '../data/repos/home_repos.dart';
 import 'home_state.dart';
 
@@ -7,7 +8,7 @@ class HomeCubit extends Cubit<HomeState> {
   final HomeRepo homeRepo;
 
   HomeCubit(this.homeRepo) : super(HomeState.initial());
-
+  AdDetailsModel? selectedAd;
   Future<void> getAppInitData() async {
     emit(HomeState.getAppInitLoading());
     final response = await homeRepo.getAppInitData();
@@ -98,6 +99,7 @@ class HomeCubit extends Cubit<HomeState> {
     final response = await homeRepo.getAdDetailsData(adId);
     response.when(
       success: (data) {
+        selectedAd = data;
         emit(HomeState.adDetailsSuccess(data));
       },
       failure: (error) {

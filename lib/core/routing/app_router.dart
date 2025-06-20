@@ -17,6 +17,7 @@ import '../../features/info/presentation/edit_user_data_screen.dart';
 import '../../features/info/presentation/info_screen.dart';
 import '../../features/info/presentation/price_guide_screen.dart';
 import '../../features/layout/presentation/bottom_nav_bar_layout.dart';
+import '../../features/maps/presentation/maps_screen.dart';
 import '../di/dependency_injection.dart';
 
 class AppRouter {
@@ -85,6 +86,9 @@ class AppRouter {
             create: (context) => BottomNavCubit(),
             child: BottomNavBarLayout(),
           ),
+        ); case Routes.mapsScreen:
+        return MaterialPageRoute(
+          builder: (_) => MapsScreen(),
         );
 
       default:

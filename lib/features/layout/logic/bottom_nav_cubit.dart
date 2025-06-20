@@ -4,6 +4,8 @@ import 'package:aqar_ya_masr/features/layout/logic/bottom_nav_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../maps/presentation/maps_screen.dart';
+
 class BottomNavCubit extends Cubit<BottomNavState> {
   BottomNavCubit() : super(const BottomNavState.initial());
 
@@ -31,7 +33,7 @@ List<String> bottomNavIconsSelected = [
 
   List<Widget> bottomNavScreens = [
     HomeScreen(),
-    Container(color: Colors.green),
+    MapsScreen(),
     Container(color: Colors.yellow),
     InfoScreen(),
   ]; List<String> bottomNavLabels = [

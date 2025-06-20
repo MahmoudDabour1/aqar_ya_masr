@@ -12,6 +12,7 @@ abstract class Routes{
   static const String contactUsScreen = '/ContactUsScreen';
   static const String editUserDataScreen = '/EditUserDataScreen';
   static const String bottomNavBarLayout = '/BottomNavBarLayout';
+  static const String mapsScreen = '/MapsScreen';
 
 
 }
