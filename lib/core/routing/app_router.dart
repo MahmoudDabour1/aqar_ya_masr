@@ -10,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../features/auth/presentation/register/register_screen.dart';
 import '../../features/auth/presentation/register/widgets/license_agreement_screen.dart';
+import '../../features/chat/chat_screen.dart';
 import '../../features/home/presentation/details_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
 import '../../features/info/presentation/about_aqar_masr_screen.dart';
@@ -95,6 +96,10 @@ class AppRouter {
         ); case Routes.mapsScreen:
         return MaterialPageRoute(
           builder: (_) => MapsScreen(),
+        );
+        case Routes.chatScreen:
+        return MaterialPageRoute(
+          builder: (_) => ChatScreen(),
         );
 
       default:
