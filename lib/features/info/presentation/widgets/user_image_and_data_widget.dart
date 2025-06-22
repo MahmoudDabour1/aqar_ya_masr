@@ -13,8 +13,9 @@ import '../../../../core/utils/spacing.dart';
 import '../../../../core/widgets/app_custom_button.dart';
 import 'center_container_items.dart';
 
+
 class UserImageAndDataWidget extends StatefulWidget {
-  final ProfileDataModel profileDataModel;
+  final ProfileDataModel? profileDataModel;
 
   const UserImageAndDataWidget({super.key, required this.profileDataModel});
 
@@ -23,28 +24,25 @@ class UserImageAndDataWidget extends StatefulWidget {
 }
 
 class _UserImageAndDataWidgetState extends State<UserImageAndDataWidget> {
-  bool isLoggedInUser = false;
+  bool _isLoggedIn = false;
 
-  void _checkLogin() async {
-    final token = await SharedPrefHelper.getString(SharedPrefKeys.userToken);
-    if (token != null && mounted) {
+  @override
+  void initState() {
+    super.initState();
+    _checkLoginStatus();
+  }
+
+  Future<void> _checkLoginStatus() async {
+    final isLogged = await SharedPrefHelper.getBool(SharedPrefKeys.isLogged) ?? false;
+    if (mounted) {
       setState(() {
-        isLoggedInUser = true;
+        _isLoggedIn = isLogged;
       });
     }
   }
 
   @override
-  void initState() {
-    super.initState();
-    _checkLogin();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    if (!isLoggedInUser) {
-      return const SizedBox.shrink();
-    }
     return SizedBox(
       height: 260.h,
       child: Stack(
@@ -58,67 +56,9 @@ class _UserImageAndDataWidgetState extends State<UserImageAndDataWidget> {
           Positioned(
             top: 50.h,
             right: 16.w,
-            child: Row(
-              children: [
-                CircleAvatar(
-                  radius: 40.r,
-                  backgroundImage:
-                      widget.profileDataModel.data?.profile?.image == null
-                          ? AssetImage('assets/images/user_placeholder.png')
-                          : NetworkImage(
-                              widget.profileDataModel.data?.profile?.image),
-                ),
-                horizontalSpace(8),
-                isLoggedInUser
-                    ? Row(
-                      children: [
-                        Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                widget.profileDataModel.data?.profile?.name ??
-                                    "اسم المستخدم",
-                                style: AppStyles.font16whiteMedium.copyWith(
-                                  fontWeight: FontWeightHelper.bold,
-                                ),
-                              ),
-                              Text(
-                                widget.profileDataModel.data?.profile?.phone ?? "",
-                                style: AppStyles.font16whiteMedium.copyWith(
-                                  fontWeight: FontWeightHelper.light,
-                                ),
-                              ),
-                            ],
-                          ),
-                        horizontalSpace(32),
-                        AppCustomButton(
-                          textButton: "الاعدادات",
-                          btnWidth: 100.w,
-                          btnHeight: 30.h,
-                          backgroundColor: AppColors.fillColor,
-                          textColor: AppColors.primaryColor,
-                          onPressed: () {
-                            context.pushNamed(
-                              Routes.editUserDataScreen,
-                            );
-                          },
-                        ),
-                      ],
-                    )
-                    : AppCustomButton(
-                        textButton: "تسجيل الدخول",
-                        btnWidth: 100.w,
-                        btnHeight: 30.h,
-                        backgroundColor: AppColors.fillColor,
-                        textColor: AppColors.primaryColor,
-                        onPressed: () {
-                          context.pushNamed(
-                            Routes.loginScreen,
-                          );
-                        },
-                      ),
-              ],
-            ),
+            child: _isLoggedIn
+                ? _buildLoggedInUI()
+                : _buildLoggedOutUI(),
           ),
           Positioned(
             left: 10.w,
@@ -136,6 +76,75 @@ class _UserImageAndDataWidgetState extends State<UserImageAndDataWidget> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildLoggedInUI() {
+    final profile = widget.profileDataModel?.data?.profile;
+    return Row(
+      children: [
+        CircleAvatar(
+          radius: 40.r,
+          backgroundImage: profile?.image != null
+              ? NetworkImage(profile!.image)
+              : const AssetImage('assets/images/user_placeholder.png') as ImageProvider,
+        ),
+        horizontalSpace(8),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              profile?.name ?? 'اسم المستخدم',
+              style: AppStyles.font16whiteMedium.copyWith(
+                fontWeight: FontWeightHelper.bold,
+              ),
+            ),
+            if (profile?.phone != null)
+              Text(
+                profile!.phone!,
+                style: AppStyles.font16whiteMedium.copyWith(
+                  fontWeight: FontWeightHelper.light,
+                ),
+              ),
+          ],
+        ),
+        horizontalSpace(32),
+        AppCustomButton(
+          textButton: "الإعدادات",
+          btnWidth: 100.w,
+          btnHeight: 30.h,
+          backgroundColor: AppColors.fillColor,
+          textColor: AppColors.primaryColor,
+          onPressed: () {
+            context.pushNamed(
+              Routes.editUserDataScreen,
+              arguments: widget.profileDataModel,
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildLoggedOutUI() {
+    return Row(
+      children: [
+        CircleAvatar(
+          radius: 40.r,
+          backgroundImage: const AssetImage('assets/images/user_placeholder.png'),
+        ),
+        horizontalSpace(8),
+        AppCustomButton(
+          textButton: "تسجيل الدخول",
+          btnWidth: 100.w,
+          btnHeight: 30.h,
+          backgroundColor: AppColors.fillColor,
+          textColor: AppColors.primaryColor,
+          onPressed: () {
+            context.pushNamed(Routes.loginScreen);
+          },
+        ),
+      ],
     );
   }
 }

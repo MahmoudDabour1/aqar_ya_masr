@@ -5,9 +5,12 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../core/theming/app_colors.dart';
 import '../../../../core/theming/app_styles.dart';
 import '../../../../core/utils/spacing.dart';
+import '../../data/models/profile_data_model.dart';
 
 class EditUserDataImageWidget extends StatelessWidget {
-  const EditUserDataImageWidget({super.key});
+  final ProfileDataModel? profileDataModel;
+
+  const EditUserDataImageWidget({super.key, required this.profileDataModel});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class EditUserDataImageWidget extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 60.r,
-                backgroundImage:
+                backgroundImage:NetworkImage(profileDataModel?.data?.profile?.image)??
                     AssetImage('assets/images/user_placeholder.png'),
               ),
               Positioned(

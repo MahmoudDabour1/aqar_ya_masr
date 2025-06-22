@@ -11,6 +11,9 @@ import 'package:aqar_ya_masr/features/info/logic/info_cubit.dart';
 import 'package:aqar_ya_masr/features/maps/data/data_source/maps_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/maps/data/repos/maps_repos.dart';
 import 'package:aqar_ya_masr/features/maps/logic/maps_cubit.dart';
+import 'package:aqar_ya_masr/features/search/data/data_source/search_remote_data_source.dart';
+import 'package:aqar_ya_masr/features/search/data/repos/search_repo.dart';
+import 'package:aqar_ya_masr/features/search/logic/search_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -53,4 +56,10 @@ Future<void> setupGetIt() async {
       () => MapsRemoteDataSource(dio));
   sl.registerLazySingleton<MapsRepos>(() => MapsReposImpl(sl()));
   sl.registerFactory<MapsCubit>(() => MapsCubit(sl()));
+
+  //search
+  sl.registerLazySingleton<SearchRemoteDataSource>(
+      () => SearchRemoteDataSource(dio));
+  sl.registerLazySingleton<SearchRepo>(() => SearchRepoImpl(sl()));
+  sl.registerFactory<SearchCubit>(() => SearchCubit(sl()));
 }

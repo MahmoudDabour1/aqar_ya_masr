@@ -5,8 +5,12 @@ import 'package:aqar_ya_masr/features/info/presentation/widgets/edit_user_data_i
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../data/models/profile_data_model.dart';
+
 class EditUserDataScreen extends StatefulWidget {
-  const EditUserDataScreen({super.key});
+  final ProfileDataModel profileDataModel;
+
+  const EditUserDataScreen({super.key, required this.profileDataModel});
 
   @override
   State<EditUserDataScreen> createState() => _EditUserDataScreenState();
@@ -23,8 +27,8 @@ class _EditUserDataScreenState extends State<EditUserDataScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              EditUserDataImageWidget(),
-              EditUserDataInputs(),
+              EditUserDataImageWidget(profileDataModel: widget.profileDataModel,),
+              EditUserDataInputs(profileDataModel: widget.profileDataModel,),
               EditUserDataButtonsWidget(),
             ],
           ),

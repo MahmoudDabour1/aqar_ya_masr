@@ -43,7 +43,7 @@ class LoginScreen extends StatelessWidget {
                 Center(
                   child: TextButton(
                     onPressed: () {
-                      context.pushNamed(Routes.homeScreen);
+                      context.pushNamed(Routes.bottomNavBarLayout);
                     },
                     child: Text(
                       "تخطى",

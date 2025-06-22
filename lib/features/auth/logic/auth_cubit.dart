@@ -99,9 +99,11 @@ class AuthCubit extends Cubit<AuthState> {
     response.when(
       success: (data) async {
         emit(AuthState.loginSuccess(data));
+        await SharedPrefHelper.setData(SharedPrefKeys.isLogged, true);
+        await SharedPrefHelper.setData(SharedPrefKeys.userToken, data.data?.token ?? "");
         await saveUserToken(data.data?.token ?? "");
         showToast(message: "Login successful");
-        context.pushNamed(Routes.bottomNavBarLayout);
+        context.pushReplacement(Routes.bottomNavBarLayout);
       },
       failure: (e) {
         showToast(message: e.message ?? "");
@@ -132,9 +134,6 @@ class AuthCubit extends Cubit<AuthState> {
   }
 
   Future<void> saveUserToken(String token) async {
-    if (token.isEmpty) {
-      throw Exception("Token is empty or invalid.");
-    }
     await SharedPrefHelper.setSecuredString(SharedPrefKeys.userToken, token);
     DioFactory.setTokenIntoHeaderAfterLogin(token);
   }
