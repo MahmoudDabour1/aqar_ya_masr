@@ -5,6 +5,7 @@ import 'package:aqar_ya_masr/features/auth/presentation/verify_code/verify_code_
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:aqar_ya_masr/features/info/data/models/profile_data_model.dart';
 import 'package:aqar_ya_masr/features/layout/logic/bottom_nav_cubit.dart';
+import 'package:aqar_ya_masr/features/search/logic/search_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,6 +21,7 @@ import '../../features/info/presentation/info_screen.dart';
 import '../../features/info/presentation/price_guide_screen.dart';
 import '../../features/layout/presentation/bottom_nav_bar_layout.dart';
 import '../../features/maps/presentation/maps_screen.dart';
+import '../../features/search/presentation/search_screen.dart';
 import '../di/dependency_injection.dart';
 
 class AppRouter {
@@ -79,13 +81,13 @@ class AppRouter {
           builder: (_) => ContactUsScreen(),
         );
       case Routes.editUserDataScreen:
-        ProfileDataModel? profileDataModel = settings.arguments as ProfileDataModel? ;
+        ProfileDataModel? profileDataModel =
+            settings.arguments as ProfileDataModel?;
 
         return MaterialPageRoute(
           builder: (_) => EditUserDataScreen(
-            profileDataModel: profileDataModel! ,
+            profileDataModel: profileDataModel!,
           ),
-
         );
       case Routes.bottomNavBarLayout:
         return MaterialPageRoute(
@@ -93,13 +95,22 @@ class AppRouter {
             create: (context) => BottomNavCubit(),
             child: BottomNavBarLayout(),
           ),
-        ); case Routes.mapsScreen:
+        );
+      case Routes.mapsScreen:
         return MaterialPageRoute(
           builder: (_) => MapsScreen(),
         );
-        case Routes.chatScreen:
+      case Routes.chatScreen:
         return MaterialPageRoute(
           builder: (_) => ChatScreen(),
+        );
+      case Routes.searchScreen:
+        String searchQuery = settings.arguments as String;
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => SearchCubit(sl()),
+            child: SearchScreen(initialSearchValue: searchQuery,),
+          ),
         );
 
       default:

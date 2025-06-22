@@ -22,6 +22,7 @@ class ApiConstants {
   static const String mapSearchEP = "ads?is_map_search=1&lat={lat}&lng={lng}&limit=500&radius=6";
   static const String getChatsEP = "chat";
   static const String sendChatsEP = "send_message";
+  static const String searchEP = "ads?q={search}&limit=500";
 
 
 }
