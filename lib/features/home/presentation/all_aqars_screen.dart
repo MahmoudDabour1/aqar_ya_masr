@@ -1,12 +1,14 @@
 import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/theming/app_styles.dart';
 import 'package:aqar_ya_masr/core/widgets/app_custom_search_text_field.dart';
+import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:aqar_ya_masr/features/home/presentation/widgets/all_aqar_single_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/routing/routes.dart';
 import '../../../core/theming/app_colors.dart';
 import '../../../core/utils/spacing.dart';
 import '../logic/home_state.dart';
@@ -114,15 +116,15 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
         builder: (context, state) {
           return state.maybeWhen(
             aqarMomayasSuccess: (aqarMomayas) =>
-                setupSuccess(aqarMomayas.data?.ads ?? []),
+                setupSuccess(aqarMomayas.data?.ads ?? [],context),
             compoundSuccess: (compound) =>
-                setupSuccess(compound.data?.ads ?? []),
+                setupSuccess(compound.data?.ads ?? [],context),
             qsrSakanySuccess: (qsrSakany) =>
-                setupSuccess(qsrSakany.qsrData?.ads ?? []),
+                setupSuccess(qsrSakany.qsrData?.ads ?? [],context),
             villaSakanySuccess: (villaSakany) =>
-                setupSuccess(villaSakany.villaData?.ads ?? []),
+                setupSuccess(villaSakany.villaData?.ads ?? [],context),
             flatSakanySuccess: (flatSakany) =>
-                setupSuccess(flatSakany.flatData?.ads ?? []),
+                setupSuccess(flatSakany.flatData?.ads ?? [],context),
             aqarMomayasLoading: () => setupLoading(),
             compoundLoading: () => setupLoading(),
             qsrSakanyLoading: () => setupLoading(),
@@ -130,16 +132,16 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
             flatSakanyLoading: () => setupLoading(),
            villaSakanyRentLoading: () => setupLoading(),
             villaSakanyRentSuccess: (villaSakanyRent) =>
-                setupSuccess(villaSakanyRent.data?.ads ?? []),
+                setupSuccess(villaSakanyRent.data?.ads ?? [],context),
             flatSakanyRentLoading: () => setupLoading(),
             flatSakanyRentSuccess: (flatSakanyRent) =>
-                setupSuccess(flatSakanyRent.data?.ads ?? []),
+                setupSuccess(flatSakanyRent.data?.ads ?? [],context),
             qsrSakanyRentLoading: () => setupLoading(),
             qsrSakanyRentSuccess: (qsrSakanyRent) =>
-                setupSuccess(qsrSakanyRent.data?.ads ?? []),
+                setupSuccess(qsrSakanyRent.data?.ads ?? [],context),
             aqarMomayasRentLoading: () => setupLoading(),
             aqarMomayasRentSuccess: (aqarMomayasRent) =>
-                setupSuccess(aqarMomayasRent.data?.ads ?? []),
+                setupSuccess(aqarMomayasRent.data?.ads ?? [],context),
 
             orElse: () => SizedBox.shrink(),
           );
@@ -148,13 +150,18 @@ class _AllAqarScreenState extends State<AllAqarScreen> {
     );
   }
 
-  Widget setupSuccess(List<dynamic> dataModel) {
+  Widget setupSuccess(List<dynamic> dataModel,BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h),
         child: Column(
           children: [
-            AppCustomSearchTextField(),
+            AppCustomSearchTextField(
+              onPressedFilter: (){
+                context.pushNamed(Routes.filterScreen);
+                context.read<FilterCubit>().aqarType = widget.aqarType;
+              },
+            ),
             verticalSpace(16.h),
             AllAqarSingleItem(dataModel: dataModel),
           ],

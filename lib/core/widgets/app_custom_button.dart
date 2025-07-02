@@ -7,8 +7,8 @@ import 'app_custom_loading_indicator.dart';
 
 class AppCustomButton extends StatelessWidget {
   final String textButton;
-  final double btnWidth;
-  final double btnHeight;
+  final double? btnWidth;
+  final double? btnHeight;
   final VoidCallback onPressed;
   final bool isLoading;
   final double radius;
@@ -19,8 +19,8 @@ class AppCustomButton extends StatelessWidget {
   const AppCustomButton({
     super.key,
     required this.textButton,
-    required this.btnWidth,
-    required this.btnHeight,
+    this.btnWidth,
+    this.btnHeight,
     required this.onPressed,
     this.isLoading = false,
     this.radius = 8,
@@ -34,14 +34,14 @@ class AppCustomButton extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius.r),
-        color: backgroundColor?? AppColors.primaryColor,
+        color: backgroundColor ?? AppColors.primaryColor,
       ),
       child: TextButton(
         style: ButtonStyle(
           fixedSize: WidgetStateProperty.all<Size>(
             Size(
-              btnWidth.w,
-              btnHeight.h,
+              btnWidth ?? MediaQuery.sizeOf(context).width.w,
+              btnHeight ?? 50.h,
             ),
           ),
         ),

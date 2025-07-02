@@ -17,19 +17,19 @@ class BottomNavBarLayout extends StatelessWidget {
         final bottomNavCubit = BlocProvider.of<BottomNavCubit>(context);
 
         return Scaffold(
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
-            },
-            child: SvgPicture.asset(
-              'assets/icons/add.svg',
-              width: 24.r,
-              height: 24.r,
-            ),
-          ),
+          // floatingActionButton: FloatingActionButton(
+          //   onPressed: () {
+          //   },
+          //   child: SvgPicture.asset(
+          //     'assets/icons/add.svg',
+          //     width: 24.r,
+          //     height: 24.r,
+          //   ),
+          // ),
 
-          floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerDocked,
+          // floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
+          // floatingActionButtonLocation:
+          //     FloatingActionButtonLocation.centerDocked,
           bottomNavigationBar: BottomAppBar(
             padding: EdgeInsets.zero,
             notchMargin: 10,

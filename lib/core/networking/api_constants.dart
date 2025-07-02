@@ -1,9 +1,13 @@
 class ApiConstants {
   static const String apiBaseUrl = "https://aqaryamasr.com/api/v2/";
-  static const String aqarMomayasEP = "ads?is_featured=1&limit={limit}&contract_type=sale";
-  static const String qsrSakanyEP = "ads?type_id=6&limit={limit}&contract_type=sale";
-  static const String villaSakanyEP = "ads?type_id=7&limit={limit}&contract_type=sale";
-  static const String flatSakanyEP = "ads?type_id=8&limit={limit}&contract_type=sale";
+  static const String aqarMomayasEP =
+      "ads?is_featured=1&limit={limit}&contract_type=sale";
+  static const String qsrSakanyEP =
+      "ads?type_id=6&limit={limit}&contract_type=sale";
+  static const String villaSakanyEP =
+      "ads?type_id=7&limit={limit}&contract_type=sale";
+  static const String flatSakanyEP =
+      "ads?type_id=8&limit={limit}&contract_type=sale";
   static const String adDetailsEP = "ads/{adId}";
   static const String registerEP = "auth/register";
   static const String appInitEP = "init";
@@ -14,17 +18,23 @@ class ApiConstants {
   static const String priceGuideEP = "price-guide";
   static const String profileEP = "profile";
 
-  static const String aqarMomayasRentEP = "ads?is_featured=1&limit={limit}&contract_type=rent";
-  static const String qsrSakanyRentEP = "ads?type_id=6&limit={limit}&contract_type=rent";
-  static const String villaSakanyRentEP = "ads?type_id=7&limit={limit}&contract_type=rent";
-  static const String flatSakanyRentEP = "ads?type_id=8&limit={limit}&contract_type=rent";
-  static const String compoundRentEP = "ads?is_planned=1&limit={limit}&contract_type=rent";
-  static const String mapSearchEP = "ads?is_map_search=1&lat={lat}&lng={lng}&limit=500&radius=6";
+  static const String aqarMomayasRentEP =
+      "ads?is_featured=1&limit={limit}&contract_type=rent";
+  static const String qsrSakanyRentEP =
+      "ads?type_id=6&limit={limit}&contract_type=rent";
+  static const String villaSakanyRentEP =
+      "ads?type_id=7&limit={limit}&contract_type=rent";
+  static const String flatSakanyRentEP =
+      "ads?type_id=8&limit={limit}&contract_type=rent";
+  static const String compoundRentEP =
+      "ads?is_planned=1&limit={limit}&contract_type=rent";
+  static const String mapSearchEP =
+      "ads?is_map_search=1&lat={lat}&lng={lng}&limit=500&radius=6";
   static const String getChatsEP = "chat";
   static const String sendChatsEP = "send_message";
   static const String searchEP = "ads?q={search}&limit=500";
-
-
+  static const String filterEP ="ads";
+      // "ads?contract_type={contract_type}&main_type={main_type}&type_id={type_id}&price_from={price_from}&price_to={price_to}&limit=500&is_planned={is_planned}&is_featured={is_featured}";
 }
 
 class ApiErrors {

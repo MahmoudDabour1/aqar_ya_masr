@@ -1,3 +1,4 @@
+import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/utils/spacing.dart';
 import 'package:aqar_ya_masr/core/widgets/app_custom_app_bar.dart';
 import 'package:aqar_ya_masr/core/widgets/app_custom_search_text_field.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/routing/router_observer.dart';
+import '../../../core/routing/routes.dart';
 
 class SearchScreen extends StatefulWidget {
   final String? initialSearchValue;
@@ -63,6 +65,9 @@ class _SearchScreenState extends State<SearchScreen> {
                   if (value != null && value.isNotEmpty) {
                     cubit.search();
                   }
+                },
+                onPressedFilter: (){
+                  context.pushNamed(Routes.filterScreen);
                 },
               ),
               verticalSpace(32),
