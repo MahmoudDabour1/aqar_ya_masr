@@ -17,6 +17,7 @@ abstract class Routes{
   static const String searchScreen = '/SearchScreen';
   static const String filterScreen = '/FilterScreen';
   static const String filterResponseScreen = '/FilterResponseScreen';
+  static const String advertiserScreen = '/AdvertiserScreen';
 
 
 }

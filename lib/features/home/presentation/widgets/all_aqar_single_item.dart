@@ -6,10 +6,11 @@ import 'list_view_item_widget.dart';
 
 class AllAqarSingleItem extends StatelessWidget {
   final List<dynamic> dataModel;
+  final ScrollPhysics? physics;
 
   const AllAqarSingleItem({
     super.key,
-    required this.dataModel,
+    required this.dataModel, this.physics,
   });
 
   @override
@@ -17,7 +18,7 @@ class AllAqarSingleItem extends StatelessWidget {
     return SizedBox(
       child: ListView.builder(
         shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
+        physics:physics?? NeverScrollableScrollPhysics(),
         itemCount: dataModel.length,
         scrollDirection: Axis.vertical,
         itemBuilder: (context, index) {
