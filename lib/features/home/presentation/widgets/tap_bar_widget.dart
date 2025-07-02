@@ -29,6 +29,9 @@ class TapBarWidget extends StatelessWidget {
               //     .text = value.toString();
               context.pushNamed(Routes.searchScreen, arguments: value);
             },
+            onPressedFilter: (){
+              context.pushNamed(Routes.filterScreen);
+            },
             // onSaved: (value) {
             //
             //   context.pushNamed(Routes.searchScreen);

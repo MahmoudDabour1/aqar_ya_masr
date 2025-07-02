@@ -1,7 +1,9 @@
+import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../routing/routes.dart';
 import '../theming/app_colors.dart';
 import '../theming/app_styles.dart';
 
@@ -9,7 +11,7 @@ class AppCustomSearchTextField extends StatefulWidget {
   final TextEditingController? controller;
   final void Function(String)? onChanged;
   final void Function(String?)? onSaved;
-  final void Function(String?)? onFieldSubmitted;
+  final Function(String?)? onFieldSubmitted;
   final Color? fillColor;
   final VoidCallback? onPressedFilter;
 
@@ -29,6 +31,8 @@ class AppCustomSearchTextField extends StatefulWidget {
 }
 
 class _AppCustomSearchTextFieldState extends State<AppCustomSearchTextField> {
+  get value => null;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -43,7 +47,13 @@ class _AppCustomSearchTextFieldState extends State<AppCustomSearchTextField> {
       },
       textInputAction: TextInputAction.search,
       keyboardType: TextInputType.text,
-      onFieldSubmitted: widget.onFieldSubmitted,
+      onFieldSubmitted: widget.onFieldSubmitted ??
+          (value) {
+            context.pushNamed(
+              Routes.searchScreen,
+              arguments: value,
+            );
+          },
       decoration: InputDecoration(
         hintText: "بحث",
         prefixIcon: Padding(
@@ -55,7 +65,10 @@ class _AppCustomSearchTextFieldState extends State<AppCustomSearchTextField> {
           ),
         ),
         suffixIcon: GestureDetector(
-          onTap: widget.onPressedFilter,
+          onTap: widget.onPressedFilter ??
+              () {
+                context.pushNamed(Routes.filterScreen);
+              },
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [

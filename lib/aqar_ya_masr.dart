@@ -1,5 +1,6 @@
 import 'package:aqar_ya_masr/core/routing/app_router.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
+import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
 import 'package:aqar_ya_masr/features/info/logic/info_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -33,6 +34,7 @@ class AqarYaMasr extends StatelessWidget {
           create: (context) => HomeCubit(sl()),
         ),
         BlocProvider(create: (_) => InfoCubit(sl())..getProfileData()),
+        BlocProvider(create: (_) => FilterCubit(sl())),
       ],
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
@@ -56,7 +58,7 @@ class AqarYaMasr extends StatelessWidget {
             onGenerateRoute: appRouter.generateRoute,
             debugShowCheckedModeBanner: false,
             navigatorObservers: [NavigatorObserver(), routeObserver],
-            initialRoute: Routes.homeScreen,
+            initialRoute: Routes.bottomNavBarLayout,
           ),
         ),
       ),

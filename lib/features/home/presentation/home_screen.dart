@@ -48,6 +48,10 @@ class _HomeScreenState extends State<HomeScreen>
     final selected = _tapController.index == 0 ? 'sale' : 'rent';
     await prefs.setString(SharedPrefKeys.selectedTab, selected);
 
+    if (selected == 'sale') {
+      _fetchSaleData();
+    }
+
     if (selected == 'rent') {
       await Future.wait([
         context.read<HomeCubit>().getAqarMomayasRentData(6),
@@ -86,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen>
         backgroundColor: AppColors.whiteColor,
         actions: [
           Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 8.w),
+            padding: EdgeInsets.symmetric(horizontal: 8.w),
             child: SvgPicture.asset(
               "assets/images/notification2.svg",
               width: 24.w,
@@ -118,5 +122,4 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
   }
-
 }

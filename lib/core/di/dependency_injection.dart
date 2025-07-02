@@ -1,6 +1,9 @@
 import 'package:aqar_ya_masr/features/auth/data/data_source/auth_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
+import 'package:aqar_ya_masr/features/filter/data/data_source/filter_remote_data_source.dart';
+import 'package:aqar_ya_masr/features/filter/data/repos/filter_repos.dart';
+import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
 import 'package:aqar_ya_masr/features/home/data/data_source/home_local_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/data_source/home_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/home/data/repos/home_repos.dart';
@@ -62,4 +65,10 @@ Future<void> setupGetIt() async {
       () => SearchRemoteDataSource(dio));
   sl.registerLazySingleton<SearchRepo>(() => SearchRepoImpl(sl()));
   sl.registerFactory<SearchCubit>(() => SearchCubit(sl()));
+
+  //Filter
+  sl.registerLazySingleton<FilterRemoteDataSource>(
+      () => FilterRemoteDataSource(dio));
+  sl.registerLazySingleton<FilterRepos>(() => FilterReposImpl(sl()));
+  sl.registerFactory<FilterCubit>(() => FilterCubit(sl()));
 }
