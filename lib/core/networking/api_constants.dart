@@ -34,7 +34,7 @@ class ApiConstants {
   static const String sendChatsEP = "send_message";
   static const String searchEP = "ads?q={search}&limit=500";
   static const String filterEP ="ads";
-      // "ads?contract_type={contract_type}&main_type={main_type}&type_id={type_id}&price_from={price_from}&price_to={price_to}&limit=500&is_planned={is_planned}&is_featured={is_featured}";
+  static const String advertiserEP ="advertiser/{advertiserId}";
 }
 
 class ApiErrors {

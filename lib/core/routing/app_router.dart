@@ -1,8 +1,8 @@
 import 'package:aqar_ya_masr/core/routing/routes.dart';
+import 'package:aqar_ya_masr/features/advertiser/logic/advertiser_cubit.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/forget_password/forget_password_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/login/login_screen.dart';
 import 'package:aqar_ya_masr/features/auth/presentation/verify_code/verify_code_screen.dart';
-import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
 import 'package:aqar_ya_masr/features/home/logic/home_cubit.dart';
 import 'package:aqar_ya_masr/features/info/data/models/profile_data_model.dart';
 import 'package:aqar_ya_masr/features/layout/logic/bottom_nav_cubit.dart';
@@ -10,6 +10,7 @@ import 'package:aqar_ya_masr/features/search/logic/search_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../features/advertiser/presentation/advertiser_screen.dart';
 import '../../features/auth/presentation/register/register_screen.dart';
 import '../../features/auth/presentation/register/widgets/license_agreement_screen.dart';
 import '../../features/chat/chat_screen.dart';
@@ -124,6 +125,16 @@ class AppRouter {
       case Routes.filterResponseScreen:
         return MaterialPageRoute(
           builder: (_) => FilterResponseScreen(),
+        );
+      case Routes.advertiserScreen:
+        final int advertiserId = settings.arguments as int;
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => AdvertiserCubit(sl()),
+            child: AdvertiserScreen(
+              advertiserId: advertiserId,
+            ),
+          ),
         );
       default:
         return null;
