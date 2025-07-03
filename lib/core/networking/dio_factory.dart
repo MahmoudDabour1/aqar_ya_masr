@@ -28,23 +28,18 @@ class DioFactory {
     final token =
         await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken);
 
-    final locale =
-        await SharedPrefHelper.getString(SharedPrefKeys.selectedLocale) ?? 'en';
-
-    if (token == null || token.isEmpty) {
-      throw Exception("User token is missing or invalid.");
-    }
     dio?.options.headers = {
       'Accept': 'application/json',
-      'Authorization': 'Bearer $token',
-      'Accept-Language': locale,
+      'x-secret-key': "2KwG1hilCWiCLyEX4bwhdZJBmtjvIpqNGwn",
       'Content-Type': 'application/json',
+      if (token != null && token.isNotEmpty) 'Authorization': 'Bearer $token',
     };
   }
 
   static void setTokenIntoHeaderAfterLogin(String token) {
     dio?.options.headers = {
       'Authorization': 'Bearer $token',
+      'x-secret-key': "2KwG1hilCWiCLyEX4bwhdZJBmtjvIpqNGwn",
     };
   }
 

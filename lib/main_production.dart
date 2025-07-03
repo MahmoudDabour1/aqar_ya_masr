@@ -6,10 +6,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'aqar_ya_masr.dart';
-
+import 'core/helpers/shared_pref_helper.dart';
+import 'core/helpers/shared_pref_keys.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  final type =
+      await SharedPrefHelper.getString(SharedPrefKeys.selectedTab) ?? 'sale';
+
   await Future.wait(
     [
       setupGetIt(),
@@ -22,6 +26,7 @@ void main() async {
   runApp(
     AqarYaMasr(
       appRouter: AppRouter(),
+      type: type,
     ),
   );
 }

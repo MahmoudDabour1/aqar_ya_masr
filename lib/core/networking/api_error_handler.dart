@@ -36,15 +36,13 @@ class ApiErrorHandler {
     if (error is String && error.contains('<html')) {
       return ApiErrorModel(
         message: "Received an HTML response instead of JSON. Possible server error.",
-        statusCode: statusCode,
       );
     }
     return ApiErrorModel(
       message: error['message'] ?? "Unknown error occurred",
-      statusCode: statusCode,
-      errorsDetails: (error['details'] as List<dynamic>?)
-          ?.map((e) => e as String?)
-          .toList(),
+      // error: (error['details'] as List<dynamic>?)
+      //     ?.map((e) => e as String?)
+      //     .toList(),
     );
   }
 }

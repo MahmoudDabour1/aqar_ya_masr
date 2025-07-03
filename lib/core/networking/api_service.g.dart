@@ -14,7 +14,7 @@ class _ApiService implements ApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'https://home4u.gosoftcloud.com';
+    baseUrl ??= 'https://aqaryamasr.com/api/v2/';
   }
 
   final Dio _dio;
