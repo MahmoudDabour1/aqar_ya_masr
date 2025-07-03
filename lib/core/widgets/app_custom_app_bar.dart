@@ -7,20 +7,25 @@ import '../theming/app_styles.dart';
 
 class AppCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String appBatTitle;
-  const AppCustomAppBar({super.key, required this.appBatTitle});
+  final bool? isHaveBackButton;
+
+  const AppCustomAppBar(
+      {super.key, required this.appBatTitle, this.isHaveBackButton = true});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: GestureDetector(
-        onTap: () {
-          context.pop();
-        },
-        child: Icon(
-          Icons.arrow_back,
-          size: 35.r,
-        ),
-      ),
+      leading: isHaveBackButton == true
+          ? GestureDetector(
+              onTap: () {
+                context.pop();
+              },
+              child: Icon(
+                Icons.arrow_back,
+                size: 35.r,
+              ),
+            )
+          : null,
       backgroundColor: AppColors.whiteColor,
       elevation: 0,
       centerTitle: true,
@@ -30,6 +35,7 @@ class AppCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
     );
   }
+
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }

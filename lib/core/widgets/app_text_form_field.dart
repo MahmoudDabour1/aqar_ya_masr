@@ -18,6 +18,7 @@ class AppTextFormField extends StatelessWidget {
   final int? maxLines;
   final bool? enabled;
   final void Function(String)? onChanged;
+  final void Function(String)? onFieldSubmitted;
   final void Function()? onTap;
   final bool? readOnly;
 
@@ -37,7 +38,7 @@ class AppTextFormField extends StatelessWidget {
     this.enabled = true,
     this.onChanged,
     this.onTap,
-    this.readOnly = false,
+    this.readOnly = false, this.onFieldSubmitted,
   });
 
   @override
@@ -61,6 +62,7 @@ class AppTextFormField extends StatelessWidget {
             ),
           ),
       obscureText: isObscureText ?? false,
+      onFieldSubmitted: onFieldSubmitted,
       readOnly: readOnly??false,
       style: AppStyles.font18BlackMedium,
       validator: (value) {

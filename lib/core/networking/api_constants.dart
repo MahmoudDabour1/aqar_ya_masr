@@ -35,6 +35,7 @@ class ApiConstants {
   static const String searchEP = "ads?q={search}&limit=500";
   static const String filterEP ="ads";
   static const String advertiserEP ="advertiser/{advertiserId}";
+  static const String chatDetailsEP ="chat/{chatId}";
 }
 
 class ApiErrors {

@@ -1,3 +1,4 @@
+import 'package:aqar_ya_masr/features/chat/data/models/chat_details_response_model.dart';
 import 'package:aqar_ya_masr/features/chat/data/models/chat_response_model.dart';
 import 'package:aqar_ya_masr/features/chat/data/models/send_chat_request_model.dart';
 import 'package:aqar_ya_masr/features/chat/data/models/send_chat_response_model.dart';
@@ -21,4 +22,9 @@ abstract class ChatRemoteDataSource {
   Future<SendChatResponseModel> sendMessage({
     @Body() SendChatRequestModel? sendChatRequestModel,
   });
+
+  @GET(ApiConstants.chatDetailsEP)
+  Future<ChatDetailsResponseModel> getChatDetails(
+    @Path("chatId") int chatId,
+  );
 }

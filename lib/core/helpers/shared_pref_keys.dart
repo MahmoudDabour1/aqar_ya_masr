@@ -9,4 +9,5 @@ class SharedPrefKeys {
   static const String userBusinessTypeId = 'userBusinessTypeId';
   static const String selectedTab = 'selectedTab';
   static const String isLogged = 'isLogged';
+  static const String userId = 'userId';
 }

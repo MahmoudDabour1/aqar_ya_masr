@@ -1,3 +1,4 @@
+import 'package:aqar_ya_masr/features/chat/presentation/chat_default_screen.dart';
 import 'package:aqar_ya_masr/features/home/presentation/home_screen.dart';
 import 'package:aqar_ya_masr/features/info/presentation/info_screen.dart';
 import 'package:aqar_ya_masr/features/layout/logic/bottom_nav_state.dart';
@@ -24,7 +25,7 @@ class BottomNavCubit extends Cubit<BottomNavState> {
     "assets/icons/ic_chat_unselected.svg",
     "assets/icons/ic_menu.svg",
   ];
-List<String> bottomNavIconsSelected = [
+  List<String> bottomNavIconsSelected = [
     "assets/icons/ic_home.svg",
     "assets/icons/ic_map.svg",
     "assets/icons/ic_chat.svg",
@@ -34,9 +35,10 @@ List<String> bottomNavIconsSelected = [
   List<Widget> bottomNavScreens = [
     HomeScreen(),
     MapsScreen(),
-    Container(color: Colors.yellow),
+    ChatDefaultScreen(),
     InfoScreen(),
-  ]; List<String> bottomNavLabels = [
+  ];
+  List<String> bottomNavLabels = [
     "عقارات",
     "تصفح",
     "الرسائل",

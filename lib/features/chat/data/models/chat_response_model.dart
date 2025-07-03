@@ -25,7 +25,7 @@ class Datum {
   @JsonKey(name: "last_message")
   final LastMessage? lastMessage;
   @JsonKey(name: "last_msg_time")
-  final DateTime? lastMsgTime;
+  final String? lastMsgTime;
 
   Datum({
     this.id,
