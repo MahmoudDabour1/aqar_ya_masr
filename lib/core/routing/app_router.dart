@@ -13,7 +13,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../features/advertiser/presentation/advertiser_screen.dart';
 import '../../features/auth/presentation/register/register_screen.dart';
 import '../../features/auth/presentation/register/widgets/license_agreement_screen.dart';
-import '../../features/chat/chat_screen.dart';
+import '../../features/chat/presentation/chat_screen.dart';
 import '../../features/filter/presentation/filter_response_screen.dart';
 import '../../features/filter/presentation/filter_screen.dart';
 import '../../features/home/presentation/details_screen.dart';
@@ -105,8 +105,11 @@ class AppRouter {
           builder: (_) => MapsScreen(),
         );
       case Routes.chatScreen:
+        int chatId = settings.arguments as int;
         return MaterialPageRoute(
-          builder: (_) => ChatScreen(),
+          builder: (_) => ChatScreen(
+            chatId: chatId,
+          ),
         );
       case Routes.searchScreen:
         String searchQuery = settings.arguments as String;
@@ -135,6 +138,10 @@ class AppRouter {
               advertiserId: advertiserId,
             ),
           ),
+        );
+      case Routes.chatDefaultScreen:
+        return MaterialPageRoute(
+          builder: (_) => AdvertiserScreen(),
         );
       default:
         return null;

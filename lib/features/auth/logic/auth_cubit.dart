@@ -101,6 +101,7 @@ class AuthCubit extends Cubit<AuthState> {
         emit(AuthState.loginSuccess(data));
         await SharedPrefHelper.setData(SharedPrefKeys.isLogged, true);
         await SharedPrefHelper.setData(SharedPrefKeys.userToken, data.data?.token ?? "");
+        await SharedPrefHelper.setData(SharedPrefKeys.userId, data.data?.profile?.id ?? "");
         await saveUserToken(data.data?.token ?? "");
         showToast(message: "Login successful");
         context.pushReplacement(Routes.bottomNavBarLayout);

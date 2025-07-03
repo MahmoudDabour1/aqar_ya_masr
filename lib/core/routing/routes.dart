@@ -18,6 +18,7 @@ abstract class Routes{
   static const String filterScreen = '/FilterScreen';
   static const String filterResponseScreen = '/FilterResponseScreen';
   static const String advertiserScreen = '/AdvertiserScreen';
+  static const String chatDefaultScreen = '/ChatDefaultScreen';
 
 
 }

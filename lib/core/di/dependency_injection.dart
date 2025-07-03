@@ -4,6 +4,9 @@ import 'package:aqar_ya_masr/features/advertiser/logic/advertiser_cubit.dart';
 import 'package:aqar_ya_masr/features/auth/data/data_source/auth_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
+import 'package:aqar_ya_masr/features/chat/data/data_source/chat_remote_data_source.dart';
+import 'package:aqar_ya_masr/features/chat/data/repos/chats_repos.dart';
+import 'package:aqar_ya_masr/features/chat/logic/chats_cubit.dart';
 import 'package:aqar_ya_masr/features/filter/data/data_source/filter_remote_data_source.dart';
 import 'package:aqar_ya_masr/features/filter/data/repos/filter_repos.dart';
 import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
@@ -75,10 +78,14 @@ Future<void> setupGetIt() async {
   sl.registerLazySingleton<FilterRepos>(() => FilterReposImpl(sl()));
   sl.registerFactory<FilterCubit>(() => FilterCubit(sl()));
 
-
   //Advertiser
   sl.registerLazySingleton<AdvertiserRemoteDataSource>(
       () => AdvertiserRemoteDataSource(dio));
   sl.registerLazySingleton<AdvertiserRepos>(() => AdvertiserReposImpl(sl()));
   sl.registerFactory<AdvertiserCubit>(() => AdvertiserCubit(sl()));
+//Chats
+  sl.registerLazySingleton<ChatRemoteDataSource>(
+      () => ChatRemoteDataSource(dio));
+  sl.registerLazySingleton<ChatsRepos>(() => ChatsReposImpl(sl()));
+  sl.registerFactory<ChatsCubit>(() => ChatsCubit(sl()));
 }

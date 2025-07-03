@@ -27,9 +27,7 @@ Datum _$DatumFromJson(Map<String, dynamic> json) => Datum(
       lastMessage: json['last_message'] == null
           ? null
           : LastMessage.fromJson(json['last_message'] as Map<String, dynamic>),
-      lastMsgTime: json['last_msg_time'] == null
-          ? null
-          : DateTime.parse(json['last_msg_time'] as String),
+      lastMsgTime: json['last_msg_time'] as String?,
     );
 
 Map<String, dynamic> _$DatumToJson(Datum instance) => <String, dynamic>{
@@ -37,7 +35,7 @@ Map<String, dynamic> _$DatumToJson(Datum instance) => <String, dynamic>{
       'sender': instance.sender,
       'unread': instance.unread,
       'last_message': instance.lastMessage,
-      'last_msg_time': instance.lastMsgTime?.toIso8601String(),
+      'last_msg_time': instance.lastMsgTime,
     };
 
 LastMessage _$LastMessageFromJson(Map<String, dynamic> json) => LastMessage(

@@ -1,5 +1,6 @@
 import 'package:aqar_ya_masr/core/routing/app_router.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
+import 'package:aqar_ya_masr/features/chat/logic/chats_cubit.dart';
 import 'package:aqar_ya_masr/features/filter/logic/filter_cubit.dart';
 import 'package:aqar_ya_masr/features/info/logic/info_cubit.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ import 'features/home/logic/home_cubit.dart';
 
 class AqarYaMasr extends StatelessWidget {
   final AppRouter appRouter;
-  final String type ;
+  final String type;
 
   const AqarYaMasr({
     super.key,
@@ -35,6 +36,7 @@ class AqarYaMasr extends StatelessWidget {
         ),
         BlocProvider(create: (_) => InfoCubit(sl())..getProfileData()),
         BlocProvider(create: (_) => FilterCubit(sl())),
+        BlocProvider(create: (_) => ChatsCubit(sl())..getChatMessages()),
       ],
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
