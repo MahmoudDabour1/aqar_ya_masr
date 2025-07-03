@@ -1,6 +1,4 @@
-import 'package:aqar_ya_masr/core/extensions/navigation_extension.dart';
 import 'package:aqar_ya_masr/core/helpers/helper_methods.dart';
-import 'package:aqar_ya_masr/core/routing/routes.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_cubit.dart';
 import 'package:aqar_ya_masr/features/auth/logic/auth_state.dart';
 import 'package:flutter/material.dart';

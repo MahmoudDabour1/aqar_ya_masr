@@ -37,7 +37,7 @@ class _LoginInputsWidgetState extends State<LoginInputsWidget> {
             controller: cubit.phoneController,
             labelText: "أدخل رقم الهاتف",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال رقم الهاتف";
               }
               return null;
@@ -53,7 +53,7 @@ class _LoginInputsWidgetState extends State<LoginInputsWidget> {
             controller: cubit.passwordController,
             labelText: "أدخل كلمة المرور",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال كلمة المرور";
               }
               if (value.length < 6) {

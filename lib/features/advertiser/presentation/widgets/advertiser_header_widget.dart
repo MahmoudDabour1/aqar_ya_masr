@@ -77,7 +77,7 @@ class AdvertiserHeaderWidget extends StatelessWidget {
                             maxLines: 5,
                             labelText: "اكتب رساله لصاحب العقار",
                             validator: (value) {
-                              if (value == null || value.isEmpty) {
+                              if (value.isEmpty) {
                                 return "الرجاء ادخال رساله";
                               }
                               return null;

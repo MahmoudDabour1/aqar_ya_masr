@@ -3,7 +3,6 @@ import 'package:aqar_ya_masr/core/helpers/helper_methods.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/forget_password_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/register_request_body.dart';
-import 'package:aqar_ya_masr/features/auth/data/models/register_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/verify_code_request_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/repos/auth_repos.dart';
 import 'package:aqar_ya_masr/features/home/data/models/app_init_model.dart';
@@ -13,7 +12,6 @@ import 'package:flutter/cupertino.dart';
 import '../../../core/helpers/shared_pref_helper.dart';
 import '../../../core/helpers/shared_pref_keys.dart';
 import '../../../core/networking/dio_factory.dart';
-import '../../../core/routing/router_observer.dart';
 import '../../../core/routing/routes.dart';
 import 'auth_state.dart';
 

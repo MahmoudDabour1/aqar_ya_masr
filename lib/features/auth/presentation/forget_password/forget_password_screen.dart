@@ -47,7 +47,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                     controller: cubit.phoneController,
                     labelText: "أدخل رقم الهاتف",
                     validator: (value) {
-                      if (value == null || value.isEmpty) {
+                      if (value.isEmpty) {
                         return "الرجاء إدخال رقم الهاتف";
                       }
                       return null;

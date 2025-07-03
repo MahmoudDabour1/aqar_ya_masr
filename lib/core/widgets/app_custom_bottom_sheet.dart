@@ -26,7 +26,7 @@ class AppCustomBottomSheet<T> extends StatelessWidget {
       labelText: "اختر $label",
       readOnly: true,
       validator: (value) {
-        if (value == null || value.isEmpty) {
+        if (value.isEmpty) {
           return "الرجاء اختيار $label";
         }
         return null;

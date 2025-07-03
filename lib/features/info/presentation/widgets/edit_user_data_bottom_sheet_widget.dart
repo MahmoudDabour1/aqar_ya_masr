@@ -43,7 +43,7 @@ class _EditUserDataBottomSheetWidgetState
         return AppTextFormField(
           labelText: "اختار المحافظة",
           readOnly: true,
-          validator: (value) => (value == null || value.isEmpty)
+          validator: (value) => (value.isEmpty)
               ? "الرجاء اختيار المحافظة"
               : null,
           suffixIcon: Icon(Icons.keyboard_arrow_down_outlined, size: 30.r),

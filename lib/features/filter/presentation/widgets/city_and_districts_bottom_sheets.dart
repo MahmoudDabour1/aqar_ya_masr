@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 
-import '../../../../core/theming/app_colors.dart';
 import '../../../../core/utils/app_constants.dart';
 import '../../../../core/widgets/app_custom_bottom_sheet.dart';
 
@@ -64,20 +63,11 @@ class _CityAndDistrictsBottomSheetsState
           getTitle: (value) => value.name ?? "",
           onItemSelected: (value) {
             selectedCity = value;
-            if (value != null) {
-              districts = value.districts ?? [];
-              selectedDistrict = null;
-              districtsController.clear();
-              cubit.city = value.id.toString();
-            } else {
-              // No city selected
-              districts = [];
-              selectedDistrict = null;
-              districtsController.clear();
-              cubit.city = "";
-              cubit.district = "";
-            }
-            setState(() {});
+            districts = value.districts ?? [];
+            selectedDistrict = null;
+            districtsController.clear();
+            cubit.city = value.id.toString();
+                      setState(() {});
             // districts = value.districts ?? [];
             // selectedDistrict = null;
             // districtsController.clear();

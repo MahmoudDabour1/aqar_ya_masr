@@ -1,4 +1,3 @@
-import 'package:aqar_ya_masr/features/home/data/models/app_init_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/forget_password_response_model.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_request_body.dart';
 import 'package:aqar_ya_masr/features/auth/data/models/login_response_model.dart';

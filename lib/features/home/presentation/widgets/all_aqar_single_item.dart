@@ -43,6 +43,5 @@ class AllAqarSingleItem extends StatelessWidget {
         },
       ),
     );
-    ;
   }
 }

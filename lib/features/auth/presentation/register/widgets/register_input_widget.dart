@@ -38,7 +38,7 @@ class _RegisterInputWidgetState extends State<RegisterInputWidget> {
             controller: cubit.nameController,
             labelText: "أدخل اسم المستخدم",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال اسم المستخدم";
               }
               return null;
@@ -54,7 +54,7 @@ class _RegisterInputWidgetState extends State<RegisterInputWidget> {
             controller: cubit.phoneController,
             labelText: "أدخل رقم الهاتف",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال رقم الهاتف";
               }
               return null;
@@ -70,7 +70,7 @@ class _RegisterInputWidgetState extends State<RegisterInputWidget> {
             controller: cubit.passwordController,
             labelText: "أدخل كلمة المرور",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال كلمة المرور";
               }
               if (value.length < 6) {
@@ -107,7 +107,7 @@ class _RegisterInputWidgetState extends State<RegisterInputWidget> {
           AppTextFormField(
             labelText: "أدخل تأكيد كلمة المرور",
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value.isEmpty) {
                 return "الرجاء إدخال تأكيد كلمة المرور";
               }
               if (value != cubit.passwordController.text) {

@@ -55,7 +55,7 @@ class _CityDropDownMenuState extends State<CityDropDownMenu> {
               labelText: "اختار المحافظة",
               readOnly: true,
               validator: (value) {
-                if (value == null || value.isEmpty) {
+                if (value.isEmpty) {
                   return "الرجاء اختيار المحافظة";
                 }
                 return null;

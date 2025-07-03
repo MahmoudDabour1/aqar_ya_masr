@@ -39,7 +39,7 @@ class _EditUserDataInputsState extends State<EditUserDataInputs> {
         AppTextFormField(
           controller: _nameController,
           labelText: "أدخل اسم المستخدم",
-          validator: (value) => (value == null || value.isEmpty)
+          validator: (value) => (value.isEmpty)
               ? "الرجاء إدخال اسم المستخدم"
               : null,
         ),
@@ -48,7 +48,7 @@ class _EditUserDataInputsState extends State<EditUserDataInputs> {
         AppTextFormField(
           controller: _phoneController,
           labelText: "أدخل رقم الهاتف",
-          validator: (value) => (value == null || value.isEmpty)
+          validator: (value) => (value.isEmpty)
               ? "الرجاء إدخال رقم الهاتف"
               : null,
         ),
@@ -58,7 +58,7 @@ class _EditUserDataInputsState extends State<EditUserDataInputs> {
           controller: _passwordController,
           labelText: "أدخل كلمة المرور",
           validator: (value) {
-            if (value == null || value.isEmpty) {
+            if (value.isEmpty) {
               return "الرجاء إدخال كلمة المرور";
             }
             if (value.length < 6) {

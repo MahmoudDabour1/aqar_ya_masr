@@ -23,6 +23,7 @@ class _ChatDefaultScreenState extends State<ChatDefaultScreen> {
     super.initState();
     context.read<ChatsCubit>().getChatMessages();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,8 +38,6 @@ class _ChatDefaultScreenState extends State<ChatDefaultScreen> {
           children: [
             AppCustomSearchTextField(),
             verticalSpace(16),
-
-
             BlocBuilder<ChatsCubit, ChatsState>(
               buildWhen: (previous, current) {
                 return current is GetChatsLoading ||
@@ -51,28 +50,28 @@ class _ChatDefaultScreenState extends State<ChatDefaultScreen> {
                           child: CircularProgressIndicator(),
                         ),
                     getMessageSuccess: (chats) => Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          " رسائلي:${chats.data?.length??0}",
-                          style: AppStyles.font18BlackBold,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              " رسائلي:${chats.data?.length ?? 0}",
+                              style: AppStyles.font18BlackBold,
+                            ),
+                            verticalSpace(16),
+                            ListView.separated(
+                              separatorBuilder: (context, index) =>
+                                  verticalSpace(8),
+                              itemCount: chats.data?.length ?? 0,
+                              shrinkWrap: true,
+                              physics: BouncingScrollPhysics(),
+                              itemBuilder: (context, index) {
+                                return ChatContainerSingleItem(
+                                  chatResponseModel: chats,
+                                  index: index,
+                                );
+                              },
+                            ),
+                          ],
                         ),
-                        verticalSpace(16),
-                        ListView.separated(
-                          separatorBuilder: (context, index) =>
-                              verticalSpace(8),
-                          itemCount: chats.data?.length??0,
-                          shrinkWrap: true,
-                          physics: BouncingScrollPhysics(),
-                          itemBuilder: (context, index) {
-                            return ChatContainerSingleItem(
-                              chatResponseModel: chats,
-                              index: index,
-                            );
-                          },
-                        ),
-                      ],
-                    ),
                     getMessageFailure: (error) => Center(
                           child: Text(
                             error,

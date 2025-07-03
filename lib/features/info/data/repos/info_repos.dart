@@ -1,10 +1,8 @@
 import 'package:aqar_ya_masr/core/networking/api_error_handler.dart';
-import 'package:aqar_ya_masr/core/networking/api_error_model.dart';
 import 'package:aqar_ya_masr/features/info/data/models/price_guide_model.dart';
 import 'package:aqar_ya_masr/features/info/data/models/profile_data_model.dart';
 
 import '../../../../core/networking/api_result.dart';
-import '../../../home/data/models/sale/aqar_momayas_model.dart';
 import '../data_source/info_remote_data_source.dart';
 
 abstract class InfoRepos{
